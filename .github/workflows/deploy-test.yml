@@ -1,0 +1,56 @@
+name: deploy (Deploy to IBM Cloud)
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy-canary:
+    runs-on: ubuntu-16.04
+    steps:
+      - uses: actions/checkout@master
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - name: Install dependencies
+        run: yarn install
+      - name: Grab latest canary release
+        run: yarn update-canary
+      - name: Build project
+        run: yarn build
+      - name: Deploying to IBM Cloud
+        uses: carbon-design-system/action-ibmcloud-cf@v1.2.0
+        with:
+          cloud-api-key: ${{ secrets.CLOUD_API_KEY }}
+          cf-org: ibm-digital-design
+          cf-space: ibmdotcom-production
+          cf-region: us-south
+          cf-app: ibmdotcom-web-components-html-test
+          cf-manifest: manifest.yml
+          deploy-dir: dist
+  deploy-staging:
+    runs-on: ubuntu-16.04
+    steps:
+      - uses: actions/checkout@master
+      - name: Use Node.js 12.x
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - name: Install dependencies
+        run: yarn install
+      - name: Grab latest next release
+        run: yarn update-next
+      - name: Build project
+        run: yarn build
+      - name: Deploying to IBM Cloud
+        uses: carbon-design-system/action-ibmcloud-cf@v1.2.0
+        with:
+          cloud-api-key: ${{ secrets.CLOUD_API_KEY }}
+          cf-org: ibm-digital-design
+          cf-space: ibmdotcom-production
+          cf-region: us-south
+          cf-app: ibmdotcom-web-components-html-staging
+          cf-manifest: manifest-staging.yml
+          deploy-dir: dist

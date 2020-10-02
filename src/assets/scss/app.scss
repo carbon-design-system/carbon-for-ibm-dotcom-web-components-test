@@ -6,13 +6,14 @@
 @include carbon--font-face-sans();
 @include carbon--type-reset();
 
-.page-container, dds-dotcom-shell-container {
+.page-container,
+dds-dotcom-shell-container {
   margin-top: 50px;
 }
 
 // There seems to be a bug where the height of the button group is being set as 0px
 dds-button-group-item {
-  height: auto !important;
+  height: auto !important; /* stylelint-disable-line declaration-no-important */
 }
 
 .ddstest-divider {

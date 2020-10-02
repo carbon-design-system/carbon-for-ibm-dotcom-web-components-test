@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Language" content="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>{{ htmlWebpackPlugin.options.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"
+  />
+  <meta name="description" content="{{ htmlWebpackPlugin.options.description }}">
+
+  <script>
+    digitalData = {
+      page: {
+        category: {
+          primaryCategory: '' // e.g. SB03
+        },
+        pageInfo: {
+          effectiveDate: '', // e.g. 2014-11-19
+          expiryDate: '', // e.g. 2017-11-19
+          language: 'en-US', // e.g. en-US
+          publishDate: '', // e.g. 2014-11-19
+          publisher: '', // e.g. IBM Corporation
+          version: 'Carbon:IBM.com Library',
+          ibm: {
+            contentDelivery: '', // e.g. ECM/Filegen
+            contentProducer: '', // e.g. ECM/IConS Adopter 34 - GS83J2343G3H3ERG - 11/19/2014 05:14:02 PM
+            country: 'US', // e.g. US
+            industry: '', // e.g. B,U
+            owner: '', // e.g. Some Person/City/IBM
+            siteID: '', // e.g. MySiteID
+            subject: '', // e.g. SW492
+            type: '' // e.g CT305
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- IBM Tag Management and Site Analytics -->
+  <script src="//1.www.s81c.com/common/stats/ibm-common.js" defer></script>
+</head>
+
+<body>
+<dds-dotcom-shell-container>
+  {{> @partial-block }}
+</dds-dotcom-shell-container>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+@import '~carbon-components/scss/globals/scss/css--reset';
+@import '~@carbon/type/scss/font-face/mono';
+@import '~@carbon/type/scss/font-face/sans';
+@import '~@carbon/grid/scss/grid';
+@include carbon--font-face-mono();
+@include carbon--font-face-sans();
+@include carbon--type-reset();
+
+.page-container, dds-dotcom-shell-container {
+  margin-top: 50px;
+}
+
+// There seems to be a bug where the height of the button group is being set as 0px
+dds-button-group-item {
+  height: auto !important;
+}
+
+.ddstest-divider {
+  margin: 50px 0;
+}

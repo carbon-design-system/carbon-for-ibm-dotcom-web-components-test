@@ -57,8 +57,8 @@ jobs:
           cf-org: ibm-digital-design
           cf-space: ibmdotcom-production
           cf-region: us-south
-          cf-app: ibmdotcom-web-components-html-test
-          cf-manifest: manifest-canary.yml
+          cf-app: ibmdotcom-web-components-html-rtl
+          cf-manifest: manifest-rtl.yml
           deploy-dir: ./
   deploy-staging:
     runs-on: ubuntu-16.04

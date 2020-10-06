@@ -22,8 +22,9 @@ for (let i = 0; i < pages.length; i++) {
       chunks: ['global', ...page.chunks],
       title: page.content.title,
       description: page.content.description,
-      altlangRootPath: dotenv.parsed.ALTLANG_ROOT_PATH || '/',
-      enableRTL: dotenv.parsed.ENABLE_RTL === 'true',
+      altlangRootPath:
+        (dotenv.parsed && dotenv.parsed.ALTLANG_ROOT_PATH) || '/',
+      enableRTL: dotenv.parsed && dotenv.parsed.ENABLE_RTL === 'true',
     })
   );
   chunkEntries = Object.assign({}, chunkEntries, page.chunkEntry);
@@ -57,7 +58,7 @@ module.exports = (options) => {
       }),
       new Webpack.DefinePlugin({
         'process.env': JSON.stringify(
-          Object.assign({}, dotenv.parsed, {
+          Object.assign({}, dotenv.parsed || {}, {
             NODE_ENV: options.isProduction ? 'production' : 'development',
           })
         ),

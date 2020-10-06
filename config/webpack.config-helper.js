@@ -7,8 +7,15 @@ const CleanWebpackPlugin = require('clean-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 // const CopyWebpackPlugin = require('copy-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
+const rtlcss = require('rtlcss');
 
 const dotenv = require('dotenv').config({ path: __dirname + '/../.env' });
+
+/**
+ * Flag to enable RTL
+ * @type {boolean}
+ */
+const enableRTL = dotenv.parsed && dotenv.parsed.ENABLE_RTL === 'true';
 
 const pages = require('../src/pages');
 let renderedPages = [];
@@ -24,7 +31,7 @@ for (let i = 0; i < pages.length; i++) {
       description: page.content.description,
       altlangRootPath:
         (dotenv.parsed && dotenv.parsed.ALTLANG_ROOT_PATH) || '/',
-      enableRTL: dotenv.parsed && dotenv.parsed.ENABLE_RTL === 'true',
+      enableRTL: enableRTL,
     })
   );
   chunkEntries = Object.assign({}, chunkEntries, page.chunkEntry);
@@ -135,7 +142,7 @@ module.exports = (options) => {
           const autoPrefixer = require('autoprefixer')({
             overrideBrowserslist: ['last 1 version', 'ie >= 11'],
           });
-          return [autoPrefixer];
+          return enableRTL ? [autoPrefixer, rtlcss] : [autoPrefixer];
         },
         sourceMap: options.isProduction,
       },

@@ -1,5 +1,4 @@
 'use strict';
-
 const Path = require('path');
 const Webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -9,7 +8,7 @@ const TerserPlugin = require('terser-webpack-plugin');
 // const CopyWebpackPlugin = require('copy-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 
-const dotenv = require('dotenv').config({path: __dirname + '/.env'});
+const dotenv = require('dotenv').config({ path: __dirname + '/../.env' });
 
 const pages = require('../src/pages');
 let renderedPages = [];
@@ -22,7 +21,8 @@ for (let i = 0; i < pages.length; i++) {
       filename: page.output,
       chunks: ['global', ...page.chunks],
       title: page.content.title,
-      description: page.content.description
+      description: page.content.description,
+      altlangRootPath: dotenv.parsed.ALTLANG_ROOT_PATH || '/',
     })
   );
   chunkEntries = Object.assign({}, chunkEntries, page.chunkEntry);
@@ -33,12 +33,16 @@ module.exports = (options) => {
 
   let webpackConfig = {
     devtool: options.devtool,
-    entry: Object.assign({}, {
-      'global': './src/pages/global.js'
-    }, chunkEntries),
+    entry: Object.assign(
+      {},
+      {
+        global: './src/pages/global.js',
+      },
+      chunkEntries
+    ),
     output: {
       path: dest,
-      filename: './assets/js/[name].[hash].js'
+      filename: './assets/js/[name].[hash].js',
     },
     plugins: [
       // new CopyWebpackPlugin([
@@ -51,13 +55,13 @@ module.exports = (options) => {
         filename: './assets/css/[name].[contenthash].css',
       }),
       new Webpack.DefinePlugin({
-        'process.env': JSON.stringify(Object.assign({},
-          dotenv.parsed,
-          {
+        'process.env': JSON.stringify(
+          Object.assign({}, dotenv.parsed, {
             NODE_ENV: options.isProduction ? 'production' : 'development',
-          }
-        ))
-      })
+            ALTLANG_ROOT_PATH: dotenv.parsed.ALTLANG_ROOT_PATH || '/',
+          })
+        ),
+      }),
     ],
     resolve: {
       modules: ['node_modules'],
@@ -67,7 +71,7 @@ module.exports = (options) => {
         {
           test: /\.js$/,
           exclude: /node_modules/,
-          loader: 'babel-loader'
+          loader: 'babel-loader',
         },
         {
           test: /\.hbs$/,
@@ -75,30 +79,32 @@ module.exports = (options) => {
           query: {
             partialDirs: [
               Path.join(__dirname, '../src', 'layouts'),
-              Path.join(__dirname, '../src', 'pages')
-            ]
-          }
+              Path.join(__dirname, '../src', 'pages'),
+            ],
+          },
         },
         {
           test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-          use: [{
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: './assets/fonts'
-            }
-          }]
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: '[name].[ext]',
+                outputPath: './assets/fonts',
+              },
+            },
+          ],
         },
         {
           test: /\.(gif|jpg|png)$/,
           loader: 'file-loader',
           options: {
             name: '[name].[ext]',
-            outputPath: './assets/images'
-          }
-        }
-      ]
-    }
+            outputPath: './assets/images',
+          },
+        },
+      ],
+    },
   };
 
   webpackConfig.optimization = {
@@ -135,47 +141,41 @@ module.exports = (options) => {
     },
   ];
 
-  webpackConfig.module.rules.push(
-    {
-      test: /\.scss$/,
-      use: [
-        {
-          loader: MiniCssExtractPlugin.loader
-        },
-        ...styleLoaders,
-        {
-          loader: options.isProduction ? 'sass-loader' : 'fast-sass-loader',
-          options: {
-            data: `
+  webpackConfig.module.rules.push({
+    test: /\.scss$/,
+    use: [
+      {
+        loader: MiniCssExtractPlugin.loader,
+      },
+      ...styleLoaders,
+      {
+        loader: options.isProduction ? 'sass-loader' : 'fast-sass-loader',
+        options: {
+          data: `
               $feature-flags: (
                 enable-css-custom-properties: true
               );
             `,
-          },
         },
-      ],
-    },
-  );
+      },
+    ],
+  });
 
   if (options.isProduction) {
     webpackConfig.plugins.push(
       new CleanWebpackPlugin(['../dist'], {
         verbose: true,
-        dry: false
-      }),
+        dry: false,
+      })
     );
   } else {
-    webpackConfig.plugins.push(
-      new Webpack.HotModuleReplacementPlugin()
-    );
+    webpackConfig.plugins.push(new Webpack.HotModuleReplacementPlugin());
 
-    webpackConfig.module.rules.push(
-      {
-        test: /\.js$/,
-        use: 'eslint-loader',
-        exclude: /node_modules/
-      }
-    );
+    webpackConfig.module.rules.push({
+      test: /\.js$/,
+      use: 'eslint-loader',
+      exclude: /node_modules/,
+    });
 
     webpackConfig.devServer = {
       port: options.port,
@@ -185,35 +185,40 @@ module.exports = (options) => {
       inline: !options.isProduction,
       hot: !options.isProduction,
       stats: {
-        chunks: false
-      }
+        chunks: false,
+      },
     };
 
     webpackConfig.plugins.push(
-      new BrowserSyncPlugin({
-        host: 'localhost',
-        port: 3000,
-        proxy: 'http://localhost:8081/',
-        files: [{
-          match: [
-            '**/*.hbs'
+      new BrowserSyncPlugin(
+        {
+          host: 'localhost',
+          port: 3000,
+          proxy: 'http://localhost:8081/',
+          files: [
+            {
+              match: ['**/*.hbs'],
+              fn: function (event, file) {
+                if (
+                  event === 'change' ||
+                  event === 'add' ||
+                  event === 'unlink'
+                ) {
+                  const bs = require('browser-sync').get('bs-webpack-plugin');
+                  bs.reload();
+                }
+              },
+            },
           ],
-          fn: function (event, file) {
-            if (event === 'change' || event === 'add' || event === 'unlink') {
-              const bs = require('browser-sync').get('bs-webpack-plugin');
-              bs.reload();
-            }
-          }
-        }]
-      }, {
-        reload: false
-      })
+        },
+        {
+          reload: false,
+        }
+      )
     );
-
   }
 
   webpackConfig.plugins = webpackConfig.plugins.concat(renderedPages);
 
   return webpackConfig;
-
 };

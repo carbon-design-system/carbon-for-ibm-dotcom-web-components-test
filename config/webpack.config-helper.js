@@ -59,7 +59,6 @@ module.exports = (options) => {
         'process.env': JSON.stringify(
           Object.assign({}, dotenv.parsed, {
             NODE_ENV: options.isProduction ? 'production' : 'development',
-            ALTLANG_ROOT_PATH: dotenv.parsed.ALTLANG_ROOT_PATH || '/',
           })
         ),
       }),

@@ -1,0 +1,8 @@
+---
+applications:
+  - name: ibmdotcom-web-components-html-rtl
+    path: ./dist
+    memory: 64M
+    buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+    routes:
+      - route: ibmdotcom-web-components-html-rtl.mybluemix.net

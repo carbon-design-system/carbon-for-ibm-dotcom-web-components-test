@@ -23,6 +23,7 @@ for (let i = 0; i < pages.length; i++) {
       title: page.content.title,
       description: page.content.description,
       altlangRootPath: dotenv.parsed.ALTLANG_ROOT_PATH || '/',
+      enableRTL: dotenv.parsed.ENABLE_RTL === 'true',
     })
   );
   chunkEntries = Object.assign({}, chunkEntries, page.chunkEntry);

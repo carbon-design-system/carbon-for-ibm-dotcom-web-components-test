@@ -185,6 +185,11 @@
       digitalData.page.pageInfo.language = lang;
       digitalData.page.pageInfo.ibm.country = params.get('cc').toUpperCase();
     }
+
+      {{#if htmlWebpackPlugin.options.enableRTL }}
+      document.documentElement.dir = 'rtl';
+      document.getElementsByTagName('html')[0].setAttribute('dir', 'rtl');
+      {{/if}}
   </script>
 
   <!-- IBM Tag Management and Site Analytics -->

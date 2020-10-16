@@ -22,7 +22,8 @@ const botUser = 'ibmdotcom-bot';
  *
  * @type {string}
  */
-const repoSlug = 'carbon-design-system/ibmdotcom-web-components-test';
+const repoSlug =
+  'carbon-design-system/carbon-for-ibm-dotcom-web-components-test';
 
 /**
  * Github host

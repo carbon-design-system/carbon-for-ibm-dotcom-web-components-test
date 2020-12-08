@@ -1,8 +1,8 @@
 ---
 name: Question 🤔
-about: Usage question or discussion about the IBM.com Library NextJS Test Application.
+about: Usage question or discussion about the Carbon for IBM.com Web Components Test Application.
 labels: question
-assignees: jeffchew, RaphaelAmadeu, kennylam, annawen1
+assignees: jeffchew, wonilsuhibm, ljcarot, RobertaJHahn
 ---
 
 <!--

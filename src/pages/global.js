@@ -17,7 +17,6 @@ import '@carbon/ibmdotcom-web-components/es/components/card/card.js';
 import '@carbon/ibmdotcom-web-components/es/components/card-link/card-link.js';
 import '@carbon/ibmdotcom-web-components/es/components/horizontal-rule/horizontal-rule.js';
 import '@carbon/ibmdotcom-web-components/es/components/feature-card-block-medium/feature-card-block-medium.js';
-import '@carbon/ibmdotcom-web-components/es/components/feature-card-block-medium/feature-card-block-medium-card.js';
 import '@carbon/ibmdotcom-web-components/es/components/feature-card-block-large/feature-card-block-large.js';
 import '@carbon/ibmdotcom-web-components/es/components/image/image.js';
 import '@carbon/ibmdotcom-web-components/es/components/cta/text-cta.js';

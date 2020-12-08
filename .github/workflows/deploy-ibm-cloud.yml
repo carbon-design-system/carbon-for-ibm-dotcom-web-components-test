@@ -10,6 +10,8 @@ on:
 jobs:
   deploy-canary:
     runs-on: ubuntu-16.04
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
     steps:
       - uses: actions/checkout@master
       - name: Use Node.js 12.x
@@ -32,8 +34,14 @@ jobs:
           cf-app: ibmdotcom-web-components-html-test
           cf-manifest: manifest-canary.yml
           deploy-dir: ./
+      - uses: act10ns/slack@v1
+        with:
+          status: ${{ job.status }}
+        if: failure()
   deploy-rtl:
     runs-on: ubuntu-16.04
+    env:
+      SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
     steps:
       - uses: actions/checkout@master
       - name: Use Node.js 12.x
@@ -62,3 +70,7 @@ jobs:
           cf-app: ibmdotcom-web-components-html-rtl
           cf-manifest: manifest-rtl.yml
           deploy-dir: ./
+      - uses: act10ns/slack@v1
+        with:
+          status: ${{ job.status }}
+        if: failure()

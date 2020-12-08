@@ -1,6 +1,6 @@
-# IBM.com Library Web Components Test Application
+# Carbon for IBM.com Web Components Test Application
 
-This is a test application utilizing the IBM.com Library Web Components package. This is a basic webpack setup using
+This is a test application utilizing the Carbon for IBM.com Web Components package. This is a basic webpack setup using
 Handlebars for page management.
 
 ### Run development
@@ -19,7 +19,7 @@ This will output to the `dist` folder for deploying up to other environments.
 yarn build
 ```
 
-### Upgrading IBM.com Library
+### Upgrading Carbon for IBM.com
 
 There are three tasks, each will upgrade either latest canary, next, or latest versions on NPM:
 

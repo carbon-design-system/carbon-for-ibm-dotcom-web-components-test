@@ -192,6 +192,13 @@
       {{/if}}
   </script>
 
+  <!-- Suppress custom elements until styles are loaded -->
+  <style>
+    dds-dotcom-shell-container:not(:defined) {
+      display: none;
+    }
+  </style>
+
   <!-- IBM Tag Management and Site Analytics -->
   <script src="//1.www.s81c.com/common/stats/ibm-common.js" defer></script>
 </head>

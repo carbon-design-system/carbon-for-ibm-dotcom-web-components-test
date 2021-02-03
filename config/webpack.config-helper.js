@@ -5,7 +5,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
-// const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 const rtlcss = require('rtlcss');
 
@@ -54,9 +54,9 @@ module.exports = (options) => {
       filename: './assets/js/[name].[hash].js',
     },
     plugins: [
-      // new CopyWebpackPlugin([
-      //   {from: './src/assets/images', to: './assets/images'}
-      // ]),
+      new CopyWebpackPlugin([
+        { from: './src/assets/images', to: './assets/images' },
+      ]),
       // new CopyWebpackPlugin([
       //   {from: './src/assets/fonts', to: './assets/fonts'}
       // ]),

@@ -24,9 +24,11 @@ for (let i = 0; i < pages.length; i++) {
   let page = Object.assign({}, pages[i]);
   renderedPages.push(
     new HtmlWebpackPlugin({
+      hash: true,
+      inject: true,
       template: page.template,
       filename: page.output,
-      chunks: ['global', ...page.chunks],
+      chunks: page.chunks,
       title: page.content.title,
       description: page.content.description,
       altlangRootPath:
@@ -42,16 +44,10 @@ module.exports = (options) => {
 
   let webpackConfig = {
     devtool: options.devtool,
-    entry: Object.assign(
-      {},
-      {
-        global: './src/pages/global.js',
-      },
-      chunkEntries
-    ),
+    entry: chunkEntries,
     output: {
       path: dest,
-      filename: './assets/js/[name].[hash].js',
+      filename: './assets/js/[name].js',
     },
     plugins: [
       new CopyWebpackPlugin([
@@ -61,7 +57,7 @@ module.exports = (options) => {
       //   {from: './src/assets/fonts', to: './assets/fonts'}
       // ]),
       new MiniCssExtractPlugin({
-        filename: './assets/css/[name].[contenthash].css',
+        filename: './assets/css/[name].css',
       }),
       new Webpack.DefinePlugin({
         'process.env': JSON.stringify(
@@ -117,6 +113,9 @@ module.exports = (options) => {
 
   webpackConfig.optimization = {
     ...webpackConfig.optimization,
+    splitChunks: {
+      chunks: 'all',
+    },
     minimizer: [
       new TerserPlugin({
         sourceMap: options.isProduction,

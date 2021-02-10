@@ -43,7 +43,7 @@ const pages = [
       description: 'Solutions template',
     },
     chunkEntry: {
-      learn: './src/pages/solutions/solutions.js',
+      solutions: './src/pages/solutions/solutions.js',
     },
     template: './src/pages/solutions/solutions.hbs',
   },

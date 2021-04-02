@@ -1,5 +1,5 @@
 'use strict';
-const Path = require('path');
+const path = require('path');
 const Webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -40,7 +40,7 @@ for (let i = 0; i < pages.length; i++) {
 }
 
 module.exports = (options) => {
-  const dest = Path.join(__dirname, '../dist');
+  const dest = path.join(__dirname, '../dist');
 
   let webpackConfig = {
     devtool: options.devtool,
@@ -82,8 +82,8 @@ module.exports = (options) => {
           loader: 'handlebars-loader',
           query: {
             partialDirs: [
-              Path.join(__dirname, '../src', 'layouts'),
-              Path.join(__dirname, '../src', 'pages'),
+              path.join(__dirname, '../src', 'layouts'),
+              path.join(__dirname, '../src', 'pages'),
             ],
           },
         },
@@ -158,6 +158,10 @@ module.exports = (options) => {
       {
         loader: options.isProduction ? 'sass-loader' : 'fast-sass-loader',
         options: {
+          includePaths: [
+            path.resolve(__dirname, '..', 'node_modules'),
+            path.resolve(__dirname, '../../../', 'node_modules'),
+          ],
           data: `
               $feature-flags: (
                 enable-css-custom-properties: true

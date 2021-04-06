@@ -7,6 +7,8 @@
 @include carbon--font-face-sans();
 @include carbon--type-reset();
 
+@import '@carbon/ibmdotcom-styles/scss/components/scroll-into-view/_scroll-into-view.scss';
+
 dds-leadspace {
   @include carbon--theme($carbon--theme--g100, true);
 }

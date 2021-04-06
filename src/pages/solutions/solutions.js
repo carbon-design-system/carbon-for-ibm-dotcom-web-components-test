@@ -66,4 +66,3 @@ import '@carbon/ibmdotcom-web-components/es/components/cta-section/cta-section-i
 
 // Scroll Animations
 import '@carbon/ibmdotcom-web-components/es/components/scroll-animations/scroll-animations.js';
-import '@carbon/ibmdotcom-styles/scss/components/scroll-into-view/_scroll-into-view.scss';

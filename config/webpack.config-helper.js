@@ -115,6 +115,8 @@ module.exports = (options) => {
     ...webpackConfig.optimization,
     splitChunks: {
       chunks: 'all',
+      minSize: 30 * 1024,
+      maxSize: 1024 * 1024,
     },
     minimizer: [
       new TerserPlugin({

@@ -28,6 +28,7 @@ import '@carbon/ibmdotcom-web-components/es/components/content-block-media/conte
 import '@carbon/ibmdotcom-web-components/es/components/content-block-simple/content-block-simple.js';
 import '@carbon/ibmdotcom-web-components/es/components/content-block-segmented/content-block-segmented.js';
 import '@carbon/ibmdotcom-web-components/es/components/content-block-segmented/content-block-segmented-item.js';
+import '@carbon/ibmdotcom-web-components/es/components/content-block-cards/content-block-cards.js';
 
 // Content Block
 import '@carbon/ibmdotcom-web-components/es/components/content-block/content-block-complementary.js';
@@ -62,3 +63,6 @@ import '@carbon/ibmdotcom-web-components/es/components/cta-section/cta-section-c
 import '@carbon/ibmdotcom-web-components/es/components/cta-section/cta-section-item.js';
 import '@carbon/ibmdotcom-web-components/es/components/cta-section/cta-section-item-heading.js';
 import '@carbon/ibmdotcom-web-components/es/components/cta-section/cta-section-item-copy.js';
+
+// Scroll Animations
+import '@carbon/ibmdotcom-web-components/es/components/scroll-animations/scroll-animations.js';

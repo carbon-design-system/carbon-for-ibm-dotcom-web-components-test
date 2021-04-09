@@ -10,12 +10,25 @@ import '@carbon/ibmdotcom-web-components/es/components/card/card.js';
 import '@carbon/ibmdotcom-web-components/es/components/card/card-eyebrow.js';
 import '@carbon/ibmdotcom-web-components/es/components/card/card-heading.js';
 import '@carbon/ibmdotcom-web-components/es/components/card/card-footer.js';
+import '@carbon/ibmdotcom-web-components/es/components/card-section-simple/card-section-simple.js';
 
 // Content Group Cards
 import '@carbon/ibmdotcom-web-components/es/components/content-group/content-group-heading.js';
 import '@carbon/ibmdotcom-web-components/es/components/content-group/content-group-copy.js';
 import '@carbon/ibmdotcom-web-components/es/components/content-group-cards/content-group-cards.js';
 import '@carbon/ibmdotcom-web-components/es/components/content-group-cards/content-group-cards-item.js';
+import '@carbon/ibmdotcom-web-components/es/components/content-group-pictograms/content-group-pictograms.js';
+
+// Content Item
+import '@carbon/ibmdotcom-web-components/es/components/content-item/content-item.js';
+import '@carbon/ibmdotcom-web-components/es/components/content-item/content-item-heading.js';
+import '@carbon/ibmdotcom-web-components/es/components/content-item/content-item-copy.js';
+
+// Content Item Horizontal
+import '@carbon/ibmdotcom-web-components/es/components/content-item-horizontal/content-item-horizontal.js';
+import '@carbon/ibmdotcom-web-components/es/components/content-item-horizontal/content-item-horizontal-media.js';
+import '@carbon/ibmdotcom-web-components/es/components/content-item-horizontal/content-item-horizontal-copy.js';
+import '@carbon/ibmdotcom-web-components/es/components/content-item-horizontal/content-item-horizontal-eyebrow.js';
 
 // CTA
 import '@carbon/ibmdotcom-web-components/es/components/cta/card-cta.js';

@@ -26,6 +26,7 @@ import '@carbon/ibmdotcom-web-components/es/components/content-block-segmented/c
 import '@carbon/ibmdotcom-web-components/es/components/content-block-segmented/content-block-segmented-item.js';
 
 // Card Section
+import '@carbon/ibmdotcom-web-components/es/components/content-section/content-section-heading.js';
 import '@carbon/ibmdotcom-web-components/es/components/card-section-images/card-section-images.js';
 import '@carbon/ibmdotcom-web-components/es/components/card-section-simple/card-section-simple.js';
 

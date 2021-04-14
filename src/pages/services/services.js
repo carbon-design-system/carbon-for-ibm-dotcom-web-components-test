@@ -59,11 +59,11 @@ import '@carbon/ibmdotcom-web-components/es/components/content-item/content-item
 import '@carbon/ibmdotcom-web-components/es/components/content-item/content-item-copy.js';
 
 // CTA Section
-import '@carbon/ibmdotcom-web-components/es/components/cta-section/cta-section.js';
+/*import '@carbon/ibmdotcom-web-components/es/components/cta-section/cta-section.js';
 import '@carbon/ibmdotcom-web-components/es/components/cta-section/cta-section-copy.js';
 import '@carbon/ibmdotcom-web-components/es/components/cta-section/cta-section-item.js';
 import '@carbon/ibmdotcom-web-components/es/components/cta-section/cta-section-item-heading.js';
-import '@carbon/ibmdotcom-web-components/es/components/cta-section/cta-section-item-copy.js';
+import '@carbon/ibmdotcom-web-components/es/components/cta-section/cta-section-item-copy.js';*/
 
 // Horizontal Rule
 import '@carbon/ibmdotcom-web-components/es/components/horizontal-rule/horizontal-rule.js';

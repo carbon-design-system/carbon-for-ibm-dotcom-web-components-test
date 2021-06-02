@@ -4,5 +4,6 @@ applications:
     path: ./dist
     memory: 64M
     buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+    force_https: true
     routes:
       - route: ibmdotcom-web-components-html-rtl.mybluemix.net

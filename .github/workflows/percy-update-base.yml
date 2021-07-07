@@ -27,8 +27,9 @@ jobs:
           env-file: .env
         env:
           DDS_CALLOUT_DATA: true
-          PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
       - name: Build the app
         run: yarn build
       - name: Run e2e tests
-        run: yarn test:e2e:local
+        run: PERCY_TOKEN=${{ secrets.PERCY_TOKEN }} yarn test:e2e:local
+      - name: Run e2e tests (upstream)
+        run: PERCY_TOKEN=${{ secrets.PERCY_TOKEN_UPSTREAM }} yarn test:e2e:local

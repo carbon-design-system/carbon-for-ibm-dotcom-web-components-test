@@ -24,3 +24,7 @@ node_modules/
 
 # Output
 dist
+
+# Cypress output files
+tests/e2e/cypress/screenshots
+tests/e2e/cypress/videos

@@ -10,7 +10,7 @@
 module.exports = {
   parser: 'babel-eslint',
   extends: ['eslint:recommended', 'plugin:jsdoc/recommended'],
-  plugins: ['jsdoc'],
+  plugins: ['jsdoc', 'cypress'],
   rules: {
     // Handle cases where we are destructuring but may not be using the initial
     // variables
@@ -55,6 +55,7 @@ module.exports = {
     es6: true,
     jest: true,
     jasmine: true,
+    'cypress/globals': true,
   },
   globals: {
     __DEV__: true,

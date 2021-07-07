@@ -29,6 +29,6 @@ jobs:
           DDS_CALLOUT_DATA: true
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
       - name: Build the app
-          run: yarn build
+        run: yarn build
       - name: Run e2e tests
         run: yarn test:e2e:local

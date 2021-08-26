@@ -31,7 +31,6 @@ import '@carbon/ibmdotcom-web-components/es/components/content-group-simple/cont
 // Card Section
 import '@carbon/ibmdotcom-web-components/es/components/content-section/content-section-heading.js';
 import '@carbon/ibmdotcom-web-components/es/components/card-section-images/card-section-images.js';
-import '@carbon/ibmdotcom-web-components/es/components/card-section-simple/card-section-simple.js';
 
 // Card Group
 import '@carbon/ibmdotcom-web-components/es/components/card-group/card-group.js';

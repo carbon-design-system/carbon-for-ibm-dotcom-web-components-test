@@ -43,20 +43,13 @@ import '@carbon/ibmdotcom-web-components/es/components/image-with-caption/image-
 
 // Content Group and Horizontal
 import '@carbon/ibmdotcom-web-components/es/components/content-group-horizontal/content-group-horizontal.js';
-import '@carbon/ibmdotcom-web-components/es/components/content-item-horizontal/content-item-horizontal.js';
-import '@carbon/ibmdotcom-web-components/es/components/content-item-horizontal/content-item-horizontal-eyebrow.js';
-import '@carbon/ibmdotcom-web-components/es/components/content-item-horizontal/content-item-horizontal-copy.js';
 
-import '@carbon/ibmdotcom-web-components/es/components/content-group-pictograms/content-group-pictograms.js';
 import '@carbon/ibmdotcom-web-components/es/components/content-group-simple/content-group-simple.js';
 
 import '@carbon/ibmdotcom-web-components/es/components/content-section/content-section-heading.js';
 
 // Content Block Cards
 import '@carbon/ibmdotcom-web-components/es/components/content-block-cards/content-block-cards.js';
-import '@carbon/ibmdotcom-web-components/es/components/content-item/content-item-heading.js';
-import '@carbon/ibmdotcom-web-components/es/components/content-item/content-item.js';
-import '@carbon/ibmdotcom-web-components/es/components/content-item/content-item-copy.js';
 
 // CTA Section
 /*import '@carbon/ibmdotcom-web-components/es/components/cta-section/cta-section.js';

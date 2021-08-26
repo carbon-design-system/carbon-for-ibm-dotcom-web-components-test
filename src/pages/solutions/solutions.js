@@ -12,9 +12,7 @@ import '@carbon/ibmdotcom-web-components/es/components/leadspace-block/leadspace
 // Callout Quote
 import '@carbon/ibmdotcom-web-components/es/components/callout-quote/callout-quote.js';
 
-// Card Group
-import '@carbon/ibmdotcom-web-components/es/components/card-group/card-group.js';
-import '@carbon/ibmdotcom-web-components/es/components/card-group/card-group-item.js';
+// Card Link
 import '@carbon/ibmdotcom-web-components/es/components/card-link/card-link.js';
 
 // Callout with media
@@ -37,7 +35,6 @@ import '@carbon/ibmdotcom-web-components/es/components/content-block/content-blo
 import '@carbon/ibmdotcom-web-components/es/components/content-block/content-block-copy.js';
 
 // Image
-import '@carbon/ibmdotcom-web-components/es/components/image/image.js';
 import '@carbon/ibmdotcom-web-components/es/components/image-with-caption/image-with-caption.js';
 
 // Logo Grid
@@ -46,23 +43,10 @@ import '@carbon/ibmdotcom-web-components/es/components/logo-grid/logo-grid-item.
 import '@carbon/ibmdotcom-web-components/es/components/logo-grid/logo-grid-link.js';
 
 // Quote
-import '@carbon/ibmdotcom-web-components/es/components/quote/quote';
-import '@carbon/ibmdotcom-web-components/es/components/quote/quote-source-heading.js';
-import '@carbon/ibmdotcom-web-components/es/components/quote/quote-source-copy.js';
-import '@carbon/ibmdotcom-web-components/es/components/quote/quote-source-bottom-copy.js';
+import '@carbon/ibmdotcom-web-components/es/components/quote';
 
 // Table of Contents
-import '@carbon/ibmdotcom-web-components/es/components/table-of-contents/table-of-contents.js';
-
-// Horizontal Rule
-import '@carbon/ibmdotcom-web-components/es/components/horizontal-rule/horizontal-rule.js';
-
-// CTA Section
-/*import '@carbon/ibmdotcom-web-components/es/components/cta-section/cta-section.js';
-import '@carbon/ibmdotcom-web-components/es/components/cta-section/cta-section-copy.js';
-import '@carbon/ibmdotcom-web-components/es/components/cta-section/cta-section-item.js';
-import '@carbon/ibmdotcom-web-components/es/components/cta-section/cta-section-item-heading.js';
-import '@carbon/ibmdotcom-web-components/es/components/cta-section/cta-section-item-copy.js';*/
+import '@carbon/ibmdotcom-web-components/es/components/table-of-contents';
 
 // Scroll Animations
-import '@carbon/ibmdotcom-web-components/es/components/scroll-animations/scroll-animations.js';
+import '@carbon/ibmdotcom-web-components/es/components/scroll-animations';

@@ -2,57 +2,45 @@ import '@carbon/ibmdotcom-web-components/es/components/dotcom-shell/dotcom-shell
 import '../assets/scss/app.scss';
 
 // Button Group
-import '@carbon/ibmdotcom-web-components/es/components/button-group/button-group.js';
-import '@carbon/ibmdotcom-web-components/es/components/button-group/button-group-item.js';
+import '@carbon/ibmdotcom-web-components/es/components/button-group';
 
 // Card
-import '@carbon/ibmdotcom-web-components/es/components/card/card.js';
-import '@carbon/ibmdotcom-web-components/es/components/card/card-eyebrow.js';
-import '@carbon/ibmdotcom-web-components/es/components/card/card-heading.js';
-import '@carbon/ibmdotcom-web-components/es/components/card/card-footer.js';
-import '@carbon/ibmdotcom-web-components/es/components/card-section-simple/card-section-simple.js';
+import '@carbon/ibmdotcom-web-components/es/components/card';
+import '@carbon/ibmdotcom-web-components/es/components/card-section-simple';
+
+// Card Group
+import '@carbon/ibmdotcom-web-components/es/components/card-group';
 
 // Content Group Cards
-import '@carbon/ibmdotcom-web-components/es/components/content-group/content-group-heading.js';
-import '@carbon/ibmdotcom-web-components/es/components/content-group/content-group-copy.js';
-import '@carbon/ibmdotcom-web-components/es/components/content-group-cards/content-group-cards.js';
-import '@carbon/ibmdotcom-web-components/es/components/content-group-cards/content-group-cards-item.js';
-import '@carbon/ibmdotcom-web-components/es/components/content-group-pictograms/content-group-pictograms.js';
+import '@carbon/ibmdotcom-web-components/es/components/content-group';
+import '@carbon/ibmdotcom-web-components/es/components/content-group-cards';
+import '@carbon/ibmdotcom-web-components/es/components/content-group-pictograms';
 
 // Content Item
-import '@carbon/ibmdotcom-web-components/es/components/content-item/content-item.js';
-import '@carbon/ibmdotcom-web-components/es/components/content-item/content-item-heading.js';
-import '@carbon/ibmdotcom-web-components/es/components/content-item/content-item-copy.js';
-
-// Content Item Horizontal
-import '@carbon/ibmdotcom-web-components/es/components/content-item-horizontal/content-item-horizontal.js';
-import '@carbon/ibmdotcom-web-components/es/components/content-item-horizontal/content-item-horizontal-media.js';
-import '@carbon/ibmdotcom-web-components/es/components/content-item-horizontal/content-item-horizontal-copy.js';
-import '@carbon/ibmdotcom-web-components/es/components/content-item-horizontal/content-item-horizontal-eyebrow.js';
+import '@carbon/ibmdotcom-web-components/es/components/content-item';
+import '@carbon/ibmdotcom-web-components/es/components/content-item-horizontal';
 
 // CTA
-import '@carbon/ibmdotcom-web-components/es/components/cta/card-cta.js';
-import '@carbon/ibmdotcom-web-components/es/components/cta/card-cta-footer.js';
-import '@carbon/ibmdotcom-web-components/es/components/cta/feature-cta-footer.js';
-import '@carbon/ibmdotcom-web-components/es/components/cta/text-cta.js';
-import '@carbon/ibmdotcom-web-components/es/components/cta/video-cta-container.js';
+import '@carbon/ibmdotcom-web-components/es/components/cta';
 
 // Feature Card
-import '@carbon/ibmdotcom-web-components/es/components/feature-card/feature-card.js';
-import '@carbon/ibmdotcom-web-components/es/components/feature-card/feature-card-footer.js';
+import '@carbon/ibmdotcom-web-components/es/components/feature-card';
+import '@carbon/ibmdotcom-web-components/es/components/feature-card-block-large';
 
-import '@carbon/ibmdotcom-web-components/es/components/feature-card-block-large/feature-card-block-large.js';
-import '@carbon/ibmdotcom-web-components/es/components/feature-card-block-large/feature-card-block-large-footer.js';
+// Horizontal Rule
+import '@carbon/ibmdotcom-web-components/es/components/horizontal-rule';
+
+// Image
+import '@carbon/ibmdotcom-web-components/es/components/image';
 
 // Link List
-import '@carbon/ibmdotcom-web-components/es/components/link-list/link-list.js';
-import '@carbon/ibmdotcom-web-components/es/components/link-list/link-list-heading.js';
-import '@carbon/ibmdotcom-web-components/es/components/link-list/link-list-item.js';
-import '@carbon/ibmdotcom-web-components/es/components/link-list/link-list-item-card.js';
-import '@carbon/ibmdotcom-web-components/es/components/cta/link-list-item-cta.js';
+import '@carbon/ibmdotcom-web-components/es/components/link-list';
 
-import '@carbon/ibmdotcom-web-components/es/components/link-with-icon/link-with-icon';
+// Link with Icon
+import '@carbon/ibmdotcom-web-components/es/components/link-with-icon';
 
-import '@carbon/ibmdotcom-web-components/es/components/pictogram-item/pictogram-item.js';
+// Pictogram Item
+import '@carbon/ibmdotcom-web-components/es/components/pictogram-item';
 
-import '@carbon/ibmdotcom-web-components/es/components/video-player/video-player-container.js';
+// Vieo Player
+import '@carbon/ibmdotcom-web-components/es/components/video-player';

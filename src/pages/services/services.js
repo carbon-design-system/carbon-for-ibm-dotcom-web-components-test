@@ -16,9 +16,6 @@ import '@carbon/ibmdotcom-web-components/es/components/content-block-media';
 import '@carbon/ibmdotcom-web-components/es/components/content-block-simple';
 import '@carbon/ibmdotcom-web-components/es/components/content-block-segmented';
 
-// Callout Data
-import '@carbon/ibmdotcom-web-components/es/components/callout-data';
-
 // Callout with media
 import '@carbon/ibmdotcom-web-components/es/components/callout-with-media';
 

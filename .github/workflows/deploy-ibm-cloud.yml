@@ -26,8 +26,6 @@ jobs:
         uses: ./.github/actions/set-dotenv
         with:
           env-file: .env
-        env:
-          DDS_CALLOUT_DATA: true
       - name: Build project
         run: yarn build
       - name: Deploying to IBM Cloud (Canary)
@@ -64,7 +62,6 @@ jobs:
           env-file: .env
         env:
           ENABLE_RTL: true
-          DDS_CALLOUT_DATA: true
       - name: Build project
         run: yarn build
       - name: Deploying to IBM Cloud (Canary - RTL)

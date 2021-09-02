@@ -26,7 +26,6 @@ jobs:
         with:
           env-file: .env
         env:
-          DDS_CALLOUT_DATA: true
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN }}
       - name: Build the app
         run: yarn build
@@ -52,7 +51,6 @@ jobs:
         with:
           env-file: .env
         env:
-          DDS_CALLOUT_DATA: true
           PERCY_TOKEN: ${{ secrets.PERCY_TOKEN_UPSTREAM }}
       - name: Build the app
         run: yarn build

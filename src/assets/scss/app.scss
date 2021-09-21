@@ -10,6 +10,9 @@
 
 @import '@carbon/ibmdotcom-styles/scss/components/scroll-into-view/_scroll-into-view.scss';
 
+// Requires for the test page using the standalone <dds-cloud-masthead-container>.
+@import '~@carbon/ibmdotcom-styles/scss/components/dotcom-shell/dotcom-shell';
+
 dds-leadspace {
   @include carbon--theme($carbon--theme--g100, true);
 }

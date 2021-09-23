@@ -9,7 +9,7 @@
 
 describe('Example page B page', () => {
   it('should load the default example-page-b page', () => {
-    cy.visit('/example-page-b.html');
+    cy.visit('/example-page-b/index.html');
 
     // Take a snapshot for visual diffing
     cy.percySnapshot('example page b | default');

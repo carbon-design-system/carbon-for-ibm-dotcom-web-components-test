@@ -7,9 +7,6 @@ import '@carbon/ibmdotcom-web-components/es/components/leadspace';
 // Table of Contents
 import '@carbon/ibmdotcom-web-components/es/components/table-of-contents';
 
-// Content Block
-import '@carbon/ibmdotcom-web-components/es/components/content-block';
-
 // Content Block variations
 import '@carbon/ibmdotcom-web-components/es/components/content-block-mixed';
 import '@carbon/ibmdotcom-web-components/es/components/content-block-media';
@@ -26,10 +23,8 @@ import '@carbon/ibmdotcom-web-components/es/components/card-link';
 import '@carbon/ibmdotcom-web-components/es/components/image-with-caption';
 
 // Content Group and Horizontal
-import '@carbon/ibmdotcom-web-components/es/components/content-group-horizontal';
-
+import '@carbon/ibmdotcom-web-components/es/components/content-block-horizontal';
 import '@carbon/ibmdotcom-web-components/es/components/content-group-simple';
-
 import '@carbon/ibmdotcom-web-components/es/components/content-section';
 
 // Content Block Cards

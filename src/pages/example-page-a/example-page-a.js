@@ -7,9 +7,6 @@ import '@carbon/ibmdotcom-web-components/es/components/leadspace';
 // Table of Contents
 import '@carbon/ibmdotcom-web-components/es/components/table-of-contents';
 
-// Content Block
-import '@carbon/ibmdotcom-web-components/es/components/content-block';
-
 // Content Block variations
 import '@carbon/ibmdotcom-web-components/es/components/content-block-mixed';
 import '@carbon/ibmdotcom-web-components/es/components/content-block-media';

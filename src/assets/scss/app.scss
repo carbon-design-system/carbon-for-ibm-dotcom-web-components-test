@@ -10,10 +10,6 @@
 
 @import '@carbon/ibmdotcom-styles/scss/components/scroll-into-view/_scroll-into-view.scss';
 
-dds-leadspace {
-  @include carbon--theme($carbon--theme--g100, true);
-}
-
 // content-block-copy styles reset if using list markdown. Overriding with dds-item-paragraph styles here.
 bx-list-item {
   font-size: 1rem;
@@ -27,6 +23,11 @@ bx-list-item {
 // There seems to be a bug where the height of the button group is being set as 0px
 dds-button-group-item {
   height: auto !important; /* stylelint-disable-line declaration-no-important */
+}
+
+// TODO move to white page
+dds-content-block-simple {
+  padding-bottom: 0;
 }
 
 // scroll animation delays

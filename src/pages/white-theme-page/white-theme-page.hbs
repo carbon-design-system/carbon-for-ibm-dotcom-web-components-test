@@ -1,0 +1,605 @@
+{{#> base }}
+
+  <div class="page-container">
+    <dds-leadspace size='' type="centered" alt="Image text" default-src="../assets/images/NextJS-white-leadspace.png">
+      <dds-leadspace-heading>Lead space centered</dds-leadspace-heading>
+      Lead space helps users understand where they landed, and what type of content they are going to find on the webpage. It will always be positioned at the top.
+
+      <dds-button-group slot="action">
+				<dds-button-group-item href="http://ibmdotcom-web-components-html-test.mybluemix.net/g100-theme-page/index.html">
+					See alternate template
+					<svg slot="icon" focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20">
+						<path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
+					</svg>
+				</dds-button-group-item>
+				<dds-button-group-item href="#content">
+					See components in action
+					<svg slot="icon" focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20">
+						<path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
+					</svg>
+				</dds-button-group-item>        
+			</dds-button-group>
+
+      <dds-leadspace-image slot="image" class="bx--image" alt="Alt image text" default-src="../assets/images/nextjs-white-leadspace.png">
+      </dds-leadspace-image>
+    </dds-leadspace>
+
+    <dds-scroll-animations id='content' keep-animation='true' animation='slide-up' 
+      selector-targets='dds-content-block,
+        dds-content-block-heading,
+        dds-content-block-copy,
+        dds-content-block-media,
+        dds-callout-quote,
+        dds-content-group-pictograms,
+        dds-content-group-cards,
+        dds-content-group-heading,
+        dds-content-group-copy,
+        dds-group-card,
+        dds-group-card-item,
+        dds-logo-grid,
+        dds-logo-grid-item,
+        dds-content-group-banner,
+        dds-card-section-simple,
+        dds-card-section-carousel,
+        dds-card,
+        dds-cta-section,
+        dds-pictogram-item'>
+
+      <dds-table-of-contents stickyOffset='48'>
+        <a name="1" data-title="Content block simple"></a>
+        <dds-content-block-simple complementary-style-scheme="with-border">
+          <dds-content-block-heading>Content Block - Simple</dds-content-block-heading>
+          <dds-content-block-copy size='sm'
+          >Content block simple works well as an introductory section on a page by providing a clear starting point for the user. 
+          By default, this component works the best as at the top of the page and includes a heading, introductory paragraph, 
+          optional media (image or video), optional CTA (call-to-action), and a horizontal rule at the bottom before the next component.
+          </dds-content-block-copy>
+
+          <dds-content-block-copy size='sm'>A variation of this component brings in aside elements and can introduce navigational quick links 
+          on the right side on desktop. You can see the aside element at work in the Content block media component directly 
+          below this one.</dds-content-block-copy>
+
+          <dds-card-cta slot="footer" cta-type="external" href="https://example.com">
+            Learn about Content block simple
+            <dds-card-cta-footer></dds-card-cta-footer>
+          </dds-card-cta>
+        </dds-content-block-simple>
+
+        <a name="2" data-title="Content block media"></a>
+        <dds-content-block-media>
+          <dds-content-block-heading>Content block media</dds-content-block-heading>
+          <dds-content-block-copy
+            >Content block media is used to spotlight an image or video in the content of the page. 
+            It starts with a brief overview (this text) before presenting an image or video, and any details you want to pull out below that. 
+            Optionally, combine with a link or card element.
+          </dds-content-block-copy>
+
+          <dds-content-block-media-content>
+            <dds-content-group-heading>Introduction to the media</dds-content-group-heading>
+            <dds-image-with-caption slot="media" alt="Image alt text" default-src="../assets/images/Card-section-img-1.png" heading="Lorem ipsum dolor sit amet.">
+              <dds-image-item media="(min-width: 672px)" srcset="../assets/images/Card-section-img-1.png"> </dds-image-item>
+            </dds-image-with-caption>
+
+            <dds-content-item>
+              <dds-content-item-heading>Aside elements</dds-content-item-heading>
+              <dds-content-item-copy>You can check the [design specs](https://ibm.ent.box.com/folder/94760926421?s=9cu22l7vs1dpjy8g8yi3mtoswazqgq2r) to get a sense of how to combine these content block components to create a cohesive story. Pair Content block media content together to break up content or segue into another component for impact.</dds-content-item-copy>
+            </dds-content-item>
+            <dds-content-item>
+              <dds-content-item-heading>Combining Content block elements</dds-content-item-heading>
+              <dds-content-item-copy>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed interdum tortor. Sed id pellentesque diam. In ut quam id mauris finibus efficitur quis ut arcu. Praesent purus turpis, venenatis eget odio et, tincidunt bibendum sem. Curabitur pretium elit non blandit lobortis. Donec quis pretium odio, in dignissim sapien.</dds-content-item-copy>
+            </dds-content-item>
+            <dds-content-item>
+              <dds-content-item-heading>Scroll animations</dds-content-item-heading>
+              <dds-content-item-copy>This page uses the *Scroll up* scroll animation on every section of the page content. Thoughtful use of animations can highlight key content and draw the user’s attention. You can find more examples of scroll animations in our [Storybook](https://www.ibm.com/standards/carbon/components/content-block-media).</dds-content-item-copy>
+            </dds-content-item>         
+            <dds-card-cta slot="footer" cta-type="local" href="https://example.com">
+              Lorem ipsum dolor sit ametttt
+              <dds-card-cta-footer></dds-card-cta-footer>
+            </dds-card-cta>
+          </dds-content-block-media-content>
+          <dds-content-block-complementary>
+            <dds-link-list type="default">
+              <dds-link-list-heading>Aside element</dds-link-list-heading>
+              <dds-link-list-item-card href="https://www.ibm.com/standards/carbon/components/content-block-media" cta-type="local">
+                <p>Content block media</p>
+                <dds-card-cta-footer>
+                  <svg
+                    slot="icon"
+                    focusable="false"
+                    preserveAspectRatio="xMidYMid meet"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    aria-hidden="true"
+                    width="20"
+                    height="20"
+                    viewBox="0 0 20 20"
+                  >
+                    <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
+                  </svg>
+                </dds-card-cta-footer>
+              </dds-link-list-item-card>
+              <dds-link-list-item-card href="1_9h94wo6b" cta-type="video">
+                <p>Link to a video</p>
+                <dds-card-cta-footer>
+                  <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 32 32" class="bx--card__cta dds-ce--cta__icon">&lt;!&ndash;&ndash;&gt;<path d="M26,28H6a2.0027,2.0027,0,0,1-2-2V6A2.0027,2.0027,0,0,1,6,4H16V6H6V26H26V16h2V26A2.0027,2.0027,0,0,1,26,28Z"></path><path d="M20 2L20 4 26.586 4 18 12.586 19.414 14 28 5.414 28 12 30 12 30 2 20 2z"></path></svg>
+                </dds-card-cta-footer>
+              </dds-link-list-item-card>
+              <dds-link-list-item-card href="1_9h94wo6b" cta-type="video">
+                <p>Link to another video</p>
+                <dds-card-cta-footer>
+                  <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 32 32" class="bx--card__cta dds-ce--cta__icon">&lt;!&ndash;&ndash;&gt;<path d="M26,28H6a2.0027,2.0027,0,0,1-2-2V6A2.0027,2.0027,0,0,1,6,4H16V6H6V26H26V16h2V26A2.0027,2.0027,0,0,1,26,28Z"></path><path d="M20 2L20 4 26.586 4 18 12.586 19.414 14 28 5.414 28 12 30 12 30 2 20 2z"></path></svg>
+                </dds-card-cta-footer>
+              </dds-link-list-item-card>
+            </dds-link-list>
+          </dds-content-block-complementary>
+        </dds-content-block-media>
+
+        <a name="3" data-title="Callout quote"></a>
+        <dds-callout-quote mark-type="double-curved">
+          The Callout quote is a typographic layout that is used to highlight an impactful client statement or user testimonial
+          <dds-quote-source-heading>
+            Speaker’s name
+          </dds-quote-source-heading>
+          <dds-quote-source-copy>
+            Additional info such as title
+          </dds-quote-source-copy>
+          <dds-quote-source-bottom-copy>
+            or company
+          </dds-quote-source-bottom-copy>
+            <dds-link-with-icon slot='footer' href='https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/callout-quote'>
+            See more about the Callout quote
+            <svg slot="icon" focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20">
+              <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
+            </svg>
+          </dds-link-with-icon>
+        </dds-callout-quote> 
+
+        <a name="4" data-title="Content group pictograms"></a>
+
+        <dds-content-group-pictograms>
+          <dds-content-group-heading>Content group pictograms</dds-content-group-heading>
+          <dds-content-group-copy>This component is used to present a group of information, each with a supporting pictogram. 
+            Use this to break up otherwise dense content with images for a better and more scannable reading experience.</dds-content-group-copy>
+            <div class="bx--grid bx--row">
+            <dds-pictogram-item>
+              <svg 
+                slot="pictogram" 
+                version="1.1" 
+                id="Layer_1" 
+                xmlns="http://www.w3.org/2000/svg" 
+                xmlns:xlink="http://www.w3.org/1999/xlink" 
+                x="0px" y="0px"
+                viewBox="0 0 32 32" 
+                style="enable-background:new 0 0 32 32;" 
+                xml:space="preserve">
+                  <path id="desktop_1_" d="M23,29.36H9v-0.72h6.64v-4.28H3c-1.301,0-2.36-1.059-2.36-2.36V5c0-1.301,1.059-2.36,2.36-2.36h26
+                    c1.302,0,2.36,1.059,2.36,2.36v17c0,1.302-1.059,2.36-2.36,2.36H16.36v4.279H23V29.36z M1.36,19.36V22c0,0.904,0.736,1.64,1.64,1.64
+                    h26c0.904,0,1.64-0.735,1.64-1.64v-2.64H1.36z M1.36,18.64h29.28V5c0-0.904-0.735-1.64-1.64-1.64H3C2.096,3.36,1.36,4.096,1.36,5
+                    V18.64z"/>
+                  <rect id="_Transparent_Rectangle" style="fill:none;" width="32" height="32"/>
+              </svg>
+              <dds-content-item-heading>Pictograms in action</dds-content-item-heading>
+              <dds-content-item-copy>IBM’s pictograms are visual symbols used to represent ideas, objects or narratives. They can communicate messages at a glance, afford interactivity, and simplify complex ideas. They work well with presentations and marketing communications.</dds-content-item-copy>
+              <dds-link-with-icon href="https://www.ibm.com/standards/carbon/components/content-group-pictograms" slot="footer">
+                Content group pictograms
+                <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" slot="icon">&lt;!&ndash;&ndash;&gt;<path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path></svg>
+              </dds-link-with-icon>
+            </dds-pictogram-item>
+
+            <dds-pictogram-item>
+              <svg 
+                slot="pictogram" 
+                version="1.1" 
+                id="Layer_1" 
+                xmlns="http://www.w3.org/2000/svg" 
+                xmlns:xlink="http://www.w3.org/1999/xlink" 
+                x="0px" y="0px"
+                viewBox="0 0 32 32" 
+                style="enable-background:new 0 0 32 32;" 
+                xml:space="preserve">
+                  <path id="secure--search_1_" d="M11,21.509l-4.254-4.254l0.509-0.509L11,20.491l7.745-7.746l0.51,0.509L11,21.509z M23.623,22.313
+                    l7.202,4.001l0.35-0.629l-7.201-4.001c0.886-1.702,1.387-3.637,1.387-5.685c0-6.815-5.545-12.36-12.36-12.36S0.64,9.185,0.64,16
+                    S6.185,28.36,13,28.36C17.511,28.36,21.464,25.932,23.623,22.313z M24.64,16c0,6.418-5.222,11.64-11.64,11.64S1.36,22.418,1.36,16
+                    S6.582,4.36,13,4.36S24.64,9.582,24.64,16z"/>
+                  <rect id="_Transparent_Rectangle" style="fill:none;" width="32" height="32"/>
+              </svg>
+              <dds-content-item-heading>Finding pictograms for your page</dds-content-item-heading>
+              <dds-content-item-copy>The IBM Design Language site houses many pictograms you can use for your project, and includes instructions on creating a custom pictogram. Only the productive pictogram set are used in these sections.</dds-content-item-copy>
+              <dds-link-with-icon href="https://www.ibm.com/design/language/iconography/pictograms/library" slot="footer">
+                IBM Design Language pictogram library
+                <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" slot="icon">&lt;!&ndash;&ndash;&gt;<path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path></svg>
+              </dds-link-with-icon>
+            </dds-pictogram-item>
+
+            <dds-pictogram-item>
+              <svg 
+                slot="pictogram" 
+                version="1.1" 
+                id="Layer_1" 
+                xmlns="http://www.w3.org/2000/svg" 
+                xmlns:xlink="http://www.w3.org/1999/xlink" 
+                x="0px" y="0px"
+                viewBox="0 0 32 32" 
+                style="enable-background:new 0 0 32 32;" 
+                xml:space="preserve">
+                  <path id="hybrid--cloud--02_1_" d="M31,24.36H16c-0.199,0-0.36-0.161-0.36-0.36V12c0-0.199,0.161-0.36,0.36-0.36h15
+                    c0.199,0,0.36,0.161,0.36,0.36v12C31.36,24.199,31.199,24.36,31,24.36z M16.36,23.64h14.28v-3.28H16.36V23.64z M16.36,19.64h14.28
+                    v-3.28H16.36V19.64z M16.36,15.64h14.28v-3.28H16.36V15.64z M14,24.36H8c-3.99,0-7.36-3.371-7.36-7.36c0-3.99,3.37-7.36,7.36-7.36
+                    c0.336,0,0.553,0.024,0.812,0.065C10.107,7.466,12.363,4.64,17,4.64c3.396,0,6.583,1.988,8.316,5.188l-0.633,0.343
+                    C23.076,7.204,20.132,5.36,17,5.36c-3.405,0-5.775,1.517-7.686,4.918c-0.075,0.132-0.227,0.203-0.375,0.179
+                    C8.576,10.395,8.376,10.36,8,10.36c-3.599,0-6.64,3.041-6.64,6.64c0,3.6,3.041,6.64,6.64,6.64h6V24.36z M20,22.36h-2v-0.72h2V22.36z
+                    M20,18.36h-2v-0.72h2V18.36z M20,14.36h-2v-0.72h2V14.36z"/>
+                  <rect id="_Transparent_Rectangle" style="fill:none;" width="32" height="32"/>
+              </svg>
+              <dds-content-item-heading>At least three pictogram sections</dds-content-item-heading>
+              <dds-content-item-copy>The Content group pictogram component should always include at least three pictogram sections. If you have less than two sections worth of content, consider another component.</dds-content-item-copy>
+            </dds-pictogram-item>
+          </div>
+        </dds-content-group-pictograms>
+
+
+        <div class='bx--col-lg-12'>
+          <dds-content-group-cards>
+            <dds-content-group-heading>Content group cards</dds-content-group-heading>
+            <dds-content-group-copy>Content group cards is used to present information through a group of cards with each acting as a call to action 
+              that drives to additional or supporting destinations. It is suitable for adding concise buckets of content and links to a long-form reading.</dds-content-group-copy>
+
+            <dds-content-group-cards-item href="https://www.example.com">
+              <dds-card-heading>
+                Default
+              </dds-card-heading>
+              <p>
+                Content group cards includes a section heading, body copy, and any number of card components listed below.
+              </p>
+              <dds-card-footer icon-placement="left">
+                <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" slot="icon">&lt;!&ndash;&ndash;&gt;<path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path></svg>
+              </dds-card-footer>
+            </dds-content-group-cards-item>
+
+            <dds-content-group-cards-item href="https://www.example.com">
+              <dds-card-heading>
+                Usage in a content block
+              </dds-card-heading>
+              <p>
+                This pattern can be used multiple times within a content block
+              </p>
+              <dds-card-footer icon-placement="left">
+                <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" slot="icon">&lt;!&ndash;&ndash;&gt;<path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path></svg>
+              </dds-card-footer>
+            </dds-content-group-cards-item>
+
+            <dds-content-group-cards-item href="https://www.example.com">
+              <dds-card-heading>
+                Card component
+              </dds-card-heading>
+              <p>
+                The Card component used here contains a title, body copy, and a CTA icon to communicate interactivity.
+              </p>
+              <dds-card-footer icon-placement="left">
+                <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" slot="icon">&lt;!&ndash;&ndash;&gt;<path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path></svg>
+              </dds-card-footer>
+            </dds-content-group-cards-item>
+
+            <dds-content-group-cards-item href="https://www.example.com">
+              <dds-card-heading>
+                Avoid solo cards
+              </dds-card-heading>
+              <p>
+                Try to avoid having orphan or single hanging cards in a row by itself.
+              </p>
+              <dds-card-footer icon-placement="left">
+                <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" slot="icon">&lt;!&ndash;&ndash;&gt;<path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path></svg>
+              </dds-card-footer>
+            </dds-content-group-cards-item>
+          </dds-content-group-cards>      
+        </div>
+
+
+        <dds-logo-grid>
+          <dds-content-block-heading>Logo Grid</dds-content-block-heading>
+          <dds-logo-grid-item default-src='../assets/images/logo-microsoft.png' alt='Microsoft'></dds-logo-grid-item>
+          <dds-logo-grid-item default-src='../assets/images/logo-dell.png' alt='Dell'></dds-logo-grid-item>
+          <dds-logo-grid-item default-src='../assets/images/logo-rabobank.png' alt='Rabobank'></dds-logo-grid-item>
+          <dds-logo-grid-item default-src='../assets/images/logo-bendigo.png' alt='Bendigo'></dds-logo-grid-item>
+          <dds-logo-grid-item default-src='../assets/images/logo-nbcuniversal.png' alt='NBC Universal'></dds-logo-grid-item>
+          <dds-logo-grid-item default-src='../assets/images/logo-cisco.png' alt='Cisco'></dds-logo-grid-item>
+        </dds-logo-grid>
+
+        <dds-content-group-banner>
+          <dds-content-group-heading>Content group banner: a subtle callout for tangential information or announcements</dds-content-group-heading>
+          <dds-link-list type="vertical" slot="complementary">
+            <dds-link-list-item-cta
+              icon-placement="right"
+              href="https://www.ibm.com/standards/carbon/components/content-group-banner"
+              cta-type="local"
+            >
+              Content group banner
+            </dds-link-list-item-cta>
+            <dds-link-list-item-cta
+              icon-placement="right"
+              href="1_9h94wo6b"
+              cta-type="video"
+            >
+              Resource video
+            </dds-link-list-item-cta>
+          </dds-link-list>
+        </dds-content-group-banner>
+      </dds-table-of-contents>
+
+      <dds-card-section-simple>
+        <dds-content-section-heading>Card section</dds-content-section-heading>
+        <dds-card-group>
+          <dds-card-group-item href="https://example.com">
+            <dds-card-heading>Card section</dds-card-heading>
+            <p>
+              The card section is a collection of cards presented in a full-width section with a left-column header that responds to the grid.
+            </p>
+            <dds-card-cta-footer slot="footer">
+              <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" slot="icon"><!----><path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path></svg>
+            </dds-card-cta-footer>
+          </dds-card-group-item>
+
+          <dds-card-group-item href="https://example.com">
+            <dds-card-heading>Cards</dds-card-heading>
+            <p>
+              The main content of the carousel lives on these cards.
+            </p>
+            <dds-card-cta-footer slot="footer">
+              <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" slot="icon"><!----><path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path></svg>
+            </dds-card-cta-footer>
+          </dds-card-group-item>
+
+          <dds-card-group-item href="https://example.com">
+            <dds-card-heading>Variation</dds-card-heading>
+            <p>
+              Previewed here is a variation of Card section that includes the high contrast card at the end of the card colection.
+            </p>
+            <dds-card-cta-footer slot="footer">
+              <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" slot="icon"><!----><path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path></svg>
+            </dds-card-cta-footer>
+          </dds-card-group-item>
+
+          <dds-card-group-item href="https://example.com">
+            <dds-card-heading>Avoid orphan cards</dds-card-heading>
+            <p>
+              Try to avoid having orphan or single hanging cards in a row by itself.
+            </p>
+            <dds-card-cta-footer slot="footer">
+              <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" slot="icon"><!----><path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path></svg>
+            </dds-card-cta-footer>
+          </dds-card-group-item>            
+          <dds-card-group-item href="https://example.com" color-scheme='inverse'>
+            <dds-card-heading>A variation inludes a high contrast Call-to-action</dds-card-heading>
+            <dds-card-cta-footer slot="footer">
+              <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" slot="icon"><!----><path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path></svg>
+            </dds-card-cta-footer>
+          </dds-card-group-item>                                
+        </dds-card-group>
+      </dds-card-section-simple>
+
+      <dds-card-section-carousel>
+        <dds-content-section-heading>Card section carousel</dds-content-section-heading>
+        <dds-content-section-copy>
+          Allows users to explore multiple pieces of content within the same area.
+        </dds-content-section-copy>
+        <dds-link-with-icon href="https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/overview" slot="footer">
+          See all components
+          <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" slot="icon">&lt;!&ndash;&ndash;&gt;<path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path></svg>
+        </dds-link-with-icon>
+        <dds-carousel>
+          <dds-card href="https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/card-section-carousel">
+            <dds-card-heading>Card section carousel</dds-card-heading>
+            On the left side, this component uses Headline copy, a Subheading, and an optional CTA text link.
+            <dds-card-footer>
+              <svg
+                slot="icon"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                aria-hidden="true"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
+              </svg>
+            </dds-card-footer>
+          </dds-card>
+          <dds-card href="https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/card-section-carousel">
+            <dds-card-heading>Cards</dds-card-heading>
+            The main content of the carousel lives on these cards. You can use any variation of the card component to populate the carousel.
+            <dds-card-footer>
+              <svg
+                slot="icon"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                aria-hidden="true"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
+              </svg>
+            </dds-card-footer>
+          </dds-card>
+          <dds-card href="https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/card-section-carousel">
+            <dds-card-heading>Carousel controls</dds-card-heading>
+            The Icon buttons and pagination to the bottom right provide navigational controls for browsing the carousel. They are required as part of this component.
+            <dds-card-footer>
+              <svg
+                slot="icon"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                aria-hidden="true"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
+              </svg>
+            </dds-card-footer>
+          </dds-card>
+          <dds-card href="https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/card-section-carousel">
+            <dds-card-heading>Number of cards</dds-card-heading>
+            The recommended amount of content is a minimum of 5 cards and maximum of 15 cards to avoid excessive clicking for the user.
+            <dds-card-footer>
+              <svg
+                slot="icon"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                aria-hidden="true"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
+              </svg>
+            </dds-card-footer>
+          </dds-card>
+          <dds-card href="https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/card-section-carousel">
+            <dds-card-heading>Related content</dds-card-heading>
+            Make sure content in the carousel is related.
+            <dds-card-footer>
+              <svg
+                slot="icon"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                aria-hidden="true"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
+              </svg>
+            </dds-card-footer>
+          </dds-card>
+          <dds-card href="https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/card-section-carousel">
+            <dds-card-heading>No essential content</dds-card-heading>
+            Do not add essential content to a carousel. Essential content could include navigational or wayfinding content links.
+            <dds-card-footer>
+              <svg
+                slot="icon"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                aria-hidden="true"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
+              </svg>
+            </dds-card-footer>
+          </dds-card>
+          <dds-card href="https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/card-section-carousel">
+            <dds-card-heading>Most important content</dds-card-heading>
+            Prioritize the most important content at the beginning of the carousel.
+            <dds-card-footer>
+              <svg
+                slot="icon"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                aria-hidden="true"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
+              </svg>
+            </dds-card-footer>
+          </dds-card>  
+          <dds-card href="https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/card-section-carousel">
+            <dds-card-heading>Simple and concise</dds-card-heading>
+            Carousel content should be simple and concise.
+            <dds-card-footer>
+              <svg
+                slot="icon"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                aria-hidden="true"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
+              </svg>
+            </dds-card-footer>
+          </dds-card>        
+          <dds-card href="https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/card-section-carousel">
+            <dds-card-heading>Use cases</dds-card-heading>
+            Common content used in carousels includes use cases, news articles, client testimonials, and quotes.
+            <dds-card-footer>
+              <svg
+                slot="icon"
+                focusable="false"
+                preserveAspectRatio="xMidYMid meet"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="currentColor"
+                aria-hidden="true"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
+              </svg>
+            </dds-card-footer>
+          </dds-card>                              
+        </dds-carousel>  
+      </dds-card-section-carousel>    
+
+      <div class='bx--offset-lg-4'>
+        <dds-cta-block>
+          <dds-content-block-heading>CTA Section</dds-content-block-heading>
+          <dds-content-block-copy>Used to communicate actions that users can take along with some information that is relevant to those actions.</dds-content-block-copy>
+
+          <dds-button-group slot="action">
+            <dds-button-group-item href="g100-theme-page/index.html">
+              See alternate template
+              <svg slot="icon" focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20">
+                <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
+              </svg>
+            </dds-button-group-item>
+            <dds-button-group-item href="https://www.ibm.com/standards/carbon/">
+              Carbon for IBM.com
+              <svg slot="icon" focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20">
+                <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
+              </svg>
+            </dds-button-group-item>        
+          </dds-button-group>
+
+          <dds-cta-block-item-row no-border>
+            <dds-cta-block-item>
+              <dds-content-item-heading>Secondary subsection</dds-content-item-heading>
+              <dds-content-item-copy
+                >Consists of two paragraph lists and is used to provide information and links to additional destinations.</dds-content-item-copy
+              >
+              <dds-text-cta slot="footer" cta-type="local" icon-placement="right" href="https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/cta-section">Find a partner</dds-text-cta>
+            </dds-cta-block-item>
+
+            <dds-cta-block-item>
+              <dds-content-item-heading>Usage</dds-content-item-heading>
+              <dds-content-item-copy>Use th secondary area to connect users to additional destinations if more than the primary is needed.</dds-content-item-copy>
+              <dds-text-cta slot="footer" cta-type="local" icon-placement="right" href="https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/cta">More on Call-to-action</dds-text-cta>
+            </dds-cta-block-item>
+          </dds-cta-block-item-row>
+        </dds-cta-block>
+      </div>
+    </dds-scroll-animations>
+    <dds-back-to-top></dds-back-to-top>
+  </div>
+
+{{/ base }}

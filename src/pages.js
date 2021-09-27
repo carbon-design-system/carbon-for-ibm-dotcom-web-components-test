@@ -59,6 +59,18 @@ const pages = [
     },
     template: './src/pages/services/services.hbs',
   },
+  {
+    output: './cloud/index.html',
+    chunks: ['cloud'],
+    content: {
+      title: 'Cloud template',
+      description: 'Cloud template',
+    },
+    chunkEntry: {
+      cloud: './src/pages/cloud/cloud.js',
+    },
+    template: './src/pages/cloud/cloud.hbs',
+  },
 ];
 
 module.exports = pages;

@@ -5,6 +5,7 @@ import '@carbon/ibmdotcom-web-components/es/components/card-link';
 import '@carbon/ibmdotcom-web-components/es/components/callout-quote/index.js';
 import '@carbon/ibmdotcom-web-components/es/components/card-section-carousel/index.js';
 import '@carbon/ibmdotcom-web-components/es/components/card-section-simple/index.js';
+import '@carbon/ibmdotcom-web-components/es/components/cta/link-list-item-card-cta';
 import '@carbon/ibmdotcom-web-components/es/components/cta-block/index.js';
 
 import '@carbon/ibmdotcom-web-components/es/components/feature-card-block-medium';

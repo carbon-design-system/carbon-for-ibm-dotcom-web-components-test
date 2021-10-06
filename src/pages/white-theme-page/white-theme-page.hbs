@@ -14,9 +14,7 @@
 				</dds-button-group-item>
 				<dds-button-group-item href="#content">
 					See components in action
-					<svg slot="icon" focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20">
-						<path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
-					</svg>
+          <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 32 32" slot="icon"><!----><path d="M24.59 16.59L17 24.17 17 4 15 4 15 24.17 7.41 16.59 6 18 16 28 26 18 24.59 16.59z"></path></svg>
 				</dds-button-group-item>        
 			</dds-button-group>
 
@@ -29,20 +27,27 @@
         dds-content-block-heading,
         dds-content-block-copy,
         dds-content-block-media,
+        dds-content-item,
         dds-callout-quote,
         dds-content-group-pictograms,
         dds-content-group-cards,
+        dds-content-group-cards-item,
         dds-content-group-heading,
         dds-content-group-copy,
         dds-group-card,
         dds-group-card-item,
+        dds-image-with-caption,
         dds-logo-grid,
         dds-logo-grid-item,
+        dds-link-list>*,
         dds-content-group-banner,
         dds-card-section-simple,
         dds-card-section-carousel,
-        dds-card,
+        dds-card-cta,
+        dds-card-link-cta,
         dds-cta-section,
+        dds-button-group,
+        dds-cta-block-item,
         dds-pictogram-item'>
 
       <dds-table-of-contents stickyOffset='48'>
@@ -59,10 +64,10 @@
           on the right side on desktop. You can see the aside element at work in the Content block media component directly 
           below this one.</dds-content-block-copy>
 
-          <dds-card-cta slot="footer" cta-type="external" href="https://example.com">
+          <dds-card-link-cta slot="footer" cta-type="external" href="https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/content-block-simple">
             Learn about Content block simple
             <dds-card-cta-footer></dds-card-cta-footer>
-          </dds-card-cta>
+          </dds-card-link-cta>
         </dds-content-block-simple>
 
         <a name="2" data-title="Content block media"></a>
@@ -76,8 +81,8 @@
 
           <dds-content-block-media-content>
             <dds-content-group-heading>Introduction to the media</dds-content-group-heading>
-            <dds-image-with-caption slot="media" alt="Image alt text" default-src="../assets/images/Card-section-img-1.png" heading="Lorem ipsum dolor sit amet.">
-              <dds-image-item media="(min-width: 672px)" srcset="../assets/images/Card-section-img-1.png"> </dds-image-item>
+            <dds-image-with-caption slot="media" alt="Image alt text" default-src="../assets/images/card-section-img-1.png" heading="Lorem ipsum dolor sit amet.">
+              <dds-image-item media="(min-width: 672px)" srcset="../assets/images/card-section-img-1.png"> </dds-image-item>
             </dds-image-with-caption>
 
             <dds-content-item>
@@ -92,46 +97,42 @@
               <dds-content-item-heading>Scroll animations</dds-content-item-heading>
               <dds-content-item-copy>This page uses the *Scroll up* scroll animation on every section of the page content. Thoughtful use of animations can highlight key content and draw the user’s attention. You can find more examples of scroll animations in our [Storybook](https://www.ibm.com/standards/carbon/components/content-block-media).</dds-content-item-copy>
             </dds-content-item>         
-            <dds-card-cta slot="footer" cta-type="local" href="https://example.com">
+            <dds-card-link-cta slot="footer" cta-type="external" href="https://www.ibm.com/standards/carbon/components/content-block-media">
               Lorem ipsum dolor sit ametttt
               <dds-card-cta-footer></dds-card-cta-footer>
-            </dds-card-cta>
+            </dds-card-link-cta>
           </dds-content-block-media-content>
-          <dds-content-block-complementary>
-            <dds-link-list type="default">
-              <dds-link-list-heading>Aside element</dds-link-list-heading>
-              <dds-link-list-item-card href="https://www.ibm.com/standards/carbon/components/content-block-media" cta-type="local">
-                <p>Content block media</p>
-                <dds-card-cta-footer>
-                  <svg
-                    slot="icon"
-                    focusable="false"
-                    preserveAspectRatio="xMidYMid meet"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="currentColor"
-                    aria-hidden="true"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                  >
-                    <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
-                  </svg>
-                </dds-card-cta-footer>
-              </dds-link-list-item-card>
-              <dds-link-list-item-card href="1_9h94wo6b" cta-type="video">
-                <p>Link to a video</p>
-                <dds-card-cta-footer>
-                  <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 32 32" class="bx--card__cta dds-ce--cta__icon">&lt;!&ndash;&ndash;&gt;<path d="M26,28H6a2.0027,2.0027,0,0,1-2-2V6A2.0027,2.0027,0,0,1,6,4H16V6H6V26H26V16h2V26A2.0027,2.0027,0,0,1,26,28Z"></path><path d="M20 2L20 4 26.586 4 18 12.586 19.414 14 28 5.414 28 12 30 12 30 2 20 2z"></path></svg>
-                </dds-card-cta-footer>
-              </dds-link-list-item-card>
-              <dds-link-list-item-card href="1_9h94wo6b" cta-type="video">
-                <p>Link to another video</p>
-                <dds-card-cta-footer>
-                  <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 32 32" class="bx--card__cta dds-ce--cta__icon">&lt;!&ndash;&ndash;&gt;<path d="M26,28H6a2.0027,2.0027,0,0,1-2-2V6A2.0027,2.0027,0,0,1,6,4H16V6H6V26H26V16h2V26A2.0027,2.0027,0,0,1,26,28Z"></path><path d="M20 2L20 4 26.586 4 18 12.586 19.414 14 28 5.414 28 12 30 12 30 2 20 2z"></path></svg>
-                </dds-card-cta-footer>
-              </dds-link-list-item-card>
-            </dds-link-list>
-          </dds-content-block-complementary>
+          <dds-link-list type="default" slot='complementary'>
+            <dds-link-list-heading>Aside element</dds-link-list-heading>
+            <dds-link-list-item-card-cta href="https://www.ibm.com/standards/carbon/components/content-block-media" cta-type="local">
+              <p>Content block media</p>
+              <dds-card-cta-footer>
+                <svg
+                  slot="icon"
+                  focusable="false"
+                  preserveAspectRatio="xMidYMid meet"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                  aria-hidden="true"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                >
+                  <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
+                </svg>
+              </dds-card-cta-footer>
+            </dds-link-list-item-card-cta>
+            <dds-link-list-item-card-cta href="1_9h94wo6b" cta-type="video">
+              <p>Link to a video</p>
+              <dds-card-cta-footer>
+              </dds-card-cta-footer>
+            </dds-link-list-item-card-cta>
+            <dds-link-list-item-card-cta href="1_9h94wo6b" cta-type="video">
+              <p>Link to another video</p>
+              <dds-card-cta-footer>
+              </dds-card-cta-footer>
+            </dds-link-list-item-card-cta>
+          </dds-link-list>
         </dds-content-block-media>
 
         <a name="3" data-title="Callout quote"></a>
@@ -146,7 +147,7 @@
           <dds-quote-source-bottom-copy>
             or company
           </dds-quote-source-bottom-copy>
-            <dds-link-with-icon slot='footer' href='https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/callout-quote'>
+            <dds-link-with-icon target="_external" slot='footer' href='https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/callout-quote'>
             See more about the Callout quote
             <svg slot="icon" focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20">
               <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
@@ -180,7 +181,7 @@
               </svg>
               <dds-content-item-heading>Pictograms in action</dds-content-item-heading>
               <dds-content-item-copy>IBM’s pictograms are visual symbols used to represent ideas, objects or narratives. They can communicate messages at a glance, afford interactivity, and simplify complex ideas. They work well with presentations and marketing communications.</dds-content-item-copy>
-              <dds-link-with-icon href="https://www.ibm.com/standards/carbon/components/content-group-pictograms" slot="footer">
+              <dds-link-with-icon href="https://www.ibm.com/standards/carbon/components/content-group-pictograms" slot="footer" target='_external'>
                 Content group pictograms
                 <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" slot="icon">&lt;!&ndash;&ndash;&gt;<path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path></svg>
               </dds-link-with-icon>
@@ -205,7 +206,7 @@
               </svg>
               <dds-content-item-heading>Finding pictograms for your page</dds-content-item-heading>
               <dds-content-item-copy>The IBM Design Language site houses many pictograms you can use for your project, and includes instructions on creating a custom pictogram. Only the productive pictogram set are used in these sections.</dds-content-item-copy>
-              <dds-link-with-icon href="https://www.ibm.com/design/language/iconography/pictograms/library" slot="footer">
+              <dds-link-with-icon href="https://www.ibm.com/design/language/iconography/pictograms/library" slot="footer" target='_external'>
                 IBM Design Language pictogram library
                 <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" slot="icon">&lt;!&ndash;&ndash;&gt;<path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path></svg>
               </dds-link-with-icon>
@@ -239,6 +240,7 @@
 
 
         <div class='bx--col-lg-12'>
+          <a name="5" data-title="Content group cards"></a>
           <dds-content-group-cards>
             <dds-content-group-heading>Content group cards</dds-content-group-heading>
             <dds-content-group-copy>Content group cards is used to present information through a group of cards with each acting as a call to action 
@@ -295,6 +297,7 @@
         </div>
 
 
+        <a name="6" data-title="Logo grid"></a>
         <dds-logo-grid>
           <dds-content-block-heading>Logo Grid</dds-content-block-heading>
           <dds-logo-grid-item default-src='../assets/images/logo-microsoft.png' alt='Microsoft'></dds-logo-grid-item>
@@ -305,6 +308,7 @@
           <dds-logo-grid-item default-src='../assets/images/logo-cisco.png' alt='Cisco'></dds-logo-grid-item>
         </dds-logo-grid>
 
+        <a name="7" data-title="Content group banner"></a>
         <dds-content-group-banner>
           <dds-content-group-heading>Content group banner: a subtle callout for tangential information or announcements</dds-content-group-heading>
           <dds-link-list type="vertical" slot="complementary">
@@ -312,6 +316,7 @@
               icon-placement="right"
               href="https://www.ibm.com/standards/carbon/components/content-group-banner"
               cta-type="local"
+              target='_external'
             >
               Content group banner
             </dds-link-list-item-cta>
@@ -329,7 +334,7 @@
       <dds-card-section-simple>
         <dds-content-section-heading>Card section</dds-content-section-heading>
         <dds-card-group>
-          <dds-card-group-item href="https://example.com">
+          <dds-card-group-item cta-type="external" href="https://www.ibm.com/standards/carbon/components/card-section">
             <dds-card-heading>Card section</dds-card-heading>
             <p>
               The card section is a collection of cards presented in a full-width section with a left-column header that responds to the grid.
@@ -339,7 +344,7 @@
             </dds-card-cta-footer>
           </dds-card-group-item>
 
-          <dds-card-group-item href="https://example.com">
+          <dds-card-group-item cta-type="external" href="https://www.ibm.com/standards/carbon/components/card-section">
             <dds-card-heading>Cards</dds-card-heading>
             <p>
               The main content of the carousel lives on these cards.
@@ -349,7 +354,7 @@
             </dds-card-cta-footer>
           </dds-card-group-item>
 
-          <dds-card-group-item href="https://example.com">
+          <dds-card-group-item cta-type="external" href="https://www.ibm.com/standards/carbon/components/card-section">
             <dds-card-heading>Variation</dds-card-heading>
             <p>
               Previewed here is a variation of Card section that includes the high contrast card at the end of the card colection.
@@ -359,7 +364,7 @@
             </dds-card-cta-footer>
           </dds-card-group-item>
 
-          <dds-card-group-item href="https://example.com">
+          <dds-card-group-item cta-type="external" href="https://www.ibm.com/standards/carbon/components/card-section">
             <dds-card-heading>Avoid orphan cards</dds-card-heading>
             <p>
               Try to avoid having orphan or single hanging cards in a row by itself.
@@ -368,7 +373,7 @@
               <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" slot="icon"><!----><path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path></svg>
             </dds-card-cta-footer>
           </dds-card-group-item>            
-          <dds-card-group-item href="https://example.com" color-scheme='inverse'>
+          <dds-card-group-item cta-type="external" href="https://www.ibm.com/standards/carbon/components/card-section" color-scheme='inverse'>
             <dds-card-heading>A variation inludes a high contrast Call-to-action</dds-card-heading>
             <dds-card-cta-footer slot="footer">
               <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" slot="icon"><!----><path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path></svg>
@@ -382,7 +387,7 @@
         <dds-content-section-copy>
           Allows users to explore multiple pieces of content within the same area.
         </dds-content-section-copy>
-        <dds-link-with-icon href="https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/overview" slot="footer">
+        <dds-link-with-icon target="_external" href="https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/overview" slot="footer">
           See all components
           <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" slot="icon">&lt;!&ndash;&ndash;&gt;<path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path></svg>
         </dds-link-with-icon>
@@ -567,13 +572,13 @@
           <dds-content-block-copy>Used to communicate actions that users can take along with some information that is relevant to those actions.</dds-content-block-copy>
 
           <dds-button-group slot="action">
-            <dds-button-group-item href="g100-theme-page/index.html">
+            <dds-button-group-item href="http://ibmdotcom-web-components-html-test.mybluemix.net/g100-theme-page/index.html">
               See alternate template
               <svg slot="icon" focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20">
                 <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
               </svg>
             </dds-button-group-item>
-            <dds-button-group-item href="https://www.ibm.com/standards/carbon/">
+            <dds-button-group-item target="_external" href="https://www.ibm.com/standards/carbon/">
               Carbon for IBM.com
               <svg slot="icon" focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20">
                 <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
@@ -587,13 +592,13 @@
               <dds-content-item-copy
                 >Consists of two paragraph lists and is used to provide information and links to additional destinations.</dds-content-item-copy
               >
-              <dds-text-cta slot="footer" cta-type="local" icon-placement="right" href="https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/cta-section">Find a partner</dds-text-cta>
+              <dds-text-cta slot="footer" cta-type="external" icon-placement="right" href="https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/cta-section">More on CTA section</dds-text-cta>
             </dds-cta-block-item>
 
             <dds-cta-block-item>
               <dds-content-item-heading>Usage</dds-content-item-heading>
-              <dds-content-item-copy>Use th secondary area to connect users to additional destinations if more than the primary is needed.</dds-content-item-copy>
-              <dds-text-cta slot="footer" cta-type="local" icon-placement="right" href="https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/cta">More on Call-to-action</dds-text-cta>
+              <dds-content-item-copy>Use the secondary area to connect users to additional destinations if more than the primary is needed.</dds-content-item-copy>
+              <dds-text-cta slot="footer" cta-type="external" icon-placement="right" href="https://www.ibm.com/standards/web/carbon-for-ibm-dotcom/components/cta">More on Call-to-action</dds-text-cta>
             </dds-cta-block-item>
           </dds-cta-block-item-row>
         </dds-cta-block>

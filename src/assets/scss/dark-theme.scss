@@ -13,6 +13,14 @@ body,
   @include carbon--theme($carbon--theme--g100, true);
 }
 
+dds-table-of-contents {
+  display: block;
+}
+
+dds-card-link-cta {
+  display: flex;
+}
+
 body {
   background-color: $ui-background;
   color: $text-01;

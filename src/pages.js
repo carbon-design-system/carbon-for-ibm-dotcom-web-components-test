@@ -24,40 +24,40 @@ const pages = [
     template: './src/pages/ui-components/ui-components.hbs',
   },
   {
-    output: './learn/index.html',
-    chunks: ['learn'],
+    output: './example-page-a/index.html',
+    chunks: ['example-page-a'],
     content: {
-      title: 'Learn template',
-      description: 'Learn template',
+      title: 'Example page A template',
+      description: 'Example page A template',
     },
     chunkEntry: {
-      learn: './src/pages/learn/learn.js',
+      'example-page-a': './src/pages/example-page-a/example-page-a.js',
     },
-    template: './src/pages/learn/learn.hbs',
+    template: './src/pages/example-page-a/example-page-a.hbs',
   },
   {
-    output: './solutions/index.html',
-    chunks: ['solutions'],
+    output: './example-page-b/index.html',
+    chunks: ['example-page-b'],
     content: {
-      title: 'Solutions template',
-      description: 'Solutions template',
+      title: 'Example page B template',
+      description: 'Example page B template',
     },
     chunkEntry: {
-      solutions: './src/pages/solutions/solutions.js',
+      'example-page-b': './src/pages/example-page-b/example-page-b.js',
     },
-    template: './src/pages/solutions/solutions.hbs',
+    template: './src/pages/example-page-b/example-page-b.hbs',
   },
   {
-    output: './services/index.html',
-    chunks: ['services'],
+    output: './example-page-c/index.html',
+    chunks: ['example-page-c'],
     content: {
-      title: 'Services template',
-      description: 'Services template',
+      title: 'Example page C template',
+      description: 'Example page C template',
     },
     chunkEntry: {
-      services: './src/pages/services/services.js',
+      'example-page-c': './src/pages/example-page-c/example-page-c.js',
     },
-    template: './src/pages/services/services.hbs',
+    template: './src/pages/example-page-c/example-page-c.hbs',
   },
   {
     output: './cloud/index.html',

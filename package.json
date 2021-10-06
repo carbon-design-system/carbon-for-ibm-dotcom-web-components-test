@@ -8,7 +8,9 @@
     "start": "webpack-dev-server --config ./config/webpack-dev.config.js --watch --colors -d",
     "lint": "eslint src",
     "lint:styles": "stylelint '**/*.{css,scss}' --config ./packages/stylelint-config-ibmdotcom",
-    "test:e2e:local": "start-server-and-test 'http-server -c-1 dist --silent' 8080 'percy exec --config tests/e2e/.percy.json -- cypress run --config-file tests/e2e/cypress.json'",
+    "test:e2e:local": "yarn build && start-server-and-test 'http-server -c-1 dist --silent' 8080 'percy exec --config tests/e2e/.percy.json -- cypress run --config video=false --config-file tests/e2e/cypress.json'",
+    "test:e2e:local:no-percy": "yarn build && start-server-and-test 'http-server -c-1 dist --silent' 8080 'cypress run --config video=false --config-file tests/e2e/cypress.json'",
+    "test:e2e:local:no-percy:with-video": "yarn build && start-server-and-test 'http-server -c-1 dist --silent' 8080 'cypress run --config-file tests/e2e/cypress.json'",
     "update-canary": "yarn upgrade @carbon/ibmdotcom-web-components@canary",
     "update-next": "yarn upgrade @carbon/ibmdotcom-web-components@next",
     "update-latest": "yarn upgrade @carbon/ibmdotcom-web-components@latest"

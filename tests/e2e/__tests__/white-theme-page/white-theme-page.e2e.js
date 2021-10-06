@@ -9,7 +9,7 @@
 
 describe('white theme page', () => {
   it('should load the default learn page', () => {
-    cy.visit('/white-theme-page/white-theme-page.html');
+    cy.visit('/white-theme-page/index.html');
 
     // Take a snapshot for visual diffing
     cy.percySnapshot('white theme page | default');

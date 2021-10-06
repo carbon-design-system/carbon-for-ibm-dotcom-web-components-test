@@ -9,7 +9,7 @@
 
 describe('g100 theme page', () => {
   it('should load the default learn page', () => {
-    cy.visit('/g100-theme-page/g100-theme-page.html');
+    cy.visit('/g100-theme-page/index.html');
 
     // Take a snapshot for visual diffing
     cy.percySnapshot('g100 theme page | default');

@@ -179,11 +179,16 @@
 
     var params = new URLSearchParams(window.location.search);
 
-    if(params.has('lc') && params.has('cc')) {
-      var lang = params.get('lc') + '-' + params.get('cc').toUpperCase();
-      document.getElementsByTagName("html")[0].setAttribute("lang", lang);
-      digitalData.page.pageInfo.language = lang;
-      digitalData.page.pageInfo.ibm.country = params.get('cc').toUpperCase();
+    if (params.has('lc')) {
+      var currentLang = params.get('lc');
+      if (params.has('cc')) {
+        currentLang += '-' + params.get('cc').toUpperCase();
+        digitalData.page.pageInfo.ibm.country = params.get('cc').toUpperCase();
+      } else {
+        digitalData.page.pageInfo.ibm.country = '';
+      }
+      document.getElementsByTagName('html')[0].setAttribute('lang', currentLang);
+      digitalData.page.pageInfo.language = currentLang;
     }
 
       {{#if htmlWebpackPlugin.options.enableRTL }}

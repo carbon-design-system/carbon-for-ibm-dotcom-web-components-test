@@ -13,10 +13,6 @@
 // Requires for the test page using the standalone <dds-cloud-masthead-container>.
 @import '~@carbon/ibmdotcom-styles/scss/components/dotcom-shell/dotcom-shell';
 
-dds-leadspace {
-  @include carbon--theme($carbon--theme--g100, true);
-}
-
 // content-block-copy styles reset if using list markdown. Overriding with dds-item-paragraph styles here.
 bx-list-item {
   font-size: 1rem;
@@ -30,6 +26,11 @@ bx-list-item {
 // There seems to be a bug where the height of the button group is being set as 0px
 dds-button-group-item {
   height: auto !important; /* stylelint-disable-line declaration-no-important */
+}
+
+// TODO move to white page
+dds-content-block-simple {
+  padding-bottom: 0;
 }
 
 // scroll animation delays
@@ -48,6 +49,15 @@ dds-cta-section-item {
   }
   &:nth-of-type(3n + 3) {
     --dds--fade-in-out-delay: 750ms;
+  }
+}
+
+dds-content-group-cards-item {
+  &:nth-of-type(2n + 1) {
+    --dds--fade-in-out-delay: 0;
+  }
+  &:nth-of-type(2n + 2) {
+    --dds--fade-in-out-delay: 250ms;
   }
 }
 /* stylelint-enable max-nesting-depth */

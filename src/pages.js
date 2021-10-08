@@ -60,6 +60,30 @@ const pages = [
     template: './src/pages/example-page-c/example-page-c.hbs',
   },
   {
+    output: './white-theme-page/index.html',
+    chunks: ['white-theme-page'],
+    content: {
+      title: 'White theme page',
+      description: 'White theme page',
+    },
+    chunkEntry: {
+      'white-theme-page': './src/pages/white-theme-page/white-theme-page.js',
+    },
+    template: './src/pages/white-theme-page/white-theme-page.hbs',
+  },
+  {
+    output: './g100-theme-page/index.html',
+    chunks: ['g100-theme-page'],
+    content: {
+      title: 'Gray 100 theme page',
+      description: 'Gray 100 theme page',
+    },
+    chunkEntry: {
+      'g100-theme-page': './src/pages/g100-theme-page/g100-theme-page.js',
+    },
+    template: './src/pages/g100-theme-page/g100-theme-page.hbs',
+  },
+  {
     output: './cloud/index.html',
     chunks: ['cloud'],
     content: {

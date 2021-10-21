@@ -1,0 +1,22 @@
+name: e2e-tests
+
+on: [push, pull_request]
+
+jobs:
+  web-components-test:
+    runs-on: ubuntu-20.04
+    strategy:
+      matrix:
+        node-version: ['14.x']
+    steps:
+      - uses: actions/checkout@v1
+      - name: Use Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - name: Install dependencies
+        run: yarn install
+      - name: Build project
+        run: yarn build
+      - name: Run e2e tests
+        run: yarn test:e2e:local:no-percy

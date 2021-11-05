@@ -8,7 +8,7 @@
 'use strict';
 
 describe('Example page C page', () => {
-  it('should load the default example-page-c page', () => {
+  it('should load the example-page-c page', () => {
     cy.visit('/example-page-c/index.html');
 
     // Take a snapshot for visual diffing

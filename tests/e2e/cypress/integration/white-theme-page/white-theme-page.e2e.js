@@ -8,7 +8,7 @@
 'use strict';
 
 describe('white theme page', () => {
-  it('should load the default learn page', () => {
+  it('should load the white theme page', () => {
     cy.visit('/white-theme-page/index.html');
 
     // Take a snapshot for visual diffing

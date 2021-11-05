@@ -7,11 +7,11 @@
 
 'use strict';
 
-describe('Example page A page', () => {
-  it('should load the default example-page-a page', () => {
-    cy.visit('/example-page-a/index.html');
+describe('Cloud page', () => {
+  it('should load the Cloud page', () => {
+    cy.visit('/cloud/index.html');
 
     // Take a snapshot for visual diffing
-    cy.percySnapshot('example page a | default');
+    cy.percySnapshot('cloud | default');
   });
 });

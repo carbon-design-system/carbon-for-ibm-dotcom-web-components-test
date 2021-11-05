@@ -8,7 +8,7 @@
 'use strict';
 
 describe('g100 theme page', () => {
-  it('should load the default learn page', () => {
+  it('should load the g100 theme page', () => {
     cy.visit('/g100-theme-page/index.html');
 
     // Take a snapshot for visual diffing

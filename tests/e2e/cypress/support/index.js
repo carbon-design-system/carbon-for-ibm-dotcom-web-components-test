@@ -10,6 +10,16 @@ import '@percy/cypress';
 
 import './commands';
 
+// Ignore ResizeObserver exceptions
+Cypress.on('uncaught:exception', (err) => {
+  const resizeObserverLoopErrRe = /^[^(ResizeObserver loop limit exceeded)]/;
+
+  /* returning false here prevents Cypress from failing the test */
+  if (resizeObserverLoopErrRe.test(err.message)) {
+    return false;
+  }
+});
+
 // Workaround, @percy/cypress was not properly loading in PercyDOM
 if (window) {
   window.PercyDOM = {

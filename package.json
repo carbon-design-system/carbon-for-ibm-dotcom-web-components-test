@@ -31,7 +31,7 @@
     "@percy/dom": "^1.0.0-beta.58",
     "autoprefixer": "^9.8.6",
     "babel-loader": "^8.2.3",
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.14",
     "browser-sync-webpack-plugin": "^2.2.2",
     "clean-webpack-plugin": "^0.1.19",
     "commander": "^6.1.0",

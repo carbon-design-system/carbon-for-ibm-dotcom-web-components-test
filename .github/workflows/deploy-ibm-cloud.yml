@@ -29,7 +29,7 @@ jobs:
       - name: Build project
         run: yarn build
       - name: Deploying to IBM Cloud (Canary)
-        uses: carbon-design-system/action-ibmcloud-cf@v1.2.1
+        uses: carbon-design-system/action-ibmcloud-cf@v1.3.0
         with:
           cloud-api-key: ${{ secrets.CLOUD_API_KEY }}
           cf-org: ibm-digital-design
@@ -65,7 +65,7 @@ jobs:
       - name: Build project
         run: yarn build
       - name: Deploying to IBM Cloud (Canary - RTL)
-        uses: carbon-design-system/action-ibmcloud-cf@v1.2.1
+        uses: carbon-design-system/action-ibmcloud-cf@v1.3.0
         with:
           cloud-api-key: ${{ secrets.CLOUD_API_KEY }}
           cf-org: ibm-digital-design

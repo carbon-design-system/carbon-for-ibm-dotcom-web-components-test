@@ -46,7 +46,7 @@
     "fast-sass-loader": "^1.5.0",
     "file-loader": "^1.1.11",
     "handlebars": "^4.0.12",
-    "handlebars-loader": "^1.7.0",
+    "handlebars-loader": "^1.7.1",
     "html-webpack-plugin": "^4.5.1",
     "http-server": "^0.12.3",
     "husky": "^4.3.0",

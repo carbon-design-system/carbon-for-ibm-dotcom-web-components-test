@@ -58,7 +58,7 @@
     "rtlcss": "^2.6.0",
     "sass-loader": "^7.1.0",
     "start-server-and-test": "^1.12.6",
-    "style-loader": "^0.23.1",
+    "style-loader": "^3.0.0",
     "stylelint": "^13.7.2",
     "terser-webpack-plugin": "^4.1.0",
     "webpack": "^4.23.1",

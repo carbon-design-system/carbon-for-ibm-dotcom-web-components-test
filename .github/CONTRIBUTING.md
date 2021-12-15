@@ -37,15 +37,15 @@ fit within the scope of any of the existing doc fix projects.
 ### Setup
 
 1. Fork the project by navigating to the main
-   [repository](https://github.com/carbon-design-system/ibm-dotcom-library/) and
+   [repository](https://github.com/carbon-design-system/carbon-for-ibm-dotcom/) and
    clicking the **Fork** button on the top-right corner.
 
 2. Navigate to your forked repository and copy the **SSH url**. Clone your fork
    by running the following in your terminal:
 
    ```
-   $ git clone git@github.com:{ YOUR_USERNAME }/ibm-dotcom-library.git
-   $ cd ibm-dotcom-library
+   $ git clone git@github.com:{ YOUR_USERNAME }/carbon-for-ibm-dotcom.git
+   $ cd carbon-for-ibm-dotcom
    ```
 
    See [GitHub docs](https://help.github.com/articles/fork-a-repo/) for more
@@ -53,10 +53,10 @@ fit within the scope of any of the existing doc fix projects.
 
 3. Once cloned, you will see `origin` as your default remote, pointing to your
    personal forked repository. Add a remote named `upstream` pointing to the
-   main `ibm-dotcom-library`:
+   main `carbon-for-ibm-dotcom`:
 
    ```
-   $ git remote add upstream git@github.com:carbon-design-system/ibm-dotcom-library.git
+   $ git remote add upstream git@github.com:carbon-design-system/carbon-for-ibm-dotcom.git
    $ git remote -v
    ```
 
@@ -80,17 +80,17 @@ features, by not reporting duplicate issues.
 1. Search this repository for an open or closed Pull Request that relates to
    your submission. You don't want to duplicate effort.
 
-2. Pull the latest master branch from `upstream`:
+2. Pull the latest main branch from `upstream`:
 
    ```
-   $ git pull upstream master
+   $ git pull upstream main
    ```
 
 3. Always work and submit pull requests from a branch. _Do not submit pull
-   requests from the `master` branch of your fork_.
+   requests from the `main` branch of your fork_.
 
    ```
-   $ git checkout -b { YOUR_BRANCH_NAME } master
+   $ git checkout -b { YOUR_BRANCH_NAME } main
    ```
 
 4. Create your patch or feature.
@@ -126,7 +126,7 @@ features, by not reporting duplicate issues.
    ```
 
 8. In Github, navigate to
-   [carbon-design-system/ibm-dotcom-library](https://github.com/carbon-design-system/ibm-dotcom-library/)
+   [carbon-design-system/carbon-for-ibm-dotcom](https://github.com/carbon-design-system/carbon-for-ibm-dotcom/)
    and click the button that reads "Compare & pull request".
 
 9. Write a title and description, then click "Create pull request".
@@ -144,6 +144,6 @@ features, by not reporting duplicate issues.
     squash and merge your commits for you.
 
 For all details related to development, make sure to check out our
-[development guide](https://github.com/carbon-design-system/ibm-dotcom-library/blob/master/docs/developing.md)!
+[development guide](https://github.com/carbon-design-system/carbon-for-ibm-dotcom/blob/main/docs/developing.md)!
 
 **That's it! Thank you for your contribution!**

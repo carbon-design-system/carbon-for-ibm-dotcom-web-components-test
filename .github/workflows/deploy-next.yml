@@ -1,0 +1,60 @@
+name: deploy-next (Deploy to Github Pages)
+
+on:
+  push:
+    branches:
+      - main
+  repository_dispatch:
+    types: [ deploy-next,deploy-staging ]
+
+concurrency:
+  group: deploy-next-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  next:
+    if: github.repository == 'carbon-design-system/carbon-for-ibm-dotcom-web-components-test'
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          token: ${{secrets.BOT_TOKEN}}
+      - name: Use Node.js 14.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14.x'
+      - name: Install dependencies
+        run: yarn install
+      - name: Grab latest next release
+        run: yarn update-next
+      - name: Set env vars
+        uses: ./.github/actions/set-dotenv
+        with:
+          env-file: .env
+      - name: Build project
+        run: yarn build
+      - name: Deploying to Github Pages
+        run: |
+          git config --global user.email ${{ secrets.BOT_EMAIL }}
+          git config --global user.name ${{ secrets.BOT_NAME }}
+
+          git checkout -- package.json
+          git checkout -- yarn.lock
+          git fetch origin gh-pages
+          git checkout -b gh-pages origin/gh-pages
+          git update-ref -d refs/remotes/origin/gh-pages
+          git pull origin gh-pages
+
+          rm -rf next
+          mkdir -p next
+          mv dist/* next
+
+          git add next
+          git commit -m "chore(deploy): deploy next to GitHub Pages"
+          git push origin gh-pages
+      - uses: act10ns/slack@v1
+        if: failure()
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        with:
+          status: ${{ job.status }}

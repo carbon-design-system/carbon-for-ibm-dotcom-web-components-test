@@ -7,8 +7,13 @@ on:
   repository_dispatch:
     types: [deploy-canary]
 
+concurrency:
+  group: percy-update-base-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   percy-update:
+    if: github.repository == 'carbon-design-system/carbon-for-ibm-dotcom-web-components-test'
     runs-on: ubuntu-20.04
     strategy:
       matrix:
@@ -34,6 +39,7 @@ jobs:
       - name: Run e2e tests
         run: yarn test:e2e:local
   percy-update-upstream:
+    if: github.repository == 'carbon-design-system/carbon-for-ibm-dotcom-web-components-test'
     runs-on: ubuntu-20.04
     strategy:
       matrix:

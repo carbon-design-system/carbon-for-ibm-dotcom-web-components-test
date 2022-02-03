@@ -8,7 +8,10 @@
 'use strict';
 
 module.exports = {
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
+  parserOptions: {
+    requireConfigFile: false,
+  },
   extends: ['eslint:recommended', 'plugin:jsdoc/recommended'],
   plugins: ['jsdoc', 'cypress'],
   rules: {

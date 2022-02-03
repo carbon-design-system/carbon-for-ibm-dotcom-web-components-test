@@ -11,7 +11,7 @@
           <slot name="footer" @slotchange="${0}"></slot>
         </div>
       </div>
-    `),!hasFooter,prefix,prefix,prefix,handleSlotChange)}},{kind:"field",decorators:[Object(lit_element.f)({attribute:"hide-border",reflect:!0,type:Boolean})],key:"hideBorder",value:()=>!1},{kind:"method",key:"render",value:function(){return Object(lit_element.d)(_t3||(_t3=_`
+    `),!hasFooter,prefix,prefix,prefix,handleSlotChange)}},{kind:"field",decorators:[Object(lit_element.e)({attribute:"hide-border",reflect:!0,type:Boolean})],key:"hideBorder",value:()=>!1},{kind:"method",key:"render",value:function(){return Object(lit_element.d)(_t3||(_t3=_`
       <div class="${0}--content-layout--logo-grid">
         <slot name="heading"></slot>
         ${0}
@@ -23,5 +23,5 @@
       <div class="bx--logo-grid__logo">
         ${0}
       </div>
-    `),Object(get.a)(Object(getPrototypeOf.a)(DDSLogoGridItem.prototype),"render",this).call(this))}}]}}),Object(stable_selector.a)(image_image.a));var card_link=__webpack_require__(81);let logo_grid_link_t,logo_grid_link_=t=>t;const{stablePrefix:logo_grid_link_ddsPrefix}=settings_settings.a;Object(decorate.a)([Object(lit_element.c)(`${logo_grid_link_ddsPrefix}-logo-grid-link`)],(function(_initialize,_StableSelectorMixin){class DDSLogoGridLink extends _StableSelectorMixin{constructor(...args){super(...args),_initialize(this)}}return{F:DDSLogoGridLink,d:[{kind:"field",decorators:[Object(lit_element.f)({reflect:!0})],key:"slot",value:()=>"footer"},{kind:"get",static:!0,key:"stableSelector",value:function(){return`${logo_grid_link_ddsPrefix}--logo-grid-link`}},{kind:"get",static:!0,key:"styles",value:function(){return Object(lit_element.b)(logo_grid_link_t||(logo_grid_link_t=logo_grid_link_`${0}${0}`),Object(get.a)(Object(getPrototypeOf.a)(DDSLogoGridLink),"styles",this),logo_grid_css)}}]}}),Object(stable_selector.a)(card_link.a)),__webpack_require__(40)}}]);
+    `),Object(get.a)(Object(getPrototypeOf.a)(DDSLogoGridItem.prototype),"render",this).call(this))}}]}}),Object(stable_selector.a)(image_image.a));var card_link=__webpack_require__(81);let logo_grid_link_t,logo_grid_link_=t=>t;const{stablePrefix:logo_grid_link_ddsPrefix}=settings_settings.a;Object(decorate.a)([Object(lit_element.c)(`${logo_grid_link_ddsPrefix}-logo-grid-link`)],(function(_initialize,_StableSelectorMixin){class DDSLogoGridLink extends _StableSelectorMixin{constructor(...args){super(...args),_initialize(this)}}return{F:DDSLogoGridLink,d:[{kind:"field",decorators:[Object(lit_element.e)({reflect:!0})],key:"slot",value:()=>"footer"},{kind:"get",static:!0,key:"stableSelector",value:function(){return`${logo_grid_link_ddsPrefix}--logo-grid-link`}},{kind:"get",static:!0,key:"styles",value:function(){return Object(lit_element.b)(logo_grid_link_t||(logo_grid_link_t=logo_grid_link_`${0}${0}`),Object(get.a)(Object(getPrototypeOf.a)(DDSLogoGridLink),"styles",this),logo_grid_css)}}]}}),Object(stable_selector.a)(card_link.a)),__webpack_require__(40)}}]);
 //# sourceMappingURL=g100-theme-page~ca09dd79.js.map

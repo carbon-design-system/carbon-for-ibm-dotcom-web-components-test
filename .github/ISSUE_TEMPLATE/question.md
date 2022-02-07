@@ -2,7 +2,7 @@
 name: Question 🤔
 about: Usage question or discussion about the Carbon for IBM.com Web Components Test Application.
 labels: question
-assignees: jeffchew, wonilsuhibm, ljcarot, RobertaJHahn
+assignees: jeffchew, ljcarot
 ---
 
 <!--

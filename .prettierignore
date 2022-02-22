@@ -5,3 +5,4 @@ docs
 coverage
 .github
 jsdocs
+tests/e2e/cypress/fixtures

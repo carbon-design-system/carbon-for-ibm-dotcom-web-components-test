@@ -218,7 +218,7 @@
       <div class="${0}--assistive-text" role="status" aria-live="assertive" aria-relevant="additions text">
         ${0}
       </div>
-    `),redirectUrl,handleSubmit,primary,country,classes,Boolean(open),Object(if_non_null.a)(searchLabel),handleClickInner,handleKeydownInner,handleKeypressInner,this.scopeParameters&&feature_flags.b?Object(lit_element.d)(search_with_typeahead_t3||(search_with_typeahead_t3=search_with_typeahead_`
+    `),redirectUrl,handleSubmit,primary,country,classes,Boolean(this.active),Object(if_non_null.a)(searchLabel),handleClickInner,handleKeydownInner,handleKeypressInner,this.scopeParameters&&feature_flags.b?Object(lit_element.d)(search_with_typeahead_t3||(search_with_typeahead_t3=search_with_typeahead_`
                 <dds-scoped-search-dropdown value="${0}">
                   ${0}
                 </dds-scoped-search-dropdown>

@@ -68,7 +68,7 @@
                 </div>
                 <div class="${0}-ce--header__nav-content-container">
                   <div class="${0}--header__nav-content" style="right: -${0}px">
-                    <nav part="nav" aria-label="nav-rtl" class="${0}--header__nav">
+                    <nav part="nav" class="${0}--header__nav">
                       <div class="${0}--sub-content-right"></div>
                       <div part="menubar" class="${0}--header__menu-bar" aria-label="${0}">
                         <slot @slotchange=${0} @keydown="${0}"></slot>
@@ -104,7 +104,7 @@
                 </div>
                 <div class="${0}-ce--header__nav-content-container">
                   <div class="${0}--header__nav-content" style="left: -${0}px">
-                    <nav part="nav" aria-label="nav-ltr" class="${0}--header__nav">
+                    <nav part="nav" class="${0}--header__nav">
                       <div class="${0}--sub-content-left"></div>
                       <div part="menubar" class="${0}--header__menu-bar" aria-label="${0}">
                         <slot @slotchange=${0} @keydown="${0}"></slot>

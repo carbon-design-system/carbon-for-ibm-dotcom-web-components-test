@@ -502,7 +502,6 @@
         tabindex="0"
         class="${0}--header__menu-item ${0}--header__menu-title"
         href="javascript:void 0"
-        aria-haspopup="menu"
         aria-expanded="${0}"
         aria-label="${0}"
         @click=${0}

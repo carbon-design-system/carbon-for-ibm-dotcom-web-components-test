@@ -9,12 +9,10 @@
         @scroll="${0}"
         @touchstart="${0}"
         @touchend="${0}"
-        style="${0}"
-      >
+        style="${0}">
         <div
           class="${0}--carousel__scroll-contents"
-          style="left:${0}px"
-        >
+          style="left:${0}px">
           <slot @slotchange="${0}"></slot>
         </div>
       </div>
@@ -25,8 +23,7 @@
           ?disabled="${0}"
           @click="${0}"
           aria-label="${0}"
-          title="${0}"
-        >
+          title="${0}">
           ${0}
         </button>
         ${0}
@@ -36,8 +33,7 @@
           ?disabled="${0}"
           @click="${0}"
           aria-label="${0}"
-          title="${0}"
-        >
+          title="${0}">
           ${0}
         </button>
       </div>
@@ -45,8 +41,7 @@
       <button
         class="${0}--btn ${0}--btn--secondary ${0}--btn--icon-only ${0}--back-to-top__btn"
         aria-label="${0}"
-        @click="${0}"
-      >
+        @click="${0}">
         ${0}
       </button>
     `),prefix,prefix,prefix,prefix,backToTopAssistiveText,handleOnClick,Object(_20.a)())}},{kind:"get",static:!0,key:"stableSelector",value:function(){return`${ddsPrefix}--back-to-top`}},{kind:"field",static:!0,key:"styles",value:()=>back_to_top_css}]}}),Object(mixins_host_listener.a)(Object(stable_selector.a)(lit_element.a)))},79:function(module,__webpack_exports__,__webpack_require__){"use strict";var lit_element__WEBPACK_IMPORTED_MODULE_0__=__webpack_require__(0),carbon_components_es_globals_js_settings_js__WEBPACK_IMPORTED_MODULE_1__=__webpack_require__(6);let _t,_=t=>t;const{prefix:prefix}=carbon_components_es_globals_js_settings_js__WEBPACK_IMPORTED_MODULE_1__.a;__webpack_exports__.a=base=>class extends base{render(){return Object(lit_element__WEBPACK_IMPORTED_MODULE_0__.d)(_t||(_t=_`

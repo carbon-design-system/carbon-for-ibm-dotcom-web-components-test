@@ -3,26 +3,22 @@
       <div class="${0}--lightbox-media-viewer__container">
         <div class="${0}--lightbox-media-viewer__row">
           <div
-            class="${0}--lightbox-media-viewer__media ${0}--no-gutter"
-          >
+            class="${0}--lightbox-media-viewer__media ${0}--no-gutter">
             ${0}
           </div>
           <div
-            class="${0}--lightbox-media-viewer__media-description ${0}--no-gutter"
-          >
+            class="${0}--lightbox-media-viewer__media-description ${0}--no-gutter">
             <div class="${0}--lightbox-media-viewer__content">
               <div
                 part="title"
                 class="${0}--lightbox-media-viewer__content__title"
-                data-autoid="${0}--lightbox-media-viewer__content__title"
-              >
+                data-autoid="${0}--lightbox-media-viewer__content__title">
                 ${0}
               </div>
               <div
                 part="description"
                 class="${0}--lightbox-media-viewer__content__desc"
-                data-autoid="${0}--lightbox-media-viewer__content__desc"
-              >
+                data-autoid="${0}--lightbox-media-viewer__content__desc">
                 ${0}
               </div>
             </div>
@@ -34,8 +30,7 @@
         class="${0}--image__img"
         alt="${0}"
         src="${0}"
-        loading="lazy"
-      />
+        loading="lazy" />
     `),prefix,Object(_carbon_carbon_web_components_es_globals_directives_if_non_null_js__WEBPACK_IMPORTED_MODULE_3__.a)(alt),Object(_carbon_carbon_web_components_es_globals_directives_if_non_null_js__WEBPACK_IMPORTED_MODULE_3__.a)(defaultSrc))}},{kind:"method",key:"_renderTitle",value:function(){const{title:title}=this;return Object(lit_element__WEBPACK_IMPORTED_MODULE_1__.d)(_t3||(_t3=_` <slot name="title">${0}</slot> `),title)}},{kind:"field",decorators:[Object(lit_element__WEBPACK_IMPORTED_MODULE_1__.e)()],key:"alt",value:()=>""},{kind:"field",decorators:[Object(lit_element__WEBPACK_IMPORTED_MODULE_1__.e)({attribute:"default-src"})],key:"defaultSrc",value:()=>""},{kind:"field",decorators:[Object(lit_element__WEBPACK_IMPORTED_MODULE_1__.e)()],key:"description",value:()=>""},{kind:"field",decorators:[Object(lit_element__WEBPACK_IMPORTED_MODULE_1__.e)()],key:"title",value:()=>""}]}}),_lightbox_media_viewer_body_js__WEBPACK_IMPORTED_MODULE_5__.a)},331:function(module,__webpack_exports__,__webpack_require__){"use strict";var _babel_runtime_helpers_esm_decorate__WEBPACK_IMPORTED_MODULE_0__=__webpack_require__(1),_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_1__=__webpack_require__(4),_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_2__=__webpack_require__(3),lit_html_directives_class_map_js__WEBPACK_IMPORTED_MODULE_3__=__webpack_require__(8),lit_element__WEBPACK_IMPORTED_MODULE_4__=__webpack_require__(0),carbon_components_es_globals_js_settings_js__WEBPACK_IMPORTED_MODULE_5__=__webpack_require__(6),_carbon_ibmdotcom_utilities_es_utilities_settings_settings_js__WEBPACK_IMPORTED_MODULE_6__=__webpack_require__(14),_globals_mixins_stable_selector_js__WEBPACK_IMPORTED_MODULE_7__=__webpack_require__(5),_defs_js__WEBPACK_IMPORTED_MODULE_8__=__webpack_require__(59),_link_list_css_js__WEBPACK_IMPORTED_MODULE_9__=__webpack_require__(87);let _t,_=t=>t;const{prefix:prefix}=carbon_components_es_globals_js_settings_js__WEBPACK_IMPORTED_MODULE_5__.a,{stablePrefix:ddsPrefix}=_carbon_ibmdotcom_utilities_es_utilities_settings_settings_js__WEBPACK_IMPORTED_MODULE_6__.a;let END_TYPE_LAYOUT;!function(END_TYPE_LAYOUT){END_TYPE_LAYOUT.DEFAULT="default",END_TYPE_LAYOUT.TWO_COLUMNS="two-columns",END_TYPE_LAYOUT.THREE_COLUMNS="three-columns"}(END_TYPE_LAYOUT||(END_TYPE_LAYOUT={}));Object(_babel_runtime_helpers_esm_decorate__WEBPACK_IMPORTED_MODULE_0__.a)([Object(lit_element__WEBPACK_IMPORTED_MODULE_4__.c)(`${ddsPrefix}-link-list`)],(function(_initialize,_StableSelectorMixin){class DDSLinkList extends _StableSelectorMixin{constructor(...args){super(...args),_initialize(this)}}return{F:DDSLinkList,d:[{kind:"field",decorators:[Object(lit_element__WEBPACK_IMPORTED_MODULE_4__.h)()],key:"_endTypeLayout",value:()=>END_TYPE_LAYOUT.DEFAULT},{kind:"field",decorators:[Object(lit_element__WEBPACK_IMPORTED_MODULE_4__.h)()],key:"_childItems",value:()=>[]},{kind:"method",key:"_handleSlotChange",value:function(event){const{selectorItem:selectorItem}=this.constructor;this._childItems=event.target.assignedNodes({flatten:!0}).filter((node=>node.nodeType===Node.ELEMENT_NODE&&(null==node?void 0:node.matches(selectorItem)))),this._childItems.length>3?this._childItems.length<7?this._endTypeLayout=END_TYPE_LAYOUT.TWO_COLUMNS:this._endTypeLayout=END_TYPE_LAYOUT.THREE_COLUMNS:this._endTypeLayout=END_TYPE_LAYOUT.DEFAULT,this.type===_defs_js__WEBPACK_IMPORTED_MODULE_8__.b.END&&this._childItems.forEach((elem=>{elem.type=_defs_js__WEBPACK_IMPORTED_MODULE_8__.a.END}))}},{kind:"field",decorators:[Object(lit_element__WEBPACK_IMPORTED_MODULE_4__.e)({reflect:!0})],key:"type",value:()=>_defs_js__WEBPACK_IMPORTED_MODULE_8__.b.DEFAULT},{kind:"method",key:"connectedCallback",value:function(){Object(_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_1__.a)(Object(_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_2__.a)(DDSLinkList.prototype),"connectedCallback",this).call(this)}},{kind:"method",key:"render",value:function(){var _LINK_LIST_TYPE$HORIZ;const{type:type,_endTypeLayout:endTypeLayout}=this,headingClasses=Object(lit_html_directives_class_map_js__WEBPACK_IMPORTED_MODULE_3__.a)({[`${ddsPrefix}-ce--link-list__heading__wrapper`]:!0,[`${ddsPrefix}-ce--link-list__heading--split`]:type===_defs_js__WEBPACK_IMPORTED_MODULE_8__.b.END&&endTypeLayout===END_TYPE_LAYOUT.TWO_COLUMNS}),listTypeClasses=null!==(_LINK_LIST_TYPE$HORIZ={[_defs_js__WEBPACK_IMPORTED_MODULE_8__.b.HORIZONTAL]:`${prefix}--link-list__list--horizontal`,[_defs_js__WEBPACK_IMPORTED_MODULE_8__.b.VERTICAL]:`${prefix}--link-list__list--vertical`,[_defs_js__WEBPACK_IMPORTED_MODULE_8__.b.END]:`${ddsPrefix}-ce--link-list__list--end`}[type])&&void 0!==_LINK_LIST_TYPE$HORIZ?_LINK_LIST_TYPE$HORIZ:`${prefix}--link-list__list--card`,listClasses=Object(lit_html_directives_class_map_js__WEBPACK_IMPORTED_MODULE_3__.a)({[`${prefix}--link-list__list`]:!0,[listTypeClasses]:!0,[`${ddsPrefix}-ce--link-list__list--split`]:type===_defs_js__WEBPACK_IMPORTED_MODULE_8__.b.END&&endTypeLayout===END_TYPE_LAYOUT.TWO_COLUMNS,[`${ddsPrefix}-ce--link-list__list--three-columns`]:type===_defs_js__WEBPACK_IMPORTED_MODULE_8__.b.END&&endTypeLayout===END_TYPE_LAYOUT.THREE_COLUMNS});return Object(lit_element__WEBPACK_IMPORTED_MODULE_4__.d)(_t||(_t=_`
       <div class="${0}"><slot name="heading"></slot></div>
       <ul name="list" class="${0}">
@@ -54,8 +49,7 @@
       <dds-link-with-icon
         icon-placement="${0}"
         href="#"
-        @click="${0}"
-      >
+        @click="${0}">
         ${0}${0}
       </dds-link-with-icon>
       <p class="bx--modal-header__heading bx--type-beta" tabindex="0">
@@ -64,16 +58,14 @@
     `),link_with_icon.a.LEFT,handleClickBackButton,headerTitle,Object(_20.a)({slot:"icon",class:`${prefix}--locale-modal__label-arrow`}),currentRegion)}},{kind:"method",key:"_renderHeading",value:function(){const{_currentRegion:currentRegion}=this;return currentRegion?this._renderLocaleSelectorHeading():this._renderRegionSelectorHeading()}},{kind:"method",key:"_renderRegionSelectorBody",value:function(){const{_handleClickRegionSelector:handleClickRegionSelector}=this;return Object(lit_element.d)(_t5||(_t5=_`
       <div
         class="${0}--modal-content ${0}--locale-modal"
-        @click="${0}"
-      >
+        @click="${0}">
         <slot name="regions-selector"></slot>
       </div>
     `),prefix,prefix,handleClickRegionSelector)}},{kind:"method",key:"_renderLocaleSelectorBody",value:function(){return Object(lit_element.d)(_t6||(_t6=_` <slot name="locales-selector"></slot> `))}},{kind:"method",key:"_renderHeader",value:function(){const{closeButtonAssistiveText:closeButtonAssistiveText}=this;return Object(lit_element.d)(_t7||(_t7=_`
       <div id="${0}--modal-header">
         <dds-expressive-modal-header>
           <dds-expressive-modal-close-button
-            assistive-text="${0}"
-          >
+            assistive-text="${0}">
           </dds-expressive-modal-close-button>
           <dds-expressive-modal-heading
             >${0}</dds-expressive-modal-heading
@@ -113,8 +105,7 @@
             label-text="${0}"
             placeholder="${0}"
             size="${0}"
-            data-autoid="${0}--locale-modal__filter"
-          >
+            data-autoid="${0}--locale-modal__filter">
           </dds-search>
           <div class="${0}--visually-hidden" aria-live="polite"></div>
           <p class="${0}--locale-modal__search-text">
@@ -133,8 +124,7 @@
         close-button-assistive-text="${0}"
         header-title="${0}"
         lang-display="${0}"
-        ?open="${0}"
-      >
+        ?open="${0}">
         <dds-regions title="${0}">
           ${0}
         </dds-regions>
@@ -143,24 +133,21 @@
           label-text="${0}"
           placeholder="${0}"
           availability-label-text="${0}"
-          unavailability-label-text="${0}"
-        >
+          unavailability-label-text="${0}">
           ${0}
         </dds-locale-search>
       </dds-locale-modal>
     `),Object(if_non_null.a)(modalClose),Object(if_non_null.a)(headerTitle),Object(if_non_null.a)(langDisplay),open,Object(if_non_null.a)(headerTitle),null==regionList?void 0:regionList.map((({countryList:countryList,name:name})=>Object(lit_element.d)(locale_modal_composite_t2||(locale_modal_composite_t2=locale_modal_composite_`
               <dds-region-item
                 ?invalid="${0}"
-                name="${0}"
-              ></dds-region-item>
+                name="${0}"></dds-region-item>
             `),0===countryList.length||void 0===(null==massagedCountryList?void 0:massagedCountryList.find((({region:region})=>region===name))),name))),Object(if_non_null.a)(searchClearText),Object(if_non_null.a)(searchLabel),Object(if_non_null.a)(searchPlaceholder),Object(if_non_null.a)(availabilityText),Object(if_non_null.a)(unavailabilityText),null==massagedCountryList?void 0:massagedCountryList.map((({country:country,href:href,language:language,locale:locale,region:region})=>Object(lit_element.d)(locale_modal_composite_t3||(locale_modal_composite_t3=locale_modal_composite_`
               <dds-locale-item
                 country="${0}"
                 href="${0}"
                 language="${0}"
                 locale="${0}"
-                region="${0}"
-              >
+                region="${0}">
               </dds-locale-item>
             `),country,href,language,locale,region))))}},{kind:"method",key:"render",value:function(){return Object(lit_element.d)(locale_modal_composite_t4||(locale_modal_composite_t4=locale_modal_composite_` <slot></slot> `))}},{kind:"field",static:!0,key:"styles",value:()=>locale_modal_composite_css}]}}),Object(hybrid_render.a)(lit_element.a))},449:function(module,__webpack_exports__,__webpack_require__){"use strict";var decorate=__webpack_require__(1),get=__webpack_require__(4),getPrototypeOf=__webpack_require__(3),lit_element=__webpack_require__(0),on=__webpack_require__(69),if_non_null=__webpack_require__(7),host_listener=__webpack_require__(12),settings=__webpack_require__(2),modal_render=__webpack_require__(109),video_player_composite=__webpack_require__(263),video_player=(__webpack_require__(188),__webpack_require__(214),__webpack_require__(166)),js_settings=__webpack_require__(6),removeHtmlTagEntities=__webpack_require__(372),formatVideoCaption=__webpack_require__(37),lightbox_media_viewer_body=__webpack_require__(270);let _t,_t2,_t3,_=t=>t;const{prefix:prefix}=js_settings.a,{stablePrefix:ddsPrefix}=settings.a;Object(decorate.a)([Object(lit_element.c)(`${ddsPrefix}-lightbox-video-player`)],(function(_initialize,_DDSLightboxMediaView){class DDSLightboxVideoPlayer extends _DDSLightboxMediaView{constructor(...args){super(...args),_initialize(this)}}return{F:DDSLightboxVideoPlayer,d:[{kind:"method",key:"_renderDescription",value:function(){const{description:description}=this;return Object(lit_element.d)(_t||(_t=_`
       <slot name="description">${0}</slot>
@@ -178,8 +165,7 @@
       <dds-expressive-modal
         ?open="${0}"
         expressive-size="full-width"
-        mode="lightbox"
-      >
+        mode="lightbox">
         <dds-expressive-modal-close-button></dds-expressive-modal-close-button>
         <dds-lightbox-video-player
           description="${0}"
@@ -187,8 +173,7 @@
           name="${0}"
           ?hide-caption="${0}"
           .formatCaption="${0}"
-          .formatDuration="${0}"
-        >
+          .formatDuration="${0}">
         </dds-lightbox-video-player>
       </dds-expressive-modal>
     `),open,Object(if_non_null.a)(videoDescription),Object(if_non_null.a)(duration),Object(if_non_null.a)(videoName),hideCaption,Object(if_non_null.a)(formatCaption),Object(if_non_null.a)(formatDuration))}},{kind:"get",static:!0,key:"selectorVideoPlayer",value:function(){return`${lightbox_video_player_composite_ddsPrefix}-lightbox-video-player`}},{kind:"get",static:!0,key:"eventCloseModal",value:function(){return`${lightbox_video_player_composite_ddsPrefix}-expressive-modal-closed`}},{kind:"get",static:!0,key:"selectorEmbeddedVideoContainer",value:function(){return"[data-video-id]"}},{kind:"field",static:!0,key:"styles",value:()=>lightbox_video_player_composite_css}]}}),Object(modal_render.a)(video_player_composite.a))},53:function(module,__webpack_exports__,__webpack_require__){"use strict";__webpack_require__(331);var decorate=__webpack_require__(1),get=__webpack_require__(4),getPrototypeOf=__webpack_require__(3),lit_element=__webpack_require__(0),settings=__webpack_require__(2),link_list_css=__webpack_require__(87),stable_selector=__webpack_require__(5);let _t,_=t=>t;const{stablePrefix:ddsPrefix}=settings.a;Object(decorate.a)([Object(lit_element.c)(`${ddsPrefix}-link-list-heading`)],(function(_initialize,_StableSelectorMixin){class DDSLinkListHeading extends _StableSelectorMixin{constructor(...args){super(...args),_initialize(this)}}return{F:DDSLinkListHeading,d:[{kind:"field",decorators:[Object(lit_element.e)({reflect:!0})],key:"slot",value:()=>"heading"},{kind:"method",key:"connectedCallback",value:function(){this.hasAttribute("role")||this.setAttribute("role","heading"),this.hasAttribute("aria-level")||this.setAttribute("aria-level","4"),Object(get.a)(Object(getPrototypeOf.a)(DDSLinkListHeading.prototype),"connectedCallback",this).call(this)}},{kind:"method",key:"render",value:function(){return Object(lit_element.d)(_t||(_t=_` <slot></slot> `))}},{kind:"get",static:!0,key:"stableSelector",value:function(){return`${ddsPrefix}--link-list-heading`}},{kind:"field",static:!0,key:"styles",value:()=>link_list_css.a}]}}),Object(stable_selector.a)(lit_element.a));var card_link=__webpack_require__(62);let link_list_item_card_t,link_list_item_card_=t=>t;const{stablePrefix:link_list_item_card_ddsPrefix}=settings.a;Object(decorate.a)([Object(lit_element.c)(`${link_list_item_card_ddsPrefix}-link-list-item-card`)],(function(_initialize,_DDSCardLink){class DDSLinkListItem extends _DDSCardLink{constructor(...args){super(...args),_initialize(this)}}return{F:DDSLinkListItem,d:[{kind:"method",key:"connectedCallback",value:function(){this.hasAttribute("role")||this.setAttribute("role","listitem"),Object(get.a)(Object(getPrototypeOf.a)(DDSLinkListItem.prototype),"connectedCallback",this).call(this)}},{kind:"get",static:!0,key:"stableSelector",value:function(){return`${link_list_item_card_ddsPrefix}--link-list-item-card`}},{kind:"get",static:!0,key:"styles",value:function(){return Object(lit_element.b)(link_list_item_card_t||(link_list_item_card_t=link_list_item_card_`

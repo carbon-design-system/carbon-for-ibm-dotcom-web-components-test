@@ -16,8 +16,7 @@
         video-id="${0}"
         .embeddedVideos="${0}"
         .mediaData="${0}"
-        ._embedMedia="${0}"
-      >
+        ._embedMedia="${0}">
       </dds-lightbox-video-player-composite>
     `),Boolean(activeVideoId),Object(if_non_null.a)(videoName),Object(if_non_null.a)(videoDescription),Object(if_non_null.a)(activeVideoId),Object(if_non_null.a)(embeddedVideos),Object(if_non_null.a)(mediaData),Object(if_non_null.a)(embedMedia))}},{kind:"method",key:"render",value:function(){return Object(lit_element.d)(_t2||(_t2=_` <slot></slot> `))}},{kind:"get",static:!0,key:"selectorVideoPlayer",value:function(){return`${ddsPrefix}-lightbox-video-player`}},{kind:"get",static:!0,key:"selectorLightboxVideoPlayerComposite",value:function(){return`${ddsPrefix}-lightbox-video-player-composite`}},{kind:"get",static:!0,key:"eventCloseLightbox",value:function(){return`${ddsPrefix}-expressive-modal-closed`}},{kind:"get",static:!0,key:"eventRequestVideoData",value:function(){return`${ddsPrefix}-cta-request-video-data`}},{kind:"get",static:!0,key:"eventRunAction",value:function(){return`${ddsPrefix}-cta-run-action`}},{kind:"field",static:!0,key:"styles",value:()=>video_cta_composite_css}]}}),Object(modal_render.a)(Object(mixins_host_listener.a)(lit_element.a)));const{stablePrefix:video_cta_container_ddsPrefix}=settings.a;Object(decorate.a)([Object(lit_element.c)(`${video_cta_container_ddsPrefix}-video-cta-container`)],(function(_initialize,_ConnectMixin){return{F:class extends _ConnectMixin{constructor(...args){super(...args),_initialize(this)}},d:[]}}),Object(connect.a)(store.a,video_player_container.d,video_player_container.c)(Object(video_player_container.a)(video_cta_composite)))}}]);
 //# sourceMappingURL=vendors~cloud~example-page-a~example-page-b~example-page-c~g100-theme-page~home~ui-components~white-~cf8fc9ca.js.map

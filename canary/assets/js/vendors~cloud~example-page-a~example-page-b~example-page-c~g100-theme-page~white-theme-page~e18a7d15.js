@@ -5,8 +5,7 @@
       ${0}
       <div
         ?hidden="${0}"
-        class="${0}--content-block__children"
-      >
+        class="${0}--content-block__children">
         ${0}
       </div>
     `),this._renderMedia(),!hasContent&&!hasMedia,prefix,this._renderContent())}},{kind:"get",static:!0,key:"stableSelector",value:function(){return`${content_block_media_content_ddsPrefix}--content-block-media-content`}},{kind:"get",static:!0,key:"styles",value:function(){return Object(lit_element.b)(_t2||(_t2=content_block_media_content_`

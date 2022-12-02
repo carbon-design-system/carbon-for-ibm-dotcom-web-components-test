@@ -11,8 +11,7 @@
                 aria-controls="pane-${0}"
                 @click="${0}"
                 tabindex="${0}"
-                ?disabled="${0}"
-              >
+                ?disabled="${0}">
                 ${0}
                 <div class="${0}--accordion__title">${0}</div>
               </button>
@@ -25,8 +24,7 @@
         <ul
           class="${0}--tabs__nav ${0}--tabs__nav--hidden"
           role="tablist"
-          @keydown="${0}"
-        >
+          @keydown="${0}">
           ${0}
         </ul>
       </div>
@@ -36,16 +34,14 @@
                 aria-selected="${0}"
                 data-target=".tab-${0}-default"
                 role="tab"
-                ?disabled="${0}"
-              >
+                ?disabled="${0}">
                 <button
                   tabindex="${0}"
                   id="tab-link-${0}-default"
                   class="${0}--tabs__nav-link"
                   type="button"
                   aria-controls="tab-panel-${0}-default"
-                  @click="${0}"
-                >
+                  @click="${0}">
                   <div><p>${0}</p></div>
                 </button>
               </li>

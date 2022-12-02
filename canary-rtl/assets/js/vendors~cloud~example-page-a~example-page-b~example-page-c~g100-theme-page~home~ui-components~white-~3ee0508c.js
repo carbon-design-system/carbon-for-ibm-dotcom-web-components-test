@@ -8,8 +8,7 @@
           src="${0}"
           alt="${0}"
           aria-describedby="image-caption long-description"
-          loading="lazy"
-        />
+          loading="lazy" />
       </picture>
       <div id="long-description" class="${0}--image__longdescription">
         <slot name="long-description"></slot>
@@ -22,8 +21,7 @@
               alt="${0}"
               default-src="${0}"
               description="${0}"
-              title="${0}"
-            >
+              title="${0}">
             </dds-lightbox-image-viewer>
           </dds-expressive-modal>
         `),open,Object(_carbon_carbon_web_components_es_globals_directives_if_non_null_js__WEBPACK_IMPORTED_MODULE_7__.a)(alt),Object(_carbon_carbon_web_components_es_globals_directives_if_non_null_js__WEBPACK_IMPORTED_MODULE_7__.a)(defaultSrc),Object(_carbon_carbon_web_components_es_globals_directives_if_non_null_js__WEBPACK_IMPORTED_MODULE_7__.a)(copy),Object(_carbon_carbon_web_components_es_globals_directives_if_non_null_js__WEBPACK_IMPORTED_MODULE_7__.a)(heading)):void 0}},{kind:"method",key:"render",value:function(){const{heading:heading,launchLightboxButtonAssistiveText:launchLightboxButtonAssistiveText,lightbox:lightbox,_handleClick:handleClick}=this;return Object(lit_element__WEBPACK_IMPORTED_MODULE_3__.d)(_t4||(_t4=_`
@@ -33,8 +31,7 @@
             <button
               class="${0}--image-with-caption__image"
               aria-label="${0}"
-              @click="${0}"
-            >
+              @click="${0}">
               ${0}
               <div class="${0}--image-with-caption__zoom-button">
                 ${0}
@@ -62,8 +59,7 @@
       <a
         class="${0}--footer-logo__link"
         aria-label="IBM logo"
-        href="${0}"
-      >
+        href="${0}">
         ${0}
         <slot></slot>
       </a>
@@ -82,8 +78,7 @@
             aria-controls="content"
             aria-expanded="${0}"
             @click="${0}"
-            @keydown="${0}"
-          >
+            @keydown="${0}">
             ${0}
             <div class="${0}--accordion__title">
               <slot name="title">${0}</slot>
@@ -100,8 +95,7 @@
       <button
         id="button"
         class="${0}--btn ${0}--btn--tertiary ${0}--locale-btn"
-        aria-label="${0}"
-      >
+        aria-label="${0}">
         <slot></slot>
         ${0}
       </button>
@@ -129,8 +123,7 @@
           <div
             part="helper-text"
             class="${0}"
-            ?hidden="${0}"
-          >
+            ?hidden="${0}">
             <slot name="helper-text" @slotchange="${0}"
               >${0}</slot
             >
@@ -141,16 +134,14 @@
             part="menu-body"
             class="${0}--list-box__menu"
             role="listbox"
-            tabindex="-1"
-          >
+            tabindex="-1">
             <slot></slot>
           </div>
         `),dropdown_prefix):void 0;return Object(lit_element.d)(_t4||(_t4=dropdown_`
       <label
         part="label-text"
         class="${0}"
-        ?hidden="${0}"
-      >
+        ?hidden="${0}">
         <slot name="label-text" @slotchange="${0}"
           >${0}</slot
         >
@@ -160,8 +151,7 @@
         ?data-invalid=${0}
         @click=${0}
         @keydown=${0}
-        @keypress=${0}
-      >
+        @keypress=${0}>
         ${0}
         <div
           part="trigger-button"
@@ -172,8 +162,7 @@
           aria-expanded="${0}"
           aria-haspopup="listbox"
           aria-owns="menu-body"
-          aria-controls="menu-body"
-        >
+          aria-controls="menu-body">
           ${0}${0}${0}
           <div class="${0}">
             ${0}
@@ -187,8 +176,7 @@
         class="${0}--assistive-text"
         role="status"
         aria-live="assertive"
-        aria-relevant="additions text"
-      >
+        aria-relevant="additions text">
         ${0}
       </div>
     `),labelClasses,!hasLabelText,handleSlotchangeLabelText,labelText,classes,invalid,handleClickInner,handleKeydownInner,handleKeypressInner,validityIcon,dropdown_prefix,Object(if_defined.a)(shouldTriggerBeFocusable?"0":void 0),String(open),this._renderPrecedingTriggerContent(),this._renderTriggerContent(),this._renderFollowingTriggerContent(),iconContainerClasses,Object(chevron_down_16.a)({"aria-label":toggleLabel}),menuBody,helper,dropdown_prefix,assistiveStatusText)}}]}}),dropdown.c);let combo_box_t,combo_box_t2,combo_box_=t=>t;const{stablePrefix:combo_box_ddsPrefix}=settings_settings.a,{prefix:combo_box_prefix}=js_settings.a;var combo_box=Object(decorate.a)([Object(lit_element.c)(`${combo_box_ddsPrefix}-combo-box`)],(function(_initialize,_DDSDropdown){class DDSComboBox extends _DDSDropdown{constructor(...args){super(...args),_initialize(this)}}return{F:DDSComboBox,d:[{kind:"field",key:"_filterInputValue",value:()=>""},{kind:"field",key:"_shouldTriggerBeFocusable",value:()=>!1},{kind:"field",decorators:[Object(lit_element.f)("#selection-button")],key:"_selectionButtonNode",value:void 0},{kind:"field",decorators:[Object(lit_element.f)("input")],key:"_filterInputNode",value:void 0},{kind:"method",key:"_testItemWithQueryText",value:function(item){return(this.itemMatches||this._defaultItemMatches)(item,this._filterInputNode.value)}},{kind:"method",key:"_defaultItemMatches",value:function(item,queryText){return item.textContent.toLowerCase().indexOf(queryText.toLowerCase())>=0}},{kind:"method",key:"_handleInput",value:function(){const items=this.querySelectorAll(this.constructor.selectorItem),index=this._filterInputNode.value?Object(collection_helpers.b)(items,this._testItemWithQueryText,this):-1;Object(collection_helpers.c)(items,((item,i)=>{item.highlighted=i===index}));const{_filterInputNode:filterInput}=this;this._filterInputValue=filterInput?filterInput.value:"",this.open=!0,this.requestUpdate()}},{kind:"method",key:"_handleClickInner",value:function(event){var _this$_selectionButto;null!==(_this$_selectionButto=this._selectionButtonNode)&&void 0!==_this$_selectionButto&&_this$_selectionButto.contains(event.target)?this._handleUserInitiatedClearInput():Object(get.a)(Object(getPrototypeOf.a)(DDSComboBox.prototype),"_handleClickInner",this).call(this,event)}},{kind:"method",key:"_handleKeypressInner",value:function(event){var _this$_selectionButto2;const{key:key}=event,action=this.constructor.getAction(key),{TRIGGERING:TRIGGERING}=DROPDOWN_KEYBOARD_ACTION;null===(_this$_selectionButto2=this._selectionButtonNode)||void 0===_this$_selectionButto2||!_this$_selectionButto2.contains(event.target)||action!==TRIGGERING&&" "!==key?Object(get.a)(Object(getPrototypeOf.a)(DDSComboBox.prototype),"_handleKeypressInner",this).call(this,event):this._handleUserInitiatedClearInput()}},{kind:"method",key:"_handleUserInitiatedClearInput",value:function(){Object(collection_helpers.c)(this.querySelectorAll(this.constructor.selectorItem),(item=>{item.highlighted=!1})),this._filterInputValue="",this._filterInputNode.focus(),this.open=!1,this.requestUpdate()}},{kind:"method",key:"_handleUserInitiatedSelectItem",value:function(item){item&&!this._selectionShouldChange(item)&&(this._filterInputValue=item.textContent||"",this.open=!1,this.requestUpdate()),Object(get.a)(Object(getPrototypeOf.a)(DDSComboBox.prototype),"_handleUserInitiatedSelectItem",this).call(this,item)}},{kind:"method",key:"_renderTriggerContent",value:function(){const{disabled:disabled,triggerContent:triggerContent,_filterInputValue:filterInputValue,_handleInput:handleInput}=this;return Object(lit_element.d)(combo_box_t||(combo_box_t=combo_box_`
@@ -203,16 +191,14 @@
         aria-labelledby="assistiveStatus"
         aria-controls="menu-body"
         aria-autocomplete="list"
-        @input=${0}
-      />
+        @input=${0} />
     `),combo_box_prefix,disabled,triggerContent,filterInputValue,this.open,handleInput)}},{kind:"method",key:"_renderFollowingTriggerContent",value:function(){const{clearSelectionLabel:clearSelectionLabel,_filterInputValue:filterInputValue}=this;return 0===filterInputValue.length?void 0:Object(lit_element.d)(combo_box_t2||(combo_box_t2=combo_box_`
           <div
             id="selection-button"
             role="button"
             class="${0}--list-box__selection"
             tabindex="0"
-            title="${0}"
-          >
+            title="${0}">
             ${0}
           </div>
         `),combo_box_prefix,clearSelectionLabel,Object(close_16.a)({"aria-label":clearSelectionLabel}))}},{kind:"field",decorators:[Object(lit_element.e)({attribute:"clear-selection-label"})],key:"clearSelectionLabel",value:()=>""},{kind:"field",decorators:[Object(lit_element.e)({attribute:!1})],key:"itemMatches",value:void 0},{kind:"method",key:"shouldUpdate",value:function(changedProperties){Object(get.a)(Object(getPrototypeOf.a)(DDSComboBox.prototype),"shouldUpdate",this).call(this,changedProperties);const{_selectedItemContent:selectedItemContent}=this;return selectedItemContent&&changedProperties.has("value")&&(this._filterInputValue=(null==selectedItemContent?void 0:selectedItemContent.textContent)||""),!0}},{kind:"method",key:"updated",value:function(){const{_listBoxNode:listBoxNode}=this;listBoxNode&&listBoxNode.classList.add(`${combo_box_prefix}--combo-box`)}},{kind:"field",static:!0,key:"TRIGGER_KEYS",value:()=>new Set(["Enter"])},{kind:"get",static:!0,key:"selectorItemHighlighted",value:function(){return`${combo_box_prefix}-combo-box-item[highlighted]`}},{kind:"get",static:!0,key:"selectorItem",value:function(){return`${combo_box_prefix}-combo-box-item`}},{kind:"get",static:!0,key:"selectorItemSelected",value:function(){return`${combo_box_prefix}-combo-box-item[selected]`}},{kind:"get",static:!0,key:"eventBeforeToggle",value:function(){return`${combo_box_prefix}-combo-box-beingtoggled`}},{kind:"get",static:!0,key:"eventToggle",value:function(){return`${combo_box_prefix}-combo-box-toggled`}},{kind:"get",static:!0,key:"eventBeforeSelect",value:function(){return`${combo_box_prefix}-combo-box-beingselected`}},{kind:"get",static:!0,key:"eventSelect",value:function(){return`${combo_box_prefix}-combo-box-selected`}}]}}),footer_dropdown);const{stablePrefix:language_selector_desktop_ddsPrefix}=settings.a;Object(decorate.a)([Object(lit_element.c)(`${language_selector_desktop_ddsPrefix}-language-selector-desktop`)],(function(_initialize,_HostListenerMixin){class DDSLanguageSelectorDesktop extends _HostListenerMixin{constructor(...args){super(...args),_initialize(this)}}return{F:DDSLanguageSelectorDesktop,d:[{kind:"field",decorators:[Object(lit_element.h)()],key:"_lastValidLang",value:void 0},{kind:"field",decorators:[Object(lit_element.f)("input")],key:"_filterInputNode",value:void 0},{kind:"field",decorators:[Object(host_listener.a)("document:click")],key:"_handleClickOutside",value(){return event=>{this.contains(event.target)||(this._filterInputValue=this._lastValidLang,this._filterInputNode.value=this._lastValidLang,this.open=!1,this.requestUpdate())}}},{kind:"method",key:"_handleInput",value:function(){const items=this.querySelectorAll(this.constructor.selectorItem),index=this._filterInputNode.value?Object(collection_helpers.b)(items,this._testItemWithQueryText,this):-1;Object(collection_helpers.c)(items,((item,i)=>{i===index&&item.scrollIntoView(),item.highlighted=i===index}));const{_filterInputNode:filterInput}=this;this._filterInputValue=filterInput?filterInput.value:"",this.open=!0,this.requestUpdate()}},{kind:"method",key:"_handleUserInitiatedClearInput",value:function(){Object(collection_helpers.c)(this.querySelectorAll(this.constructor.selectorItem),(item=>{item.highlighted=!1,item.selected=!1})),this._lastValidLang=this._filterInputValue,this._filterInputValue="",this._filterInputNode.focus(),this.open=!1,this.requestUpdate()}},{kind:"method",key:"_handleUserInitiatedSelectItem",value:function(item){item&&!this._selectionShouldChange(item)&&(this._filterInputValue=item.textContent||"",this.open=!1,this.requestUpdate()),this._lastValidLang=null==item?void 0:item.textContent,item.selected=!0,Object(get.a)(Object(getPrototypeOf.a)(DDSLanguageSelectorDesktop.prototype),"_handleUserInitiatedSelectItem",this).call(this,item)}},{kind:"field",decorators:[Object(lit_element.e)()],key:"size",value:()=>DROPDOWN_SIZE.EXTRA_LARGE},{kind:"field",decorators:[Object(lit_element.e)({attribute:"style-scheme"})],key:"styleScheme",value:()=>LANGUAGE_SELECTOR_STYLE_SCHEME.REGULAR},{kind:"field",decorators:[Object(lit_element.e)({reflect:!0})],key:"slot",value:()=>"language-selector"},{kind:"method",key:"updated",value:function(changedProperties){Object(get.a)(Object(getPrototypeOf.a)(DDSLanguageSelectorDesktop.prototype),"updated",this).call(this),changedProperties.has("value")&&(this._lastValidLang=this.value)}},{kind:"field",static:!0,key:"styles",value:()=>footer_css}]}}),Object(mixins_host_listener.a)(combo_box));var select_select=__webpack_require__(381),input=__webpack_require__(132);const{stablePrefix:language_selector_mobile_ddsPrefix}=settings.a;Object(decorate.a)([Object(lit_element.c)(`${language_selector_mobile_ddsPrefix}-language-selector-mobile`)],(function(_initialize,_BXSelect){return{F:class extends _BXSelect{constructor(...args){super(...args),_initialize(this)}},d:[{kind:"field",decorators:[Object(lit_element.e)()],key:"size",value:()=>input.a.EXTRA_LARGE},{kind:"field",decorators:[Object(lit_element.e)({reflect:!0})],key:"slot",value:()=>"language-selector"},{kind:"field",static:!0,key:"styles",value:()=>footer_css}]}}),select_select.a),__webpack_require__(447),__webpack_require__(432);let footer_composite_t,footer_composite_t2,footer_composite_t3,footer_composite_t4,_t5,_t6,_t7,_t8,_t9,_t10,_t11,_t12,_t13,_t14,_t15,footer_composite_=t=>t;const{stablePrefix:footer_composite_ddsPrefix}=settings.a;let footer_composite_DDSFooterComposite=Object(decorate.a)([Object(lit_element.c)(`${footer_composite_ddsPrefix}-footer-composite`)],(function(_initialize,_ModalRenderMixin){return{F:class extends _ModalRenderMixin{constructor(...args){super(...args),_initialize(this)}},d:[{kind:"field",key:"_handleClickLocaleButton",value(){return()=>{this.openLocaleModal=!0}}},{kind:"field",decorators:[Object(host_listener.a)("document:eventCloseModal")],key:"_handleCloseModal",value(){return event=>{this.modalRenderRoot.contains(event.target)&&(this.openLocaleModal=!1)}}},{kind:"field",decorators:[Object(lit_element.e)()],key:"buttonLabel",value:void 0},{kind:"field",decorators:[Object(lit_element.e)({attribute:"clear-selection-label"})],key:"clearSelectionLabel",value:void 0},{kind:"field",decorators:[Object(lit_element.e)({attribute:!1})],key:"collatorCountryName",value:()=>new Intl.Collator},{kind:"field",decorators:[Object(lit_element.e)({type:Boolean,attribute:"disable-locale-button"})],key:"disableLocaleButton",value:()=>!1},{kind:"field",decorators:[Object(lit_element.e)()],key:"language",value:void 0},{kind:"field",decorators:[Object(lit_element.e)({attribute:!1})],key:"langList",value:void 0},{kind:"field",decorators:[Object(lit_element.e)({attribute:"lang-display"})],key:"langDisplay",value:void 0},{kind:"field",decorators:[Object(lit_element.e)({attribute:"language-selector-label"})],key:"languageSelectorLabel",value:void 0},{kind:"field",decorators:[Object(lit_element.e)({attribute:"selected-language"})],key:"selectedLanguage",value:void 0},{kind:"field",decorators:[Object(lit_element.e)({attribute:!1})],key:"legalLinks",value:()=>[]},{kind:"field",decorators:[Object(lit_element.e)({attribute:!1})],key:"adjunctLinks",value:()=>[]},{kind:"field",decorators:[Object(lit_element.e)({attribute:!1})],key:"links",value:()=>[]},{kind:"field",decorators:[Object(lit_element.e)({attribute:!1})],key:"localeList",value:void 0},{kind:"field",decorators:[Object(lit_element.e)({type:Boolean,attribute:"open-locale-modal"})],key:"openLocaleModal",value:()=>!1},{kind:"field",decorators:[Object(lit_element.e)({reflect:!0})],key:"size",value:void 0},{kind:"method",key:"getLangDisplay",value:async function(){return await Locale.a.getLangDisplay()}},{kind:"method",key:"firstUpdated",value:function(){var _this$_loadTranslatio;const{language:language}=this;var _this$_setLanguage;(Object(global.a)(),language)&&(null===(_this$_setLanguage=this._setLanguage)||void 0===_this$_setLanguage||_this$_setLanguage.call(this,language));null===(_this$_loadTranslatio=this._loadTranslation)||void 0===_this$_loadTranslatio||_this$_loadTranslatio.call(this,language),this.getLangDisplay().then((res=>{this.langDisplay=res}))}},{kind:"method",key:"updated",value:function(changedProperties){if(changedProperties.has("language")){const{language:language}=this;var _this$_setLanguage2,_this$_loadTranslatio2;if(language)null===(_this$_setLanguage2=this._setLanguage)||void 0===_this$_setLanguage2||_this$_setLanguage2.call(this,language),null===(_this$_loadTranslatio2=this._loadTranslation)||void 0===_this$_loadTranslatio2||_this$_loadTranslatio2.call(this,language).catch((()=>{}))}}},{kind:"method",key:"renderModal",value:function(){const{collatorCountryName:collatorCountryName,langDisplay:langDisplay,language:language,localeList:localeList,openLocaleModal:openLocaleModal,_loadLocaleList:loadLocaleList}=this;return Object(lit_element.d)(footer_composite_t||(footer_composite_t=footer_composite_`
@@ -222,18 +208,15 @@
         ?open="${0}"
         .collatorCountryName="${0}"
         .localeList="${0}"
-        ._loadLocaleList="${0}"
-      >
+        ._loadLocaleList="${0}">
       </dds-locale-modal-composite>
     `),Object(if_non_null.a)(langDisplay),Object(if_non_null.a)(language),openLocaleModal,Object(if_non_null.a)(collatorCountryName),Object(if_non_null.a)(localeList),Object(if_non_null.a)(loadLocaleList))}},{kind:"method",key:"renderLightDOM",value:function(){const{buttonLabel:buttonLabel,clearSelectionLabel:clearSelectionLabel,disableLocaleButton:disableLocaleButton,langDisplay:langDisplay,langList:langList,languageSelectorLabel:languageSelectorLabel,selectedLanguage:selectedLanguage,size:size,links:links,legalLinks:legalLinks,adjunctLinks:adjunctLinks,_handleClickLocaleButton:handleClickLocaleButton}=this;return Object(lit_element.d)(footer_composite_t2||(footer_composite_t2=footer_composite_`
       <dds-footer
         size="${0}"
-        ?disable-locale-button="${0}"
-      >
+        ?disable-locale-button="${0}">
         <dds-footer-logo></dds-footer-logo>
         <dds-footer-nav
-          ?disable-locale-button="${0}"
-        >
+          ?disable-locale-button="${0}">
           ${0}
         </dds-footer-nav>
         ${0}
@@ -266,14 +249,12 @@
                 trigger-content="${0}"
                 label-text="${0}"
                 value="${0}"
-                clear-selection-label="${0}"
-              >
+                clear-selection-label="${0}">
                 ${0}
               </dds-language-selector-desktop>
               <dds-language-selector-mobile
                 value="${0}"
-                placeholder="${0}"
-              >
+                placeholder="${0}">
                 ${0}
               </dds-language-selector-mobile>
             `),languageSelectorLabel,languageSelectorLabel,selectedLanguage,clearSelectionLabel,null==langList?void 0:langList.map((language=>Object(lit_element.d)(_t7||(_t7=footer_composite_`
@@ -299,8 +280,7 @@
                   <dds-legal-nav-item
                     autoid="${0}"
                     href="${0}"
-                    slot="adjunct-links"
-                  >
+                    slot="adjunct-links">
                     ${0}
                   </dds-legal-nav-item>
                 `),Object(if_non_null.a)(titleEnglish),Object(if_non_null.a)(url),title))):"",size!==FOOTER_SIZE.MICRO||langList||disableLocaleButton?"":Object(lit_element.d)(_t11||(_t11=footer_composite_`
@@ -318,16 +298,14 @@
                   trigger-content="${0}"
                   label-text="${0}"
                   value="${0}"
-                  clear-selection-label="${0}"
-                >
+                  clear-selection-label="${0}">
                   ${0}
                 </dds-language-selector-desktop>
                 <dds-language-selector-mobile
                   size="${0}"
                   slot="locale"
                   value="${0}"
-                  placeholder="${0}"
-                >
+                  placeholder="${0}">
                   ${0}
                 </dds-language-selector-mobile>
               `),size,languageSelectorLabel,languageSelectorLabel,selectedLanguage,clearSelectionLabel,null==langList?void 0:langList.map((language=>Object(lit_element.d)(_t13||(_t13=footer_composite_`

@@ -4,8 +4,7 @@
     `),Object(get.a)(Object(getPrototypeOf.a)(DDSContentBlockSegmented),"styles",this),content_block_segmented_css)}}]}}),content_block_content_block.b);var stable_selector=__webpack_require__(5),content_group=__webpack_require__(29);let content_block_segmented_item_t,content_block_segmented_item_t2,_t3,content_block_segmented_item_=t=>t;const{prefix:content_block_segmented_item_prefix}=settings.a,{stablePrefix:content_block_segmented_item_ddsPrefix}=settings_settings.a;Object(decorate.a)([Object(lit_element.c)(`${content_block_segmented_item_ddsPrefix}-content-block-segmented-item`)],(function(_initialize,_StableSelectorMixin){class DDSContentBlockSegmentedItem extends _StableSelectorMixin{constructor(...args){super(...args),_initialize(this)}}return{F:DDSContentBlockSegmentedItem,d:[{kind:"method",key:"_renderInnerBody",value:function(){return Object(lit_element.d)(content_block_segmented_item_t||(content_block_segmented_item_t=content_block_segmented_item_` ${0}${0} `),this._renderContent(),this._renderMedia())}},{kind:"method",key:"_renderMedia",value:function(){const{_hasMedia:hasMedia,_handleSlotChange:handleSlotChange}=this;return Object(lit_element.d)(content_block_segmented_item_t2||(content_block_segmented_item_t2=content_block_segmented_item_`
       <div
         ?hidden="${0}"
-        class="${0}--content-block-segmented__media"
-      >
+        class="${0}--content-block-segmented__media">
         <slot name="media" @slotchange="${0}"></slot>
       </div>
     `),!hasMedia,content_block_segmented_item_prefix,handleSlotChange)}},{kind:"get",static:!0,key:"stableSelector",value:function(){return`${content_block_segmented_item_ddsPrefix}--content-block-segmented-item`}},{kind:"get",static:!0,key:"styles",value:function(){return Object(lit_element.b)(_t3||(_t3=content_block_segmented_item_`
@@ -14,8 +13,7 @@
       <div class="${0}--leadspace__row">
         <p
           data-autoid="${0}--leadspace__desc"
-          class="${0}--leadspace__desc"
-        >
+          class="${0}--leadspace__desc">
           <slot>${0}</slot>
         </p>
       </div>
@@ -28,8 +26,7 @@
               <div class="${0}--leadspace__row">
                 <slot
                   name="navigation"
-                  @slotchange="${0}"
-                ></slot>
+                  @slotchange="${0}"></slot>
                 ${0}
               </div>
               ${0}

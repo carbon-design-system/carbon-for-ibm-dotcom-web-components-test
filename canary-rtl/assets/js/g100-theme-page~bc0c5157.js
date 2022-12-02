@@ -4,8 +4,7 @@
     `),Object(get.a)(Object(getPrototypeOf.a)(DDSContentBlockSegmented),"styles",this),content_block_segmented_css)}}]}}),content_block_content_block.b);var stable_selector=__webpack_require__(5),content_group=__webpack_require__(29);let content_block_segmented_item_t,content_block_segmented_item_t2,_t3,content_block_segmented_item_=t=>t;const{prefix:content_block_segmented_item_prefix}=settings.a,{stablePrefix:content_block_segmented_item_ddsPrefix}=settings_settings.a;Object(decorate.a)([Object(lit_element.c)(`${content_block_segmented_item_ddsPrefix}-content-block-segmented-item`)],(function(_initialize,_StableSelectorMixin){class DDSContentBlockSegmentedItem extends _StableSelectorMixin{constructor(...args){super(...args),_initialize(this)}}return{F:DDSContentBlockSegmentedItem,d:[{kind:"method",key:"_renderInnerBody",value:function(){return Object(lit_element.d)(content_block_segmented_item_t||(content_block_segmented_item_t=content_block_segmented_item_` ${0}${0} `),this._renderContent(),this._renderMedia())}},{kind:"method",key:"_renderMedia",value:function(){const{_hasMedia:hasMedia,_handleSlotChange:handleSlotChange}=this;return Object(lit_element.d)(content_block_segmented_item_t2||(content_block_segmented_item_t2=content_block_segmented_item_`
       <div
         ?hidden="${0}"
-        class="${0}--content-block-segmented__media"
-      >
+        class="${0}--content-block-segmented__media">
         <slot name="media" @slotchange="${0}"></slot>
       </div>
     `),!hasMedia,content_block_segmented_item_prefix,handleSlotChange)}},{kind:"get",static:!0,key:"stableSelector",value:function(){return`${content_block_segmented_item_ddsPrefix}--content-block-segmented-item`}},{kind:"get",static:!0,key:"styles",value:function(){return Object(lit_element.b)(_t3||(_t3=content_block_segmented_item_`
@@ -18,12 +17,10 @@
         @scroll="${0}"
         @touchstart="${0}"
         @touchend="${0}"
-        style="${0}"
-      >
+        style="${0}">
         <div
           class="${0}--carousel__scroll-contents"
-          style="left:${0}px"
-        >
+          style="left:${0}px">
           <slot @slotchange="${0}"></slot>
         </div>
       </div>
@@ -34,8 +31,7 @@
           ?disabled="${0}"
           @click="${0}"
           aria-label="${0}"
-          title="${0}"
-        >
+          title="${0}">
           ${0}
         </button>
         ${0}
@@ -45,8 +41,7 @@
           ?disabled="${0}"
           @click="${0}"
           aria-label="${0}"
-          title="${0}"
-        >
+          title="${0}">
           ${0}
         </button>
       </div>
@@ -73,15 +68,13 @@
     `),this._renderActions(),this._renderLinkList(),this._renderContent())}},{kind:"method",key:"_renderLinkList",value:function(){const{_hasLinkList:hasLinkList,_handleSlotChange:handleSlotChange}=this;return Object(lit_element.d)(_t6||(_t6=_`
       <div
         ?hidden="${0}"
-        class="${0}--content-layout__link-list"
-      >
+        class="${0}--content-layout__link-list">
         <slot name="link-list" @slotchange="${0}"></slot>
       </div>
     `),!hasLinkList,prefix,handleSlotChange)}},{kind:"get",static:!0,key:"stableSelector",value:function(){return`${ddsPrefix}--cta-block`}},{kind:"field",static:!0,key:"styles",value:()=>cta_block_css}]}}),Object(stable_selector.a)(content_block_content_block.b));var sameHeight=__webpack_require__(39),parent_visibility=__webpack_require__(207);let cta_block_item_row_t,cta_block_item_row_=t=>t;const{prefix:cta_block_item_row_prefix}=settings.a,{stablePrefix:cta_block_item_row_ddsPrefix}=settings_settings.a;Object(decorate.a)([Object(lit_element.c)(`${cta_block_item_row_ddsPrefix}-cta-block-item-row`)],(function(_initialize,_ParentVisibilityMixi){class DDSCTABlockItemRow extends _ParentVisibilityMixi{constructor(...args){super(...args),_initialize(this)}}return{F:DDSCTABlockItemRow,d:[{kind:"field",decorators:[Object(lit_element.e)({type:Boolean,reflect:!0,attribute:"no-border"})],key:"_noBorder",value:()=>!1},{kind:"field",key:"_childItemHeadings",value:()=>[]},{kind:"field",key:"_childItemCopies",value:()=>[]},{kind:"field",key:"_observerResizeRoot",value:()=>null},{kind:"method",key:"_onParentVisible",value:function(){this._setSameHeight()}},{kind:"method",key:"_cleanAndCreateObserverResize",value:function({create:create}={}){this._observerResizeRoot&&(this._observerResizeRoot.disconnect(),this._observerResizeRoot=null),create&&(this._observerResizeRoot=new ResizeObserver(this._setSameHeight),this._observerResizeRoot.observe(this.ownerDocument.documentElement))}},{kind:"field",key:"_setSameHeight",value(){return()=>{window.requestAnimationFrame((()=>{Object(sameHeight.a)(this._childItemHeadings.filter((e=>e)),"md"),Object(sameHeight.a)(this._childItemCopies.filter((e=>e)),"md")}))}}},{kind:"field",decorators:[Object(lit_element.h)()],key:"_hasAction",value:()=>!1},{kind:"method",key:"_handleSlotChange",value:function(event){const{target:target}=event,{selectorItem:selectorItem,selectorItemHeading:selectorItemHeading,selectorItemCopy:selectorItemCopy}=this.constructor,childItems=target.assignedNodes().filter((elem=>{var _matches,_ref;return null===(_matches=(_ref=elem).matches)||void 0===_matches?void 0:_matches.call(_ref,selectorItem)}));childItems&&childItems.forEach((e=>{this._childItemHeadings.push(e.querySelector(selectorItemHeading)),this._childItemCopies.push(e.querySelector(selectorItemCopy))})),this._setSameHeight()}},{kind:"method",key:"render",value:function(){return Object(lit_element.d)(cta_block_item_row_t||(cta_block_item_row_t=cta_block_item_row_` <slot @slotchange="${0}"></slot> `),this._handleSlotChange)}},{kind:"method",key:"connectedCallback",value:function(){Object(get.a)(Object(getPrototypeOf.a)(DDSCTABlockItemRow.prototype),"connectedCallback",this).call(this),this._cleanAndCreateObserverResize({create:!0})}},{kind:"method",key:"disconnectedCallback",value:function(){this._cleanAndCreateObserverResize(),Object(get.a)(Object(getPrototypeOf.a)(DDSCTABlockItemRow.prototype),"disconnectedCallback",this).call(this)}},{kind:"method",key:"firstUpdated",value:function(){Object(get.a)(Object(getPrototypeOf.a)(DDSCTABlockItemRow.prototype),"connectedCallback",this).call(this),this._cleanAndCreateObserverResize({create:!0})}},{kind:"method",key:"updated",value:function(changedProperties){changedProperties.has("_noBorder")&&this.classList.toggle(`${cta_block_item_row_prefix}--cta-block-item-row__border`,!this._noBorder)}},{kind:"get",static:!0,key:"stableSelector",value:function(){return`${cta_block_item_row_ddsPrefix}--cta-block-item-row`}},{kind:"get",static:!0,key:"selectorItem",value:function(){return`${cta_block_item_row_ddsPrefix}-cta-block-item`}},{kind:"get",static:!0,key:"selectorItemHeading",value:function(){return`${cta_block_item_row_ddsPrefix}-content-item-heading`}},{kind:"get",static:!0,key:"selectorItemCopy",value:function(){return`${cta_block_item_row_ddsPrefix}-content-item-copy`}},{kind:"field",static:!0,key:"styles",value:()=>cta_block_css}]}}),Object(parent_visibility.a)(Object(stable_selector.a)(lit_element.a)));var content_item_content_item=__webpack_require__(55);let cta_block_item_t,cta_block_item_t2,cta_block_item_t3,cta_block_item_t4,cta_block_item_=t=>t;const{prefix:cta_block_item_prefix}=settings.a,{stablePrefix:cta_block_item_ddsPrefix}=settings_settings.a,cta_block_item_slotExistencePropertyNames={media:"_hasMedia",statistic:"_hasStatistic",footer:"_hasFooter"};Object(decorate.a)([Object(lit_element.c)(`${cta_block_item_ddsPrefix}-cta-block-item`)],(function(_initialize,_StableSelectorMixin){class DDSCTABlockItem extends _StableSelectorMixin{constructor(...args){super(...args),_initialize(this)}}return{F:DDSCTABlockItem,d:[{kind:"field",decorators:[Object(lit_element.h)()],key:"_hasMedia",value:()=>!1},{kind:"field",decorators:[Object(lit_element.h)()],key:"_hasStatistic",value:()=>!1},{kind:"method",key:"_handleSlotChange",value:function({target:target}){const{name:name}=target,hasContent=target.assignedNodes().filter((elem=>{var _matches,_ref;return!(null!==(_matches=(_ref=elem).matches)&&void 0!==_matches&&_matches.call(_ref,this.constructor.selectorButtonGroup))})).some((node=>node.nodeType!==Node.TEXT_NODE||node.textContent.trim()));this[cta_block_item_slotExistencePropertyNames[name]||"_hasStatistic"]=hasContent}},{kind:"method",key:"_renderStatistic",value:function(){const{_hasStatistic:hasStatistic,_handleSlotChange:handleSlotChange}=this;return Object(lit_element.d)(cta_block_item_t||(cta_block_item_t=cta_block_item_`
       <div
         ?hidden="${0}"
-        class="${0}--cta-block-item__statitics"
-      >
+        class="${0}--cta-block-item__statitics">
         <slot name="statistics" @slotchange="${0}"></slot>
       </div>
     `),!hasStatistic,cta_block_item_prefix,handleSlotChange)}},{kind:"method",key:"_renderMedia",value:function(){const{_hasMedia:hasMedia,_handleSlotChange:handleSlotChange}=this;return Object(lit_element.d)(cta_block_item_t2||(cta_block_item_t2=cta_block_item_`
@@ -105,8 +98,7 @@
     `),Object(get.a)(Object(getPrototypeOf.a)(DDSCardInCardImage),"styles",this),card_in_card_css)}}]}}),image_image.a);var stable_selector=__webpack_require__(5);let card_in_card_t,_t2,_t3,card_in_card_=t=>t;const{prefix:prefix}=settings.a,{stablePrefix:card_in_card_ddsPrefix}=settings_settings.a;Object(decorate.a)([Object(lit_element.c)(`${card_in_card_ddsPrefix}-card-in-card`)],(function(_initialize,_StableSelectorMixin){class DDSCardInCard extends _StableSelectorMixin{constructor(...args){super(...args),_initialize(this)}}return{F:DDSCardInCard,d:[{kind:"method",key:"_renderImage",value:function(){const{ctaType:ctaType,videoName:videoName,videoThumbnailUrl:videoThumbnailUrl,thumbnail:thumbnail,_hasImage:hasImage}=this,image=hasImage||ctaType!==card_cta.a.VIDEO?void 0:Object(lit_element.d)(card_in_card_t||(card_in_card_t=card_in_card_`
             <dds-card-in-card-image
               alt="${0}"
-              default-src="${0}"
-            >
+              default-src="${0}">
               ${0}
             </dds-card-in-card-image>
           `),Object(if_non_null.a)(videoName),Object(if_non_null.a)(thumbnail||videoThumbnailUrl),Object(play_video.a)({slot:"icon"}));return Object(lit_element.d)(_t2||(_t2=card_in_card_`

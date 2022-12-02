@@ -27,8 +27,7 @@
       <button
         id="${0}-sentinel"
         type="button"
-        class="${0}--visually-hidden"
-      ></button>
+        class="${0}--visually-hidden"></button>
     `),side,masthead_menu_button_prefix)},{kind:"method",key:"render",value:function(){const{active:active,_hasSearchActive:hasSearchActive,_renderSentinel:renderSentinel}=this,classes=Object(class_map.a)({[`${masthead_menu_button_ddsPrefix}-ce--header__menu-trigger__container`]:!0,[`${masthead_menu_button_ddsPrefix}-ce--header__menu-trigger__container--has-search-active`]:hasSearchActive}),startSentinel=active?renderSentinel("start"):"",endSentinel=active?renderSentinel("end"):"";return Object(lit_element.d)(_t2||(_t2=masthead_menu_button_`
       <div class="${0}">
         ${0}${0}${0}
@@ -46,8 +45,7 @@
                 <dds-megamenu-link-with-icon
                   href="${0}"
                   style-scheme="category-headline"
-                  title="${0}"
-                >
+                  title="${0}">
                   <span>${0}</span>${0}
                 </dds-megamenu-link-with-icon>
               `),Object(if_non_null.a)(href),title,title,Object(_16.a)({slot:"icon"})):Object(lit_element.d)(_t3||(_t3=megamenu_category_group_`
@@ -60,15 +58,13 @@
         `),this._renderDynamicStyles(),pageIsRTL?Object(lit_element.d)(top_nav_t2||(top_nav_t2=top_nav_`
                 <div class="${0}">
                   <div
-                    class="${0}--header__nav-caret-right-gradient"
-                  ></div>
+                    class="${0}--header__nav-caret-right-gradient"></div>
                   <button
                     part="next-button"
                     tabindex="-1"
                     aria-hidden="true"
                     class="${0}--header__nav-caret-right"
-                    @click="${0}"
-                  >
+                    @click="${0}">
                     ${0}
                   </button>
                 </div>
@@ -79,12 +75,10 @@
                       <div
                         part="menubar"
                         class="${0}--header__menu-bar"
-                        aria-label="${0}"
-                      >
+                        aria-label="${0}">
                         <slot
                           @slotchange=${0}
-                          @keydown="${0}"
-                        ></slot>
+                          @keydown="${0}"></slot>
                       </div>
                       <div class="${0}--sub-content-left"></div>
                     </nav>
@@ -96,8 +90,7 @@
                     tabindex="-1"
                     aria-hidden="true"
                     class="${0}--header__nav-caret-left"
-                    @click="${0}"
-                  >
+                    @click="${0}">
                     ${0}
                   </button>
                   <div class="${0}--header__nav-caret-left-gradient"></div>
@@ -109,8 +102,7 @@
                     tabindex="-1"
                     aria-hidden="true"
                     class="${0}--header__nav-caret-left"
-                    @click="${0}"
-                  >
+                    @click="${0}">
                     ${0}
                   </button>
                   <div class="${0}--header__nav-caret-left-gradient"></div>
@@ -122,12 +114,10 @@
                       <div
                         part="menubar"
                         class="${0}--header__menu-bar"
-                        aria-label="${0}"
-                      >
+                        aria-label="${0}">
                         <slot
                           @slotchange=${0}
-                          @keydown="${0}"
-                        ></slot>
+                          @keydown="${0}"></slot>
                       </div>
                       <div class="${0}--sub-content-right"></div>
                     </nav>
@@ -135,15 +125,13 @@
                 </div>
                 <div class="${0}">
                   <div
-                    class="${0}--header__nav-caret-right-gradient"
-                  ></div>
+                    class="${0}--header__nav-caret-right-gradient"></div>
                   <button
                     part="next-button"
                     tabindex="-1"
                     aria-hidden="true"
                     class="${0}--header__nav-caret-right"
-                    @click="${0}"
-                  >
+                    @click="${0}">
                     ${0}
                   </button>
                 </div>
@@ -155,13 +143,11 @@
           tabindex="-1"
           aria-expanded="${0}"
           class="${0}"
-          @click=${0}
-        >
+          @click=${0}>
           <div class="${0}--side-nav__submenu-content">
             <span class="${0}--side-nav__submenu-title">${0}</span>
             <div
-              class="${0}--side-nav__icon ${0}--side-nav__icon--small ${0}--side-nav__submenu-chevron"
-            >
+              class="${0}--side-nav__icon ${0}--side-nav__icon--small ${0}--side-nav__submenu-chevron">
               ${0}
             </div>
           </div>
@@ -178,13 +164,11 @@
     `),this._renderDynamicStyles(),showBackBtn?Object(lit_element.d)(left_nav_menu_section_t2||(left_nav_menu_section_t2=left_nav_menu_section_`
               <li
                 class="${0}--side-nav__menu-item ${0}--masthead__side-nav--submemu-back"
-                role="none"
-              >
+                role="none">
                 <button
                   class="${0}--side-nav__link"
                   tabindex="-1"
-                  @click="${0}"
-                >
+                  @click="${0}">
                   <span class="${0}--side-nav__link-text"
                     >${0}${0}</span
                   >
@@ -197,12 +181,10 @@
             `),left_nav_menu_section_prefix,title):void 0,title&&titleUrl?Object(lit_element.d)(_t4||(_t4=left_nav_menu_section_`
               <a
                 class="${0}--masthead__side-nav--submemu-title"
-                href=${0}
-              >
+                href=${0}>
                 <span>${0}</span>
                 <div
-                  class="${0}--masthead__side-nav--submemu-section-title__icon"
-                >
+                  class="${0}--masthead__side-nav--submemu-section-title__icon">
                   ${0}
                 </div>
               </a>
@@ -231,8 +213,7 @@
         aria-label="${0}"
         @input="${0}"
         @keydown="${0}"
-        @keypress="${0}"
-      />
+        @keypress="${0}" />
     `),search_with_typeahead_prefix,searchPlaceholder,Object(if_non_null.a)(searchLabel),handleInput,handleKeyInput,handleKeyInput)}},{kind:"method",key:"_handleClickItem",value:function(event){const item=event.target.closest(this.constructor.selectorItem);this.shadowRoot.contains(item)&&this._handleUserInitiatedSelectItem(item)}},{kind:"method",key:"_renderForm",value:function(){const{active:active,language:language,open:open,redirectUrl:redirectUrl,searchLabel:searchLabel,_assistiveStatusText:assistiveStatusText,_handleClickInner:handleClickInner,_handleKeydownInner:handleKeydownInner,_handleKeypressInner:handleKeypressInner,_handleSubmit:handleSubmit}=this;if(!active)return;const[primary,country]=language.split("-"),classes=Object(class_map.a)({"react-autosuggest__container":!0,"react-autosuggest__suggestions-container--open":open});return Object(lit_element.d)(search_with_typeahead_t2||(search_with_typeahead_t2=search_with_typeahead_`
       <form method="get" action="${0}" @submit="${0}">
         <input type="hidden" name="lang" value="${0}" />
@@ -249,8 +230,7 @@
           aria-label="${0}"
           @click=${0}
           @keydown="${0}"
-          @keypress="${0}"
-        >
+          @keypress="${0}">
           ${0}
           ${0}
           ${0}
@@ -260,8 +240,7 @@
         class="${0}--assistive-text"
         role="status"
         aria-live="assertive"
-        aria-relevant="additions text"
-      >
+        aria-relevant="additions text">
         ${0}
       </div>
     `),redirectUrl,handleSubmit,primary,country,this.scopeParameters?Object(lit_element.d)(search_with_typeahead_t3||(search_with_typeahead_t3=search_with_typeahead_`
@@ -270,13 +249,11 @@
               <input
                 type="hidden"
                 name="scope-value"
-                value="${0}"
-              />
+                value="${0}" />
               <input
                 type="hidden"
                 name="scope-label"
-                value="${0}"
-              />
+                value="${0}" />
             `),this.appId,this.scopeValue,this.scopeLabel):"",classes,Boolean(this.active),Object(if_non_null.a)(searchLabel),handleClickInner,handleKeydownInner,handleKeypressInner,this.scopeParameters?Object(lit_element.d)(search_with_typeahead_t4||(search_with_typeahead_t4=search_with_typeahead_`
                 <dds-scoped-search-dropdown value="${0}">
                   ${0}
@@ -298,31 +275,26 @@
                     `),scope.name,scope.appId,scope.name)))):"",this._renderTriggerContent(),this.leadspaceSearch?"":Object(lit_element.d)(_t7||(_t7=search_with_typeahead_`
                 <div
                   id="result-list"
-                  class="react-autosuggest__suggestions-container"
-                >
+                  class="react-autosuggest__suggestions-container">
                   <ul
                     role="listbox"
-                    class="${0}-ce__search__list react-autosuggest__suggestions-list"
-                  >
+                    class="${0}-ce__search__list react-autosuggest__suggestions-list">
                     ${0}
                     ${0}
                   </ul>
                 </div>
               `),search_with_typeahead_ddsPrefix,this.searchResults&&this.searchResults.map((item=>Object(lit_element.d)(_t8||(_t8=search_with_typeahead_`
                           <dds-search-with-typeahead-item
-                            text="${0}"
-                          ></dds-search-with-typeahead-item>
+                            text="${0}"></dds-search-with-typeahead-item>
                         `),item))),this.groupedResults&&this.groupedResults.map((group=>Object(lit_element.d)(_t9||(_t9=search_with_typeahead_`
                           <dds-search-with-typeahead-item
                             groupTitle
-                            text="${0}"
-                          ></dds-search-with-typeahead-item>
+                            text="${0}"></dds-search-with-typeahead-item>
                           ${0}
                         `),group.title,group.items.map((item=>Object(lit_element.d)(_t10||(_t10=search_with_typeahead_`
                                 <dds-search-with-typeahead-item
                                   text="${0}"
-                                  href="${0}"
-                                ></dds-search-with-typeahead-item>
+                                  href="${0}"></dds-search-with-typeahead-item>
                               `),item.name,item.href))))))),search_with_typeahead_prefix,assistiveStatusText)}},{kind:"method",key:"_selectionShouldChange",value:function(){return!0}},{kind:"field",decorators:[Object(lit_element.e)({type:Boolean,reflect:!0})],key:"active",value:()=>!1},{kind:"field",decorators:[Object(lit_element.e)({attribute:"close-search-button-assistive-text"})],key:"closeSearchButtonAssistiveText",value:()=>"Close"},{kind:"field",decorators:[Object(lit_element.e)()],key:"language",value:()=>"en-US"},{kind:"field",decorators:[Object(lit_element.e)({attribute:"open-search-button-assistive-text"})],key:"openSearchButtonAssistiveText",value:()=>"Open IBM search field"},{kind:"field",decorators:[Object(lit_element.e)({attribute:"perform-search-button-assistive-text"})],key:"performSearchButtonAssistiveText",value:()=>"Search all of IBM"},{kind:"field",decorators:[Object(lit_element.e)()],key:"searchPlaceholder",value:()=>"Search all of IBM"},{kind:"field",decorators:[Object(lit_element.e)({attribute:"redirect-url"})],key:"redirectUrl",value:()=>"https://www.ibm.com/search?lnk=mhsrch"},{kind:"field",decorators:[Object(lit_element.e)({attribute:"search-label"})],key:"searchLabel",value:()=>"IBM search field"},{kind:"field",decorators:[Object(lit_element.e)({reflect:!0})],key:"slot",value:()=>"search"},{kind:"field",decorators:[Object(lit_element.e)({type:Boolean,attribute:"search-open-on-load"})],key:"searchOpenOnload",value:()=>!1},{kind:"get",key:"searchQueryString",value:function(){var _this$_searchInputNod2,_this$_searchInputNod3;return null!==(_this$_searchInputNod2=null===(_this$_searchInputNod3=this._searchInputNode)||void 0===_this$_searchInputNod3?void 0:_this$_searchInputNod3.value)&&void 0!==_this$_searchInputNod2?_this$_searchInputNod2:""}},{kind:"method",key:"_setSearchParam",value:function(){const{_searchInputNode:searchInputNode}=this,URLParams=new URLSearchParams(this.ownerDocument.defaultView.location.search),searchParam=this.searchOpenOnload?URLParams.get("q"):"";searchParam&&(searchInputNode.value=searchParam)}},{kind:"method",key:"firstUpdated",value:function(){this._setSearchParam(),this.leadspaceSearch&&(this.setAttribute("should-remain-open",""),this.setAttribute("active","")),!this.appId&&this.scopeParameters&&(this.appId="all",this.redirectUrl="https://www.ibm.com/search/scoped")}},{kind:"method",key:"updated",value:function(changedProperties){if(changedProperties.has("searchResults")){var _this$shadowRoot2;const titleElements=null===(_this$shadowRoot2=this.shadowRoot)||void 0===_this$shadowRoot2?void 0:_this$shadowRoot2.querySelectorAll("dds-search-with-typeahead-item[groupTitle]");null==titleElements||titleElements.forEach((e=>{var _e$previousElementSib;null===(_e$previousElementSib=e.previousElementSibling)||void 0===_e$previousElementSib||_e$previousElementSib.setAttribute("lastBeforeGroup","")}))}if(changedProperties.has("appId")){var _this$scopeParameters;if(gridBreakpoint<document.body.clientWidth&&this._searchSuggestions&&this.scopeParameters){var _this$shadowRoot3,_this$_searchSuggesti5,_this$_searchSuggesti6;const scopeBarWidth=(null===(_this$shadowRoot3=this.shadowRoot)||void 0===_this$shadowRoot3?void 0:_this$shadowRoot3.querySelector("dds-scoped-search-dropdown")).offsetWidth;null===(_this$_searchSuggesti5=this._searchSuggestions)||void 0===_this$_searchSuggesti5||null===(_this$_searchSuggesti6=_this$_searchSuggesti5.parentElement)||void 0===_this$_searchSuggesti6||_this$_searchSuggesti6.setAttribute("style",`left: ${scopeBarWidth}px; width: calc(100% - ${scopeBarWidth}px);`)}else{var _this$_searchSuggesti7,_this$_searchSuggesti8;null===(_this$_searchSuggesti7=this._searchSuggestions)||void 0===_this$_searchSuggesti7||null===(_this$_searchSuggesti8=_this$_searchSuggesti7.parentElement)||void 0===_this$_searchSuggesti8||_this$_searchSuggesti8.removeAttribute("style")}this.customTypeaheadAPI||this.getResults(this.value).then((res=>{this.searchResults=res}));const newPlaceholder=this.placeholderFormatter({appId:null===(_this$scopeParameters=this.scopeParameters.filter((e=>e.value===`${this.appId}`))[0])||void 0===_this$scopeParameters?void 0:_this$scopeParameters.name});this.setAttribute("placeholder",newPlaceholder),this.performSearchButtonAssistiveText=newPlaceholder}}},{kind:"method",key:"render",value:function(){const{active:active,closeSearchButtonAssistiveText:closeSearchButtonAssistiveText,openSearchButtonAssistiveText:openSearchButtonAssistiveText,performSearchButtonAssistiveText:performSearchButtonAssistiveText,_handleClickCloseButton:handleClickCloseButton,_handleClickSearchButton:handleClickSearchButton,_handleClickItem:handleClickItem}=this,searchButtonAssistiveText=active?performSearchButtonAssistiveText:openSearchButtonAssistiveText;return Object(lit_element.d)(_t11||(_t11=search_with_typeahead_`
       ${0}
     `),this.leadspaceSearch?Object(lit_element.d)(_t13||(_t13=search_with_typeahead_`
@@ -334,27 +306,23 @@
                 part="close-button"
                 class="${0}--header__action ${0}--header__search--close ${0}"
                 aria-label="${0}"
-                @click="${0}"
-              >
+                @click="${0}">
                 ${0}
               </button>
             </div>
             <div
               id="result-list"
-              class="react-autosuggest__suggestions-container"
-            >
+              class="react-autosuggest__suggestions-container">
               <ul
                 role="listbox"
-                class="${0}-ce__search__list react-autosuggest__suggestions-list"
-              >
+                class="${0}-ce__search__list react-autosuggest__suggestions-list">
                 ${0}
               </ul>
             </div>
           `),search_with_typeahead_prefix,Object(search_20.a)({part:"search-icon",class:`${search_with_typeahead_prefix}--search-magnifier-icon`,role:"img"}),this._renderForm(),search_with_typeahead_prefix,search_with_typeahead_prefix,0===this.value.length?`${search_with_typeahead_prefix}--header__search--hide`:"",closeSearchButtonAssistiveText,handleClickCloseButton,Object(close_20.a)(),search_with_typeahead_ddsPrefix,this.searchResults&&this.searchResults.map((item=>Object(lit_element.d)(_t14||(_t14=search_with_typeahead_`
                       <dds-search-with-typeahead-item
                         text="${0}"
-                        @click=${0}
-                      ></dds-search-with-typeahead-item>
+                        @click=${0}></dds-search-with-typeahead-item>
                     `),item,handleClickItem)))):Object(lit_element.d)(_t12||(_t12=search_with_typeahead_`
             ${0}
             <div class="${0}--header__search--actions">
@@ -363,8 +331,7 @@
                 part="open-button"
                 class="${0}--header__action ${0}--header__search--search"
                 aria-label="${0}"
-                @click="${0}"
-              >
+                @click="${0}">
                 ${0}
               </button>
               <button
@@ -372,8 +339,7 @@
                 part="close-button"
                 class="${0}--header__action ${0}--header__search--close"
                 aria-label="${0}"
-                @click="${0}"
-              >
+                @click="${0}">
                 ${0}
               </button>
             </div>
@@ -388,12 +354,10 @@
               <dds-masthead-l1-name
                 title="${0}"
                 aria-selected="${0}"
-                url="${0}"
-              ></dds-masthead-l1-name>
+                url="${0}"></dds-masthead-l1-name>
             `),title,isSelected,url):void 0,selectedMenuItem,this._renderNavItems({selectedMenuItem:selectedMenuItem,target:NAV_ITEMS_RENDER_TARGET.TOP_NAV,hasL1:!0}))}},{kind:"method",key:"_renderLogo",value:function(){if(!this.logoData)return Object(lit_element.d)(masthead_composite_t3||(masthead_composite_t3=masthead_composite_`
         <dds-masthead-logo
-          ?hide-logo="${0}"
-        ></dds-masthead-logo>
+          ?hide-logo="${0}"></dds-masthead-logo>
       `),this.activateSearch);const useAlternateLogo=MastheadLogo.a.setMastheadLogo(this.logoData),{tooltip:tooltip,svg:svg,href:href}=this.logoData;return Object(lit_element.d)(masthead_composite_t4||(masthead_composite_t4=masthead_composite_`
       <dds-masthead-logo
         ?hide-logo="${0}"
@@ -408,8 +372,7 @@
         <dds-megamenu-right-navigation
           style-scheme="${0}"
           view-all-href="${0}"
-          view-all-title="${0}"
-        >
+          view-all-title="${0}">
           ${0}
         </dds-megamenu-right-navigation>
       </dds-megamenu>
@@ -426,8 +389,7 @@
                     <dds-megamenu-category-group
                       data-autoid="${0}"
                       href="${0}"
-                      title="${0}"
-                    >
+                      title="${0}">
                       <dds-megamenu-category-group-copy
                         >${0}</dds-megamenu-category-group-copy
                       >
@@ -440,31 +402,27 @@
                                     data-autoid="${0}-item${0}"
                                     href="${0}"
                                     style-scheme="category-sublink"
-                                    title="${0}"
-                                  >
+                                    title="${0}">
                                     <span>${0}</span>${0}
                                   </dds-megamenu-link-with-icon>
                                 `),autoid,key,url,title,title,Object(_16.a)({slot:"icon"})):Object(lit_element.d)(masthead_composite_t11||(masthead_composite_t11=masthead_composite_`
                                   <dds-megamenu-category-link
                                     data-autoid="${0}-item${0}"
                                     title="${0}"
-                                    href="${0}"
-                                  >
+                                    href="${0}">
                                   </dds-megamenu-category-link>
                                 `),autoid,key,title,url)))))}))):null,hasHighlights?megamenu_right_navigation.a.LEFT_SECTION:megamenu_right_navigation.a.REGULAR,Object(if_non_null.a)(null==viewAllLink?void 0:viewAllLink.url),Object(if_non_null.a)(null==viewAllLink?void 0:viewAllLink.title),menu.map(((item,j)=>{var _item$megapanelConten4,_item$megapanelConten5;const autoid=`${masthead_composite_ddsPrefix}--masthead__l0-nav-list${j+highlightedItems.length}`;return Object(lit_element.d)(masthead_composite_t12||(masthead_composite_t12=masthead_composite_`
               <dds-megamenu-category-group
                 data-autoid="${0}"
                 href="${0}"
-                title="${0}"
-              >
+                title="${0}">
                 ${0}
               </dds-megamenu-category-group>
             `),autoid,item.url,item.title,null===(_item$megapanelConten4=item.megapanelContent)||void 0===_item$megapanelConten4||null===(_item$megapanelConten5=_item$megapanelConten4.quickLinks)||void 0===_item$megapanelConten5?void 0:_item$megapanelConten5.links.map((({title:title,url:url},key)=>Object(lit_element.d)(masthead_composite_t13||(masthead_composite_t13=masthead_composite_`
                       <dds-megamenu-category-link
                         data-autoid="${0}-item${0}"
                         title="${0}"
-                        href="${0}"
-                      >
+                        href="${0}">
                       </dds-megamenu-category-link>
                     `),autoid,key,title,url))))})))}},{kind:"method",key:"_renderLeftNavMenuSections",value:function({menuItems:menuItems,heading:heading="",isSubmenu:isSubmenu=!1,showBackButton:showBackButton=!1,sectionTitle:sectionTitle="",sectionUrl:sectionUrl="",sectionId:sectionId=""}){const items=menuItems.map((elem=>elem.menu?Object(lit_element.d)(masthead_composite_t14||(masthead_composite_t14=masthead_composite_`
           <dds-left-nav-menu
@@ -472,8 +430,7 @@
             panel-id=${0}
             ?active="${0}"
             title="${0}"
-            data-autoid="${0}"
-          >
+            data-autoid="${0}">
           </dds-left-nav-menu>
         `),elem.lastHighlightedItem,elem.panelId,elem.selected,elem.title,elem.autoid):Object(lit_element.d)(_t15||(_t15=masthead_composite_`
         <dds-left-nav-menu-item
@@ -481,8 +438,7 @@
           ?active="${0}"
           href="${0}"
           title="${0}"
-          data-autoid="${0}"
-        ></dds-left-nav-menu-item>
+          data-autoid="${0}"></dds-left-nav-menu-item>
       `),elem.lastHighlightedItem,elem.selected,elem.url,elem.title,elem.autoid)));return heading&&items.unshift(Object(lit_element.d)(_t16||(_t16=masthead_composite_`
           <dds-left-nav-menu-category-heading
             >${0}</dds-left-nav-menu-category-heading
@@ -493,8 +449,7 @@
         ?is-submenu=${0}
         title=${0}
         titleUrl=${0}
-        ?show-back-button=${0}
-      >
+        ?show-back-button=${0}>
         ${0}
       </dds-left-nav-menu-section>
     `),sectionId,Object(if_non_null.a)(isSubmenu),Object(if_non_null.a)(sectionTitle),Object(if_non_null.a)(sectionUrl),Object(if_non_null.a)(showBackButton),items)}},{kind:"method",key:"_selectedLeftNavItems",value:function(){let matchFound=!1;const selectedItems={level0:"",level1:"",level2:""};return({menu:_menu=[{url:"",megapanelContent:{quickLinks:{links:[{url:""}]}}}],key:_key="",parentItemUrl:_parentItemUrl="",currentUrlPath:_currentUrlPath=""})=>{if(!matchFound){if(_parentItemUrl===_currentUrlPath)selectedItems.level0=`${_key}`,matchFound=!0;else for(let i=0;i<(null==_menu?void 0:_menu.length);i++){var _menu$i;if((null===(_menu$i=_menu[i])||void 0===_menu$i?void 0:_menu$i.url)===_currentUrlPath){selectedItems.level0=`${_key}`,selectedItems.level1=`${_key}-${i}`,matchFound=!0;break}{var _menu$i2,_menu$i2$megapanelCon,_menu$i2$megapanelCon2;const links=null===(_menu$i2=_menu[i])||void 0===_menu$i2||null===(_menu$i2$megapanelCon=_menu$i2.megapanelContent)||void 0===_menu$i2$megapanelCon||null===(_menu$i2$megapanelCon2=_menu$i2$megapanelCon.quickLinks)||void 0===_menu$i2$megapanelCon2?void 0:_menu$i2$megapanelCon2.links;for(let k=0;k<(null==links?void 0:links.length);k++){var _links$k;if((null===(_links$k=links[k])||void 0===_links$k?void 0:_links$k.url)===_currentUrlPath){selectedItems.level0=`${_key}`,selectedItems.level1=`${_key}-${i}`,selectedItems.level2=`${_key}-${i}-${k}`,matchFound=!0;break}}}}return this._hasAutoSelectedItems=matchFound,selectedItems}return selectedItems}}},{kind:"method",key:"_renderLeftNav",value:function(menuItems,selectedMenuItem,autoid,currentUrlPath){const menu=[],selectedItemUrl=this._selectedLeftNavItems(),level0Items=menuItems.map(((elem,i)=>{if(elem.menuSections){var _elem$menuSections$,_menuElems;const level1Items=[];let menuElems=null===(_elem$menuSections$=elem.menuSections[0])||void 0===_elem$menuSections$?void 0:_elem$menuSections$.menuItems,highlightedItems=[];if(elem.hasMegapanel){const{viewAllLink:viewAllLink,highlightedItems:hightlighted,menu:nonHighlightedMenuItems}=this._getHighlightedMenuItems(elem.menuSections);highlightedItems=hightlighted,menuElems=hightlighted.concat(nonHighlightedMenuItems),viewAllLink&&menuElems.push(viewAllLink)}const _selectedItems=selectedItemUrl({menu:menuElems,key:i,parentItemUrl:elem.url,currentUrlPath:currentUrlPath});var _elem$menuSections$2;if(null===(_menuElems=menuElems)||void 0===_menuElems||_menuElems.map(((item,k)=>{var _item$megapanelConten6,_item$megapanelConten7,_item$megapanelConten8,_item$megapanelConten9,_item$megapanelConten10,_item$megapanelConten11;const level2Items=[],lastHighlighted=k+1===highlightedItems.length;return null===(_item$megapanelConten6=item.megapanelContent)||void 0===_item$megapanelConten6||null===(_item$megapanelConten7=_item$megapanelConten6.quickLinks)||void 0===_item$megapanelConten7||_item$megapanelConten7.links.map(((submenu,j)=>level2Items.push({title:submenu.title,url:submenu.url,autoid:`${autoid}--sidenav--nav${i}-list${k}-item${j}`,selected:selectedMenuItem?selectedMenuItem===submenu.titleEnglish:(null==_selectedItems?void 0:_selectedItems.level2)===`${i}-${k}-${j}`}))),0!==level2Items.length&&menu.push(this._renderLeftNavMenuSections({menuItems:level2Items,isSubmenu:!0,showBackButton:!0,sectionTitle:item.title,sectionUrl:item.url,sectionId:`${i}, ${k}`})),level1Items.push({title:item.title,autoid:`${autoid}--sidenav--nav${i}-list${k}`,lastHighlightedItem:lastHighlighted,url:item.url,panelId:`${i}, ${k}`,selected:selectedMenuItem?selectedMenuItem===item.titleEnglish:(null==_selectedItems?void 0:_selectedItems.level1)===`${i}-${k}`,menu:(null===(_item$megapanelConten8=item.megapanelContent)||void 0===_item$megapanelConten8||null===(_item$megapanelConten9=_item$megapanelConten8.quickLinks)||void 0===_item$megapanelConten9?void 0:_item$megapanelConten9.links)&&0!==(null===(_item$megapanelConten10=item.megapanelContent)||void 0===_item$megapanelConten10||null===(_item$megapanelConten11=_item$megapanelConten10.quickLinks)||void 0===_item$megapanelConten11?void 0:_item$megapanelConten11.links.length)})})),0!==level1Items.length)menu.push(this._renderLeftNavMenuSections({menuItems:level1Items,heading:null===(_elem$menuSections$2=elem.menuSections[0])||void 0===_elem$menuSections$2?void 0:_elem$menuSections$2.heading,isSubmenu:!0,showBackButton:!0,sectionTitle:elem.title,sectionUrl:elem.url,sectionId:`${i}, -1`}))}const selectedItems=selectedItemUrl({key:i,parentItemUrl:elem.url,currentUrlPath:currentUrlPath});return{title:elem.title,titleEnglish:elem.titleEnglish,menu:elem.menuSections&&0!==elem.menuSections.length,url:elem.url,panelId:`${i}, -1`,autoid:`${autoid}--sidenav--nav${i}`,selected:selectedMenuItem?selectedMenuItem===elem.titleEnglish:(null==selectedItems?void 0:selectedItems.level0)===`${i}`}}));return Object(lit_element.d)(_t18||(_t18=masthead_composite_`
@@ -505,22 +460,19 @@
                         ?active="${0}"
                         href="${0}"
                         title="${0}"
-                        data-autoid="${0}-nav--subnav-col${0}-item${0}"
-                      ></dds-top-nav-menu-item>
+                        data-autoid="${0}-nav--subnav-col${0}-item${0}"></dds-top-nav-menu-item>
                     `),selectedMenuItem?selected:menuItemUrl===currentUrlPath,menuItemUrl,menuItemTitle,autoid,i,j))),0===sections.length?Object(lit_element.d)(_t20||(_t20=masthead_composite_`
                 <dds-top-nav-item
                   ?active="${0}"
                   href="${0}"
                   title="${0}"
-                  data-autoid="${0}-nav--nav${0}"
-                ></dds-top-nav-item>
+                  data-autoid="${0}-nav--nav${0}"></dds-top-nav-item>
               `),selectedMenuItem?selected:url===currentUrlPath,url,title,autoid,i):link.hasMegapanel?Object(lit_element.d)(_t21||(_t21=masthead_composite_`
                 <dds-megamenu-top-nav-menu
                   ?active="${0}"
                   menu-label="${0}"
                   trigger-content="${0}"
-                  data-autoid="${0}-nav--nav${0}"
-                >
+                  data-autoid="${0}-nav--nav${0}">
                   ${0}
                 </dds-megamenu-top-nav-menu>
               `),selected,title,title,autoid,i,sections):Object(lit_element.d)(_t22||(_t22=masthead_composite_`
@@ -528,8 +480,7 @@
                 ?active="${0}"
                 menu-label="${0}"
                 trigger-content="${0}"
-                data-autoid="${0}-nav--nav${0}"
-              >
+                data-autoid="${0}-nav--nav${0}">
                 ${0}
               </dds-top-nav-menu>
             `),selected,title,title,autoid,i,sections)})):void 0:menu?this._renderLeftNav(menu,selectedMenuItem,autoid,currentUrlPath):void 0}},{kind:"field",key:"_hasAutoSelectedItems",value:()=>!1},{kind:"field",decorators:[Object(lit_element.e)({type:String,reflect:!0,attribute:"has-profile"})],key:"hasProfile",value:()=>"true"},{kind:"field",decorators:[Object(lit_element.e)({type:Boolean,attribute:"has-search"})],key:"hasSearch",value:()=>!0},{kind:"field",decorators:[Object(lit_element.e)({type:Boolean,attribute:"activate-search"})],key:"activateSearch",value:()=>!1},{kind:"field",decorators:[Object(lit_element.e)({attribute:"search-open-on-load"})],key:"searchOpenOnload",value(){return this.activateSearch}},{kind:"field",decorators:[Object(lit_element.e)({attribute:!1})],key:"authenticatedProfileItems",value:void 0},{kind:"field",decorators:[Object(lit_element.e)()],key:"platform",value:void 0},{kind:"field",decorators:[Object(lit_element.e)({attribute:!1})],key:"platformUrl",value:void 0},{kind:"field",decorators:[Object(lit_element.e)({attribute:"brand-name"})],key:"brandName",value:void 0},{kind:"field",decorators:[Object(lit_element.e)({attribute:!1})],key:"currentSearchResults",value:()=>[]},{kind:"field",decorators:[Object(lit_element.e)({attribute:"custom-profile-login"})],key:"customProfileLogin",value:void 0},{kind:"field",decorators:[Object(lit_element.e)({attribute:"custom-typeahead-api",type:Boolean})],key:"customTypeaheadAPI",value:()=>!1},{kind:"field",decorators:[Object(lit_element.e)({attribute:"masthead-assistive-text"})],key:"mastheadAssistiveText",value:void 0},{kind:"field",decorators:[Object(lit_element.e)({attribute:"menu-bar-assistive-text"})],key:"menuBarAssistiveText",value:void 0},{kind:"field",decorators:[Object(lit_element.e)({attribute:"skip-to-content-text"})],key:"skipToContentText",value:()=>"Skip to content"},{kind:"field",decorators:[Object(lit_element.e)({attribute:"skip-to-content-href"})],key:"skipToContentHref",value:()=>"#main-content"},{kind:"field",decorators:[Object(lit_element.e)({attribute:"menu-button-assistive-text-active"})],key:"menuButtonAssistiveTextActive",value:void 0},{kind:"field",decorators:[Object(lit_element.e)({attribute:"menu-button-assistive-text-inactive"})],key:"menuButtonAssistiveTextInactive",value:void 0},{kind:"field",decorators:[Object(lit_element.e)()],key:"scopeParameters",value:void 0},{kind:"field",decorators:[Object(lit_element.e)({attribute:"selected-menu-item"})],key:"selectedMenuItem",value:void 0},{kind:"field",decorators:[Object(lit_element.e)({attribute:!1})],key:"unauthenticatedProfileItems",value:void 0},{kind:"field",decorators:[Object(lit_element.e)({attribute:"data-endpoint"})],key:"dataEndpoint",value:void 0},{kind:"field",decorators:[Object(lit_element.e)({type:Number,attribute:"input-timeout"})],key:"inputTimeout",value:()=>200},{kind:"field",decorators:[Object(lit_element.e)()],key:"language",value:void 0},{kind:"field",decorators:[Object(lit_element.e)({attribute:!1})],key:"navLinks",value:void 0},{kind:"field",decorators:[Object(lit_element.e)({attribute:!1})],key:"logoData",value:void 0},{kind:"field",decorators:[Object(lit_element.e)({attribute:!1})],key:"l1Data",value:void 0},{kind:"field",decorators:[Object(lit_element.e)({type:Boolean,reflect:!0,attribute:"open-search-dropdown"})],key:"openSearchDropdown",value:()=>!1},{kind:"field",decorators:[Object(lit_element.e)()],key:"searchPlaceholder",value:void 0},{kind:"field",decorators:[Object(lit_element.e)({attribute:"user-status"})],key:"userStatus",value:()=>profileAPI.b},{kind:"method",key:"createRenderRoot",value:function(){return this}},{kind:"method",key:"firstUpdated",value:function(){var _this$_loadTranslatio,_this$_loadUserStatus;const{language:language,dataEndpoint:dataEndpoint}=this;var _this$_setLanguage;(Object(global.a)(),language)&&(null===(_this$_setLanguage=this._setLanguage)||void 0===_this$_setLanguage||_this$_setLanguage.call(this,language));null===(_this$_loadTranslatio=this._loadTranslation)||void 0===_this$_loadTranslatio||_this$_loadTranslatio.call(this,language,dataEndpoint).catch((()=>{})),null===(_this$_loadUserStatus=this._loadUserStatus)||void 0===_this$_loadUserStatus||_this$_loadUserStatus.call(this),this.setStyleBySelector(`${masthead_composite_ddsPrefix}-masthead-container`,"z-index","900",!0)}},{kind:"method",key:"updated",value:function(changedProperties){if(changedProperties.has("language")){const{language:language,dataEndpoint:dataEndpoint}=this;var _this$_setLanguage2,_this$_loadTranslatio2;if(language)null===(_this$_setLanguage2=this._setLanguage)||void 0===_this$_setLanguage2||_this$_setLanguage2.call(this,language),null===(_this$_loadTranslatio2=this._loadTranslation)||void 0===_this$_loadTranslatio2||_this$_loadTranslatio2.call(this,language,dataEndpoint).catch((()=>{}))}changedProperties.has("brandName")&&(this.platform=this.brandName,console.warn("`brand-name` will be deprecated in the future use `platform` instead."))}},{kind:"method",key:"render",value:function(){var _profileItems;const{activateSearch:activateSearch,authenticatedProfileItems:authenticatedProfileItems,currentSearchResults:currentSearchResults,customTypeaheadAPI:customTypeaheadAPI,customProfileLogin:customProfileLogin,platform:platform,platformUrl:platformUrl,hasProfile:hasProfile,inputTimeout:inputTimeout,mastheadAssistiveText:mastheadAssistiveText,menuBarAssistiveText:menuBarAssistiveText,menuButtonAssistiveTextActive:menuButtonAssistiveTextActive,menuButtonAssistiveTextInactive:menuButtonAssistiveTextInactive,navLinks:navLinks,language:language,openSearchDropdown:openSearchDropdown,hasSearch:hasSearch,scopeParameters:scopeParameters,searchPlaceholder:searchPlaceholder,selectedMenuItem:selectedMenuItem,skipToContentText:skipToContentText,skipToContentHref:skipToContentHref,unauthenticatedProfileItems:unauthenticatedProfileItems,userStatus:userStatus,l1Data:l1Data}=this,authenticated=userStatus!==profileAPI.b;let profileItems;profileItems=feature_flags.a&&customProfileLogin&&!authenticated?null==unauthenticatedProfileItems?void 0:unauthenticatedProfileItems.map((item=>"signin"===(null==item?void 0:item.id)?_objectSpread(_objectSpread({},item),{},{url:customProfileLogin}):item)):authenticated?authenticatedProfileItems:unauthenticatedProfileItems;const formattedLang=null==language?void 0:language.toLowerCase().replace(/-(.*)/,(m=>m.toUpperCase()));let platformAltUrl=platformUrl;return platformUrl&&formattedLang&&"object"==typeof platformUrl&&Object.prototype.hasOwnProperty.call(platformUrl,formattedLang)&&(platformAltUrl=platformUrl[formattedLang].url||platformUrl),Object(lit_element.d)(_t23||(_t23=masthead_composite_`
@@ -542,13 +493,11 @@
       <dds-masthead aria-label="${0}">
         <dds-skip-to-content
           href="${0}"
-          link-assistive-text="${0}"
-        ></dds-skip-to-content>
+          link-assistive-text="${0}"></dds-skip-to-content>
         <dds-masthead-menu-button
           button-label-active="${0}"
           button-label-inactive="${0}"
-          ?hide-menu-button="${0}"
-        >
+          ?hide-menu-button="${0}">
         </dds-masthead-menu-button>
 
         ${0}
@@ -577,8 +526,7 @@
             <dds-top-nav
               selected-menu-item=${0}
               menu-bar-label="${0}"
-              ?hideNav="${0}"
-            >
+              ?hideNav="${0}">
               ${0}
             </dds-top-nav>
           `),selectedMenuItem,Object(if_non_null.a)(menuBarAssistiveText),activateSearch,this._renderNavItems({selectedMenuItem:selectedMenuItem,target:NAV_ITEMS_RENDER_TARGET.TOP_NAV,hasL1:!1}))||void 0,hasSearch?Object(lit_element.d)(_t28||(_t28=masthead_composite_`
@@ -591,8 +539,7 @@
                 placeholder="${0}"
                 .currentSearchResults="${0}"
                 ?custom-typeahead-api="${0}"
-                .scopeParameters="${0}"
-              ></dds-search-with-typeahead>
+                .scopeParameters="${0}"></dds-search-with-typeahead>
             `),activateSearch,inputTimeout,Object(if_non_null.a)(language),openSearchDropdown,activateSearch,Object(if_non_null.a)(searchPlaceholder),Object(if_non_null.a)(currentSearchResults),Object(if_non_null.a)(customTypeaheadAPI),Object(if_non_null.a)(scopeParameters)):void 0,activateSearch,"false"===hasProfile?"":Object(lit_element.d)(_t29||(_t29=masthead_composite_`
                 <dds-masthead-profile ?authenticated="${0}">
                   ${0}
@@ -605,8 +552,7 @@
       <button
         id="${0}-sentinel"
         type="button"
-        class="${0}--visually-hidden"
-      ></button>
+        class="${0}--visually-hidden"></button>
     `),side,prefix)},{kind:"method",key:"render",value:function(){const{_renderSentinel:renderSentinel}=this;return Object(lit_element__WEBPACK_IMPORTED_MODULE_4__.d)(_t2||(_t2=_`
       <div class="${0}--side-nav__wrapper">
         ${0}
@@ -627,8 +573,7 @@
         <dds-megamenu-link-with-icon
           href="${0}"
           style-scheme="view-all"
-          part="view-all"
-        >
+          part="view-all">
           <span>${0}</span>${0}
         </dds-megamenu-link-with-icon>
       `),this.viewAllHref,this.viewAllTitle,Object(_carbon_carbon_web_components_es_icons_arrow_right_16_js__WEBPACK_IMPORTED_MODULE_3__.a)({slot:"icon"})))}},{kind:"field",static:!0,key:"styles",value:()=>_masthead_css_js__WEBPACK_IMPORTED_MODULE_7__.a}]}}),lit_element__WEBPACK_IMPORTED_MODULE_1__.a);__webpack_exports__.b=DDSMegaMenuRightNavigation},277:function(module,__webpack_exports__,__webpack_require__){"use strict";var _babel_runtime_helpers_esm_decorate__WEBPACK_IMPORTED_MODULE_0__=__webpack_require__(1),_babel_runtime_helpers_esm_get__WEBPACK_IMPORTED_MODULE_1__=__webpack_require__(4),_babel_runtime_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_2__=__webpack_require__(3),lit_element__WEBPACK_IMPORTED_MODULE_3__=__webpack_require__(0),_carbon_carbon_web_components_es_components_link_link_js__WEBPACK_IMPORTED_MODULE_4__=__webpack_require__(30),_internal_vendor_carbon_ibmdotcom_utilities_utilities_settings_settings_js__WEBPACK_IMPORTED_MODULE_5__=__webpack_require__(2),_defs_js__WEBPACK_IMPORTED_MODULE_6__=__webpack_require__(177),_masthead_css_js__WEBPACK_IMPORTED_MODULE_7__=__webpack_require__(16);let _t,_=t=>t;const{stablePrefix:ddsPrefix}=_internal_vendor_carbon_ibmdotcom_utilities_utilities_settings_settings_js__WEBPACK_IMPORTED_MODULE_5__.a;Object(_babel_runtime_helpers_esm_decorate__WEBPACK_IMPORTED_MODULE_0__.a)([Object(lit_element__WEBPACK_IMPORTED_MODULE_3__.c)(`${ddsPrefix}-megamenu-link-with-icon`)],(function(_initialize,_BXLink){class DDSMegaMenuLinkWithIcon extends _BXLink{constructor(...args){super(...args),_initialize(this)}}return{F:DDSMegaMenuLinkWithIcon,d:[{kind:"field",decorators:[Object(lit_element__WEBPACK_IMPORTED_MODULE_3__.e)({reflect:!0,attribute:"style-scheme"})],key:"styleScheme",value:()=>_defs_js__WEBPACK_IMPORTED_MODULE_6__.a.DEFAULT},{kind:"get",static:!0,key:"styles",value:function(){return Object(lit_element__WEBPACK_IMPORTED_MODULE_3__.b)(_t||(_t=_`
@@ -641,8 +586,7 @@
         href="javascript:void 0"
         aria-expanded="${0}"
         aria-label="${0}"
-        @click=${0}
-      >
+        @click=${0}>
         ${0}
       </a>
       <ul class="${0}--header__menu" aria-label="${0}">
@@ -667,8 +611,7 @@
         `),prefix,namePrefix):void 0;return Object(lit_element__WEBPACK_IMPORTED_MODULE_3__.d)(_t2||(_t2=_`
       <a
         class="${0}--side-nav__submenu ${0}--side-nav__submenu-platform"
-        href="${0}"
-      >
+        href="${0}">
         ${0}
         <slot></slot>
       </a>
@@ -677,8 +620,7 @@
         <div class="${0}--pictogram-item__wrapper">
           <slot
             class="${0}--pictogram-item__pictogram"
-            name="pictogram"
-          ></slot>
+            name="pictogram"></slot>
         </div>
         <div class="${0}--pictogram-item__content">
           <div class="${0}--content-item">${0}</div>

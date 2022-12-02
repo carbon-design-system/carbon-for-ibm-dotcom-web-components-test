@@ -5,20 +5,17 @@
         <div
           part="table"
           class="${0}"
-          style="top: ${0}"
-        >
+          style="top: ${0}">
           ${0}
           <div class="${0}--tableofcontents__mobile-top"></div>
           ${0}
           <div
             class="${0}-ce--table-of-contents__items-container"
-            style="position: sticky; top: ${0}"
-          >
+            style="position: sticky; top: ${0}">
             <div class="${0}--tableofcontents__desktop-container">
               <div
                 class="${0}--tableofcontents__desktop"
-                style="${0}: -${0}px"
-              >
+                style="${0}: -${0}px">
                 ${0}
                 <ul>
                   ${0}
@@ -31,8 +28,7 @@
                 <select
                   aria-label="${0}"
                   class="${0}--tableofcontents__mobile__select"
-                  @change="${0}"
-                >
+                  @change="${0}">
                   ${0}
                 </select>
                 ${0}
@@ -56,25 +52,21 @@
                   <li
                     class="${0}"
                     @click="${0}"
-                    @keydown="${0}"
-                  >
+                    @keydown="${0}">
                     <a
                       aria-current="${0}"
                       data-target="${0}"
-                      href="#${0}"
-                    >
+                      href="#${0}">
                       ${0}
                     </a>
                   </li>
                 `),itemClasses,handleClickItem,handleOnKeyDown,Object(if_defined.a)(selected?"location":void 0),name,name,title)}))):"",containerClasses,navigationClasses,this.layout===TOC_TYPES.HORIZONTAL&&stickyOffset?`${stickyOffset}px`:0,hasMobileContainerVisible?lit_html.f:Object(lit_element.d)(_t4||(_t4=_`
                 <div
                   ?hidden="${0}"
-                  class="${0}--tableofcontents__desktop__children"
-                >
+                  class="${0}--tableofcontents__desktop__children">
                   <slot
                     name="heading"
-                    @slotchange="${0}"
-                  ></slot>
+                    @slotchange="${0}"></slot>
                   <slot name="menu-rule"></slot>
                 </div>
               `),!hasHeading,prefix,handleSlotChangeHeading),prefix,"horizontal"===this.layout?Object(lit_element.d)(_t5||(_t5=_`
@@ -82,15 +74,13 @@
               `),pageIsRTL?Object(lit_element.d)(_t6||(_t6=_`
                       <div class="${0}">
                         <div
-                          class="${0}--toc__navbar-caret-right-gradient"
-                        ></div>
+                          class="${0}--toc__navbar-caret-right-gradient"></div>
                         <button
                           part="next-button"
                           tabindex="-1"
                           aria-hidden="true"
                           class="${0}--toc__navbar-caret-right"
-                          @click="${0}"
-                        >
+                          @click="${0}">
                           ${0}
                         </button>
                       </div>
@@ -101,33 +91,28 @@
                           tabindex="-1"
                           aria-hidden="true"
                           class="${0}--toc__navbar-caret-left"
-                          @click="${0}"
-                        >
+                          @click="${0}">
                           ${0}
                         </button>
                         <div
-                          class="${0}--toc__navbar-caret-left-gradient"
-                        ></div>
+                          class="${0}--toc__navbar-caret-left-gradient"></div>
                       </div>
                     `),caretLeftContainerClasses,prefix,paginateLeft,Object(_20.a)(),prefix)):"",ddsPrefix,stickyOffset&&this.layout!==TOC_TYPES.HORIZONTAL?`${stickyOffset}px`:0,prefix,prefix,pageIsRTL?"right":"left",currentScrollPosition,pageIsRTL?Object(lit_element.d)(_t8||(_t8=_` <div class="${0}--sub-content-right"></div> `),prefix):Object(lit_element.d)(_t9||(_t9=_` <div class="${0}--sub-content-left"></div> `),prefix),targets.map((item=>{var _ref2,_item$dataset$title2;const name=item.getAttribute("name"),title=(null!==(_ref2=null!==(_item$dataset$title2=item.dataset.title)&&void 0!==_item$dataset$title2?_item$dataset$title2:item.textContent)&&void 0!==_ref2?_ref2:"").trim(),selected=item===currentTarget,itemClasses=Object(class_map.a)({[`${prefix}--tableofcontents__desktop__item`]:!0,[`${prefix}--tableofcontents__desktop__item--active`]:selected});return Object(lit_element.d)(_t10||(_t10=_`
                       <li
                         class="${0}"
                         @click="${0}"
-                        @keydown="${0}"
-                      >
+                        @keydown="${0}">
                         <a
                           aria-current="${0}"
                           data-target="${0}"
-                          href="#${0}"
-                        >
+                          href="#${0}">
                           ${0}
                         </a>
                       </li>
                     `),itemClasses,handleClickItem,handleOnKeyDown,Object(if_defined.a)(selected?"location":void 0),name,name,title)})),pageIsRTL?Object(lit_element.d)(_t11||(_t11=_` <div class="${0}--sub-content-left"></div> `),prefix):Object(lit_element.d)(_t12||(_t12=_` <div class="${0}--sub-content-right"></div> `),prefix),prefix,prefix,this.ariaLabelFormatter,prefix,handleChangeSelect,targets.map((item=>{var _ref3,_item$dataset$title3;const name=item.getAttribute("name"),title=(null!==(_ref3=null!==(_item$dataset$title3=item.dataset.title)&&void 0!==_item$dataset$title3?_item$dataset$title3:item.textContent)&&void 0!==_ref3?_ref3:"").trim();return Object(lit_element.d)(_t13||(_t13=_`
                       <option
                         class="${0}--tableofcontents__mobile__select__option"
-                        value="${0}"
-                      >
+                        value="${0}">
                         ${0}
                       </option>
                     `),prefix,name,title)})),Object(table_of_contents_20.a)({class:`${prefix}--tableofcontents__mobile__select__icon`}),"horizontal"===this.layout?Object(lit_element.d)(_t14||(_t14=_`
@@ -139,38 +124,32 @@
                           tabindex="-1"
                           aria-hidden="true"
                           class="${0}--toc__navbar-caret-left"
-                          @click="${0}"
-                        >
+                          @click="${0}">
                           ${0}
                         </button>
                         <div
-                          class="${0}--toc__navbar-caret-left-gradient"
-                        ></div>
+                          class="${0}--toc__navbar-caret-left-gradient"></div>
                       </div>
                     `),caretLeftContainerClasses,prefix,paginateLeft,Object(caret_right_20.a)(),prefix):Object(lit_element.d)(_t16||(_t16=_`
                       <div class="${0}">
                         <div
-                          class="${0}--toc__navbar-caret-right-gradient"
-                        ></div>
+                          class="${0}--toc__navbar-caret-right-gradient"></div>
                         <button
                           part="next-button"
                           tabindex="-1"
                           aria-hidden="true"
                           class="${0}--toc__navbar-caret-right"
-                          @click="${0}"
-                        >
+                          @click="${0}">
                           ${0}
                         </button>
                       </div>
                     `),caretRightContainerClasses,prefix,prefix,paginateRight,Object(caret_right_20.a)())):"",prefix,prefix,hasMobileContainerVisible?Object(lit_element.d)(_t17||(_t17=_`
                   <div
                     ?hidden="${0}"
-                    class="${0}--tableofcontents__children__mobile"
-                  >
+                    class="${0}--tableofcontents__children__mobile">
                     <slot
                       name="heading"
-                      @slotchange="${0}"
-                    ></slot>
+                      @slotchange="${0}"></slot>
                   </div>
                 `),!hasHeading,prefix,handleSlotChangeHeading):void 0,handleSlotChange)}},{kind:"get",static:!0,key:"selectorDesktopItem",value:function(){return`.${prefix}--tableofcontents__desktop__item a`}},{kind:"field",static:!0,key:"selectorTarget",value:()=>"[name]"},{kind:"get",static:!0,key:"stableSelector",value:function(){return`${ddsPrefix}--table-of-contents`}},{kind:"field",static:!0,key:"styles",value:()=>table_of_contents_css}]}}),Object(mixins_host_listener.a)(Object(stable_selector.a)(lit_element.a)))}}]);
 //# sourceMappingURL=vendors~cloud~example-page-a~example-page-b~example-page-c~g100-theme-page~white-theme-page~cbdf2361.js.map

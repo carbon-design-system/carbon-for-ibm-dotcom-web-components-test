@@ -7,8 +7,7 @@
             <dds-image
               alt="${0}"
               default-src="${0}"
-              slot="image"
-            >
+              slot="image">
               ${0}
             </dds-image>
           `),Object(if_non_null.a)(videoName),Object(if_non_null.a)(thumbnail||videoThumbnailUrl),Object(play_video.a)({slot:"icon"}));return noPoster?void 0:Object(lit_element.d)(_t3||(_t3=_`
@@ -39,8 +38,7 @@
             <dds-card-cta-image
               class="${0}--card__video-thumbnail"
               alt="${0}"
-              default-src="${0}"
-            >
+              default-src="${0}">
               ${0}
             </dds-card-cta-image>
           `),prefix,Object(if_non_null.a)(videoName),Object(if_non_null.a)(thumbnail||videoThumbnailUrl),Object(play_video.a)({slot:"icon"}));return Object(lit_element.d)(_t3||(_t3=card_cta_`

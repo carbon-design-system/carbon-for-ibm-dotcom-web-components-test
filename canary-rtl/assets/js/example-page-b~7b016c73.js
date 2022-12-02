@@ -35,14 +35,12 @@
         `),prefix,prefix,prefix)}}},{kind:"method",key:"_renderSource",value:function(){const{_hasSourceHeading:hasSourceHeading,_hasSourceCopy:hasSourceCopy,_handleSlotChange:handleSlotChange}=this;return Object(lit_element.d)(_t7||(_t7=_`
       <div
         ?hidden="${0}"
-        class="${0}--quote__source"
-      >
+        class="${0}--quote__source">
         <slot @slotchange="${0}" name="source-heading"></slot>
         <slot @slotchange="${0}" name="source-copy"></slot>
         <slot
           @slotchange="${0}"
-          name="source-bottom-copy"
-        ></slot>
+          name="source-bottom-copy"></slot>
       </div>
     `),!hasSourceHeading||!hasSourceCopy,prefix,handleSlotChange,handleSlotChange,handleSlotChange)}},{kind:"method",key:"_renderFooter",value:function(){const{_hasFooter:hasFooter,_handleSlotChange:handleSlotChange}=this;return Object(lit_element.d)(_t8||(_t8=_`
       <div ?hidden="${0}" class="${0}--quote__footer">

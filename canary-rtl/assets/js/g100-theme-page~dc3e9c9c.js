@@ -3,8 +3,7 @@
       <div class="${0}--leadspace__row">
         <p
           data-autoid="${0}--leadspace__desc"
-          class="${0}--leadspace__desc"
-        >
+          class="${0}--leadspace__desc">
           <slot>${0}</slot>
         </p>
       </div>
@@ -17,8 +16,7 @@
               <div class="${0}--leadspace__row">
                 <slot
                   name="navigation"
-                  @slotchange="${0}"
-                ></slot>
+                  @slotchange="${0}"></slot>
                 ${0}
               </div>
               ${0}

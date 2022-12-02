@@ -7,8 +7,7 @@
         aria-haspopup="menu"
         aria-expanded="${0}"
         aria-label="${0}"
-        @click=${0}
-      >
+        @click=${0}>
         ${0}
       </a>
       <ul class="${0}--header__menu" aria-label="${0}">
@@ -25,8 +24,7 @@
         class="${0}--tabs__nav-link"
         role="tab"
         ?disabled="${0}"
-        aria-selected="${0}"
-      >
+        aria-selected="${0}">
         <slot></slot>
       </button>
     `),cloud_megamenu_tab_prefix,disabled,Boolean(selected))}},{kind:"field",static:!0,key:"styles",value:()=>cloud_masthead_css}]}}),tab.a);var megamenu_right_navigation=__webpack_require__(226);const{stablePrefix:cloud_megamenu_left_navigation_ddsPrefix}=settings.a;Object(decorate.a)([Object(lit_element.c)(`${cloud_megamenu_left_navigation_ddsPrefix}-cloud-megamenu-left-navigation`)],(function(_initialize,_DDSMegaMenuRightNavi){return{F:class extends _DDSMegaMenuRightNavi{constructor(...args){super(...args),_initialize(this)}},d:[{kind:"field",static:!0,key:"styles",value:()=>cloud_masthead_css}]}}),megamenu_right_navigation.b);var megamenu_left_navigation=__webpack_require__(293);const{stablePrefix:cloud_megamenu_right_navigation_ddsPrefix}=settings.a;Object(decorate.a)([Object(lit_element.c)(`${cloud_megamenu_right_navigation_ddsPrefix}-cloud-megamenu-right-navigation`)],(function(_initialize,_DDSMegaMenuLeftNavig){return{F:class extends _DDSMegaMenuLeftNavig{constructor(...args){super(...args),_initialize(this)}},d:[{kind:"field",static:!0,key:"styles",value:()=>cloud_masthead_css}]}}),megamenu_left_navigation.a);var _32=__webpack_require__(376);let cloud_megamenu_category_heading_t,cloud_megamenu_category_heading_=t=>t;const{stablePrefix:cloud_megamenu_category_heading_ddsPrefix}=settings.a;Object(decorate.a)([Object(lit_element.c)(`${cloud_megamenu_category_heading_ddsPrefix}-cloud-megamenu-category-heading`)],(function(_initialize,_LitElement){return{F:class extends _LitElement{constructor(...args){super(...args),_initialize(this)}},d:[{kind:"field",decorators:[Object(lit_element.e)({reflect:!0})],key:"href",value:()=>""},{kind:"field",decorators:[Object(lit_element.e)({reflect:!0})],key:"title",value:()=>""},{kind:"method",key:"render",value:function(){return Object(lit_element.d)(cloud_megamenu_category_heading_t||(cloud_megamenu_category_heading_t=cloud_megamenu_category_heading_`
@@ -39,8 +37,7 @@
       <dds-cloud-megamenu>
         <dds-cloud-megamenu-left-navigation
           view-all-href="${0}"
-          view-all-title="${0}"
-        >
+          view-all-title="${0}">
           <dds-cloud-megamenu-tabs value="${0}">
             ${0}
           </dds-cloud-megamenu-tabs>
@@ -61,8 +58,7 @@
                 id="panel-${0}"
                 role="tabpanel"
                 aria-labelledby="tab-${0}"
-                hidden
-              >
+                hidden>
                 <dds-cloud-megamenu-category-heading
                   href="${0}"
                   title="${0}"
@@ -84,8 +80,7 @@
             panel-id=${0}
             ?active="${0}"
             title="${0}"
-            data-autoid="${0}"
-          >
+            data-autoid="${0}">
           </dds-left-nav-menu>
         `),elem.lastHighlightedItem,elem.panelId,elem.selected,elem.title,elem.autoid):Object(lit_element.d)(_t6||(_t6=cloud_masthead_composite_`
         <dds-left-nav-menu-item
@@ -93,8 +88,7 @@
           ?active="${0}"
           href="${0}"
           title="${0}"
-          data-autoid="${0}"
-        ></dds-left-nav-menu-item>
+          data-autoid="${0}"></dds-left-nav-menu-item>
       `),elem.lastHighlightedItem,elem.selected,elem.url,elem.title,elem.autoid)));return heading&&items.unshift(Object(lit_element.d)(_t7||(_t7=cloud_masthead_composite_`
           <dds-left-nav-menu-category-heading
             >${0}</dds-left-nav-menu-category-heading
@@ -107,21 +101,18 @@
               `),null==profileItems?void 0:profileItems.map((item=>Object(lit_element.d)(_t10||(_t10=cloud_masthead_composite_`
                     <dds-cloud-left-nav-item
                       href="${0}"
-                      title="${0}"
-                    ></dds-cloud-left-nav-item>
+                      title="${0}"></dds-cloud-left-nav-item>
                   `),item.url,item.title)))),null==ctaButtons?void 0:ctaButtons.map((item=>Object(lit_element.d)(_t11||(_t11=cloud_masthead_composite_`
               <dds-cloud-left-nav-item
                 href="${0}"
-                title="${0}"
-              ></dds-cloud-left-nav-item>
+                title="${0}"></dds-cloud-left-nav-item>
             `),item.url,item.title))))),Object(lit_element.d)(_t12||(_t12=cloud_masthead_composite_`
       <dds-left-nav-menu-section
         section-id="${0}"
         ?is-submenu=${0}
         title=${0}
         titleUrl=${0}
-        ?show-back-button=${0}
-      >
+        ?show-back-button=${0}>
         ${0}
       </dds-left-nav-menu-section>
     `),sectionId,Object(if_non_null.a)(isSubmenu),Object(if_non_null.a)(sectionTitle),Object(if_non_null.a)(sectionUrl),Object(if_non_null.a)(showBackButton),items)}},{kind:"method",key:"firstUpdated",value:function(){var _this$_loadTranslatio,_this$_loadUserStatus;const{language:language,dataEndpoint:dataEndpoint}=this;var _this$_setLanguage;(Object(global.a)(),language)&&(null===(_this$_setLanguage=this._setLanguage)||void 0===_this$_setLanguage||_this$_setLanguage.call(this,language));null===(_this$_loadTranslatio=this._loadTranslation)||void 0===_this$_loadTranslatio||_this$_loadTranslatio.call(this,language,dataEndpoint).catch((()=>{})),null===(_this$_loadUserStatus=this._loadUserStatus)||void 0===_this$_loadUserStatus||_this$_loadUserStatus.call(this,this.authMethod),this.setStyleBySelector(`${cloud_masthead_composite_ddsPrefix}-cloud-masthead-container`,"z-index","900",!0)}},{kind:"method",key:"render",value:function(){const{activateSearch:activateSearch,authenticatedProfileItems:authenticatedProfileItems,authenticatedCtaButtons:authenticatedCtaButtons,contactUsButton:contactUsButton,hasContact:hasContact,platform:platform,platformUrl:platformUrl,inputTimeout:inputTimeout,mastheadAssistiveText:mastheadAssistiveText,menuBarAssistiveText:menuBarAssistiveText,menuButtonAssistiveTextActive:menuButtonAssistiveTextActive,menuButtonAssistiveTextInactive:menuButtonAssistiveTextInactive,language:language,openSearchDropdown:openSearchDropdown,searchPlaceholder:searchPlaceholder,selectedMenuItem:selectedMenuItem,unauthenticatedProfileItems:unauthenticatedProfileItems,unauthenticatedCtaButtons:unauthenticatedCtaButtons,userStatus:userStatus,l1Data:l1Data}=this,authenticated="anonymous"!==userStatus,profileItems=authenticated?authenticatedProfileItems:unauthenticatedProfileItems,ctaButtons=authenticated?authenticatedCtaButtons:unauthenticatedCtaButtons,formattedLang=null==language?void 0:language.toLowerCase().replace(/-(.*)/,(m=>m.toUpperCase()));let platformAltUrl=platformUrl;return platformUrl&&formattedLang&&"object"==typeof platformUrl&&Object.prototype.hasOwnProperty.call(platformUrl,formattedLang)&&(platformAltUrl=platformUrl[formattedLang].url||platformUrl),Object(lit_element.d)(_t13||(_t13=cloud_masthead_composite_`
@@ -134,8 +125,7 @@
         <dds-masthead-menu-button
           cloud
           button-label-active="${0}"
-          button-label-inactive="${0}"
-        >
+          button-label-inactive="${0}">
         </dds-masthead-menu-button>
 
         ${0}
@@ -146,8 +136,7 @@
           input-timeout="${0}"
           language="${0}"
           ?open="${0}"
-          placeholder="${0}"
-        ></dds-search-with-typeahead>
+          placeholder="${0}"></dds-search-with-typeahead>
         ${0}
         ${0}
         <dds-megamenu-overlay></dds-megamenu-overlay>
@@ -163,8 +152,7 @@
             `),Object(if_non_null.a)(platformAltUrl),platform):void 0,l1Data?void 0:Object(lit_element.d)(_t16||(_t16=cloud_masthead_composite_`
               <dds-top-nav
                 cloud
-                menu-bar-label="${0}"
-              >
+                menu-bar-label="${0}">
                 ${0}
               </dds-top-nav>
             `),Object(if_non_null.a)(menuBarAssistiveText),this._renderNavItems({selectedMenuItem:selectedMenuItem,target:masthead_composite.a.TOP_NAV,hasL1:!1})),activateSearch,inputTimeout,Object(if_non_null.a)(language),openSearchDropdown,Object(if_non_null.a)(searchPlaceholder),authenticated?Object(lit_element.d)(_t17||(_t17=cloud_masthead_composite_`

@@ -6,5 +6,15 @@
     "schedule:weekends",
     ":noUnscheduledUpdates"
   ],
-  "rangeStrategy": "replace"
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["major"],
+      "enabled": false
+    }
+  ],
+  "rangeStrategy": "replace",
+  "vulnerabilityAlerts": {
+    "enabled": true
+  },
+  "rebaseWhen": "never"
 }

@@ -1,7 +1,7 @@
 'use strict';
 const path = require('path');
 const Webpack = require('webpack');
-const ESLintWebpackPlugin = require('eslint-webpack-plugin');
+// const ESLintWebpackPlugin = require('eslint-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
@@ -44,7 +44,7 @@ module.exports = (options) => {
   const dest = path.join(__dirname, '../dist');
 
   let webpackConfig = {
-    devtool: options.devtool,
+    mode: 'development',
     entry: chunkEntries,
     output: {
       path: dest,
@@ -81,7 +81,7 @@ module.exports = (options) => {
         {
           test: /\.hbs$/,
           loader: 'handlebars-loader',
-          query: {
+          options: {
             partialDirs: [
               path.join(__dirname, '../src', 'layouts'),
               path.join(__dirname, '../src', 'pages'),
@@ -159,9 +159,11 @@ module.exports = (options) => {
       },
       ...styleLoaders,
       {
-        loader: options.isProduction ? 'sass-loader' : 'fast-sass-loader',
+        // loader: options.isProduction ? 'sass-loader' : 'fast-sass-loader',
+        loader: 'sass-loader',
         options: {
           includePaths: [
+            path.resolve(__dirname, 'node_modules'),
             path.resolve(__dirname, '..', 'node_modules'),
             path.resolve(__dirname, '../../../', 'node_modules'),
           ],
@@ -184,18 +186,13 @@ module.exports = (options) => {
     );
   } else {
     webpackConfig.plugins.push(new Webpack.HotModuleReplacementPlugin());
-    webpackConfig.plugins.push(new ESLintWebpackPlugin());
+    // webpackConfig.plugins.push(new ESLintWebpackPlugin());
 
     webpackConfig.devServer = {
       port: options.port,
-      contentBase: dest,
       historyApiFallback: true,
       compress: options.isProduction,
-      inline: !options.isProduction,
       hot: !options.isProduction,
-      stats: {
-        chunks: false,
-      },
     };
 
     webpackConfig.plugins.push(

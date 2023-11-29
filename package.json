@@ -2,12 +2,15 @@
   "name": "ibmdotcom-web-components-test",
   "version": "0.0.0",
   "private": true,
+  "engines": {
+    "node": ">=18.x"
+  },
   "scripts": {
     "clean": "rimraf dist",
     "build": "webpack --config ./config/webpack-prod.config.js --colors --optimize-minimize",
-    "start": "webpack-dev-server --config ./config/webpack-dev.config.js --watch --colors -d",
+    "start": "webpack-dev-server --config ./config/webpack-dev.config.js --watch --color",
     "lint": "eslint src",
-    "lint:styles": "stylelint '**/*.{css,scss}' --config ./packages/stylelint-config-ibmdotcom",
+    "lint:styles": "stylelint '**/*.{css,scss}' --config ./packages/stylelint-config-carbon",
     "test:e2e:local": "start-server-and-test 'http-server -c-1 dist --silent' 8080 'percy exec --config tests/e2e/.percy.json -- cypress run --config video=false --config-file tests/e2e/cypress.json'",
     "test:e2e:local:no-percy": "start-server-and-test 'http-server -c-1 dist --silent' 8080 'cypress run --config video=false --config-file tests/e2e/cypress.json'",
     "test:e2e:local:no-percy:with-video": "start-server-and-test 'http-server -c-1 dist --silent' 8080 'cypress run --config-file tests/e2e/cypress.json'",
@@ -32,6 +35,7 @@
     "@percy/dom": "^1.0.0-beta.70",
     "autoprefixer": "^9.8.8",
     "babel-loader": "^8.2.3",
+    "babel-preset-carbon": "^0.0.14",
     "browser-sync": "^2.26.3",
     "browser-sync-webpack-plugin": "^2.2.2",
     "clean-webpack-plugin": "^0.1.19",
@@ -40,36 +44,69 @@
     "css-loader": "^1.0.1",
     "cypress": "^9.0.0",
     "dotenv": "^14.0.0",
-    "eslint": "^8.0.0",
-    "eslint-plugin-cypress": "^2.11.3",
-    "eslint-plugin-jsdoc": "^37.0.0",
-    "eslint-webpack-plugin": "^3.1.1",
-    "fast-sass-loader": "^1.5.0",
+    "eslint": "^8.54.0",
+    "eslint-config-carbon": "^3.10.0",
+    "fast-sass-loader": "^2.0.1",
     "file-loader": "^6.0.0",
     "handlebars": "4.7.7",
     "handlebars-loader": "^1.7.0",
     "html-webpack-plugin": "^4.5.1",
     "http-server": "^14.0.0",
     "husky": "^7.0.0",
-    "lint-staged": "^12.0.0",
+    "lint-staged": "^15.1.0",
     "mini-css-extract-plugin": "^0.12.0",
-    "node-sass": "^4.9.4",
     "postcss-loader": "^3.0.0",
     "prettier": "^2.1.2",
     "rtlcss": "^2.6.0",
-    "sass-loader": "^7.1.0",
+    "sass": "^1.69.5",
+    "sass-loader": "^13.3.2",
     "start-server-and-test": "^1.12.6",
     "style-loader": "^3.0.0",
-    "stylelint": "^14.0.0",
     "terser-webpack-plugin": "^4.1.0",
-    "webpack": "^4.23.1",
-    "webpack-cli": "^3.1.2",
-    "webpack-dev-server": "^3.1.10"
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
-    "@carbon/grid": "^10.15.0",
-    "@carbon/ibmdotcom-web-components": "^1.29.0",
-    "@carbon/type": "^10.13.0",
-    "carbon-web-components": "^1.7.1"
-  }
+    "@carbon/ibmdotcom-web-components": "next",
+    "@carbon/styles": "^1.36.0",
+    "@carbon/web-components": "^2.0.1"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ],
+    "rules": {
+      "header-max-length": [
+        2,
+        "always",
+        72
+      ],
+      "body-max-line-length": [
+        2,
+        "always",
+        80
+      ],
+      "scope-case": [
+        0,
+        "always",
+        "lower-case"
+      ]
+    }
+  },
+  "lint-staged": {
+    "**/*.js": [
+      "prettier --write",
+      "eslint src"
+    ],
+    "*.md": [
+      "prettier --write"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint-config-carbon"
+    ]
+  },
+  "packageManager": "yarn@4.0.2"
 }

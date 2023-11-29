@@ -1,20 +1,15 @@
-@import '~carbon-components/scss/globals/scss/css--reset';
-@import '~@carbon/type/scss/font-face/mono';
-@import '~@carbon/type/scss/font-face/sans';
-@import '~@carbon/grid/scss/grid';
-@import '~@carbon/themes/scss/themes';
-@import './percy';
-@include carbon--font-face-mono();
-@include carbon--font-face-sans();
-@include carbon--type-reset();
+@use '@carbon/styles/scss/theme' as *;
+@use '@carbon/styles/scss/themes' as *;
+@use './percy';
+@include type-reset();
 
-@import '@carbon/ibmdotcom-styles/scss/components/scroll-into-view/_scroll-into-view.scss';
+@use '@carbon/ibmdotcom-styles/scss/components/scroll-into-view/_scroll-into-view.scss';
 
-// Requires for the test page using the standalone <dds-cloud-masthead-container>.
-@import '~@carbon/ibmdotcom-styles/scss/components/dotcom-shell/dotcom-shell';
+// Requires for the test page using the standalone <c4d-cloud-masthead-container>.
+@use '@carbon/ibmdotcom-styles/scss/components/dotcom-shell/dotcom-shell';
 
-// content-block-copy styles reset if using list markdown. Overriding with dds-item-paragraph styles here.
-bx-list-item {
+// content-block-copy styles reset if using list markdown. Overriding with c4d-item-paragraph styles here.
+cds-list-item {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -24,56 +19,56 @@ bx-list-item {
 }
 
 // There seems to be a bug where the height of the button group is being set as 0px
-dds-button-group-item {
+c4d-button-group-item {
   height: auto !important; /* stylelint-disable-line declaration-no-important */
 }
 
 // TODO move to white page
-dds-content-block-simple {
+c4d-content-block-simple {
   padding-bottom: 0;
 }
 
 // scroll animation delays
 /* stylelint-disable max-nesting-depth */
-dds-logo-grid-item,
-dds-card-group-item,
-dds-cta-section-item {
+c4d-logo-grid-item,
+c4d-card-group-item,
+c4d-cta-section-item {
   &:nth-of-type(3n) {
-    --dds--fade-in-out-delay: 0;
+    --c4d--fade-in-out-delay: 0;
   }
   &:nth-of-type(3n + 1) {
-    --dds--fade-in-out-delay: 250ms;
+    --c4d--fade-in-out-delay: 250ms;
   }
   &:nth-of-type(3n + 2) {
-    --dds--fade-in-out-delay: 500ms;
+    --c4d--fade-in-out-delay: 500ms;
   }
   &:nth-of-type(3n + 3) {
-    --dds--fade-in-out-delay: 750ms;
+    --c4d--fade-in-out-delay: 750ms;
   }
 }
 
-dds-content-group-cards-item {
+c4d-content-group-cards-item {
   &:nth-of-type(2n + 1) {
-    --dds--fade-in-out-delay: 0;
+    --c4d--fade-in-out-delay: 0;
   }
   &:nth-of-type(2n + 2) {
-    --dds--fade-in-out-delay: 250ms;
+    --c4d--fade-in-out-delay: 250ms;
   }
 }
 /* stylelint-enable max-nesting-depth */
 
-.ddstest-divider {
+.c4dtest-divider {
   margin: 50px 0;
 }
 
-.bx--g10-container {
-  @include carbon--theme($carbon--theme--g10, true);
+.cds--g10-container {
+  @include theme($g10, true);
 
-  background-color: $ui-background;
+  background-color: $background;
   padding-left: 1rem;
 }
 
 // TODO: Delete when change is reflected in WC Package
-dds-card-cta {
+c4d-card-cta {
   max-width: 320px;
 }

@@ -16,13 +16,13 @@ jobs:
     if: github.repository == 'carbon-design-system/carbon-for-ibm-dotcom-web-components-test'
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           token: ${{secrets.BOT_TOKEN}}
-      - name: Use Node.js 14.x
-        uses: actions/setup-node@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: '14.x'
+          node-version: 18.15
       - name: Install dependencies
         run: yarn install
       - name: Grab latest canary release
@@ -53,7 +53,7 @@ jobs:
           git commit -m "chore(deploy): deploy canary to GitHub Pages"
           git push origin gh-pages
       - name: Notify Slack upon failure
-        uses: act10ns/slack@v1
+        uses: act10ns/slack@v2
         if: failure()
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
@@ -63,13 +63,13 @@ jobs:
     if: github.repository == 'carbon-design-system/carbon-for-ibm-dotcom-web-components-test'
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
         with:
           token: ${{secrets.BOT_TOKEN}}
-      - name: Use Node.js 14.x
-        uses: actions/setup-node@v2
+      - name: Use Node.js
+        uses: actions/setup-node@v4
         with:
-          node-version: '14.x'
+          node-version: 18.15
       - name: Install dependencies
         run: yarn install
       - name: Grab latest canary release
@@ -102,7 +102,7 @@ jobs:
           git commit -m "chore(deploy): deploy canary (RTL) to GitHub Pages"
           git push origin gh-pages
       - name: Notify Slack upon failure
-        uses: act10ns/slack@v1
+        uses: act10ns/slack@v2
         if: failure()
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}

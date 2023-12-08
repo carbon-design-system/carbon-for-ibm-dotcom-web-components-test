@@ -139,11 +139,13 @@ module.exports = (options) => {
     {
       loader: 'postcss-loader',
       options: {
-        plugins: () => {
-          const autoPrefixer = require('autoprefixer')({
-            overrideBrowserslist: ['last 1 version', 'ie >= 11'],
-          });
-          return enableRTL ? [autoPrefixer, rtlcss] : [autoPrefixer];
+        postcssOptions: {
+          plugins: () => {
+            const autoPrefixer = require('autoprefixer')({
+              overrideBrowserslist: ['last 1 version'],
+            });
+            return enableRTL ? [autoPrefixer, rtlcss] : [autoPrefixer];
+          },
         },
         sourceMap: options.isProduction,
       },
@@ -158,17 +160,19 @@ module.exports = (options) => {
       },
       ...styleLoaders,
       {
-        loader: options.isProduction ? 'sass-loader' : 'fast-sass-loader',
+        loader: 'sass-loader',
         options: {
-          includePaths: [
-            path.resolve(__dirname, '..', 'node_modules'),
-            path.resolve(__dirname, '../../../', 'node_modules'),
-          ],
-          data: `
-              $feature-flags: (
-                enable-css-custom-properties: true
-              );
-            `,
+          sassOptions: {
+            includePaths: [
+              path.resolve(__dirname, '..', 'node_modules'),
+              path.resolve(__dirname, '../../../', 'node_modules'),
+            ],
+            data: `
+                $feature-flags: (
+                  enable-css-custom-properties: true
+                );
+              `,
+          },
         },
       },
     ],

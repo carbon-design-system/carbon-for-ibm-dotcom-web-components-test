@@ -1,7 +1,6 @@
 'use strict';
 const path = require('path');
 const Webpack = require('webpack');
-const ESLintWebpackPlugin = require('eslint-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
@@ -184,7 +183,6 @@ module.exports = (options) => {
     );
   } else {
     webpackConfig.plugins.push(new Webpack.HotModuleReplacementPlugin());
-    webpackConfig.plugins.push(new ESLintWebpackPlugin());
 
     webpackConfig.devServer = {
       port: options.port,

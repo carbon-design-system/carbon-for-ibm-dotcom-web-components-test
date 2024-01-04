@@ -1,12 +1,11 @@
 @use '@carbon/styles/scss/theme' as *;
 @use '@carbon/styles/scss/themes' as *;
 @use './percy';
-@include type-reset();
-
 @use '@carbon/ibmdotcom-styles/scss/components/scroll-into-view/_scroll-into-view.scss';
-
 // Requires for the test page using the standalone <c4d-cloud-masthead-container>.
 @use '@carbon/ibmdotcom-styles/scss/components/dotcom-shell/dotcom-shell';
+
+// @include type-reset();
 
 // content-block-copy styles reset if using list markdown. Overriding with c4d-item-paragraph styles here.
 cds-list-item {

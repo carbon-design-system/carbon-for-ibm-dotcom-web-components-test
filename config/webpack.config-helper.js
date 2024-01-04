@@ -60,12 +60,15 @@ module.exports = (options) => {
       new MiniCssExtractPlugin({
         filename: './assets/css/[name].css',
       }),
-      new Webpack.DefinePlugin({
-        'process.env': JSON.stringify(
-          Object.assign({}, dotenv.parsed || {}, {
-            NODE_ENV: options.isProduction ? 'production' : 'development',
-          })
-        ),
+      // new Webpack.DefinePlugin({
+      //   'process.env': JSON.stringify(
+      //     Object.assign({}, dotenv.parsed || {}, {
+      //       NODE_ENV: options.isProduction ? 'production' : 'development',
+      //     })
+      //   ),
+      // }),
+      new Webpack.ProvidePlugin({
+        process: 'process/browser',
       }),
     ],
     resolve: {
@@ -162,16 +165,17 @@ module.exports = (options) => {
         // loader: options.isProduction ? 'sass-loader' : 'fast-sass-loader',
         loader: 'sass-loader',
         options: {
-          includePaths: [
-            path.resolve(__dirname, 'node_modules'),
-            path.resolve(__dirname, '..', 'node_modules'),
-            path.resolve(__dirname, '../../../', 'node_modules'),
-          ],
-          data: `
-              $feature-flags: (
-                enable-css-custom-properties: true
-              );
-            `,
+          sassOptions: {
+            includePaths: [
+              path.resolve(__dirname, '..', 'node_modules'),
+              path.resolve(__dirname, '../../../', 'node_modules'),
+            ],
+            additionalData: `
+                $feature-flags: (
+                  enable-css-custom-properties: true
+                );
+              `,
+          },
         },
       },
     ],
@@ -192,7 +196,6 @@ module.exports = (options) => {
       port: options.port,
       historyApiFallback: true,
       compress: options.isProduction,
-      hot: !options.isProduction,
     };
 
     webpackConfig.plugins.push(

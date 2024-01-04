@@ -18,4 +18,4 @@ import '@carbon/ibmdotcom-web-components/es/components/content-group-simple';
 
 // Card Section
 import '@carbon/ibmdotcom-web-components/es/components/content-section';
-import '@carbon/ibmdotcom-web-components/es/components/card-section-images';
+import '@carbon/ibmdotcom-web-components/es/components/card-section-simple';

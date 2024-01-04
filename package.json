@@ -41,7 +41,7 @@
     "clean-webpack-plugin": "^0.1.19",
     "commander": "^6.1.0",
     "copy-webpack-plugin": "^4.5.4",
-    "css-loader": "^1.0.1",
+    "css-loader": "^6.8.1",
     "cypress": "^9.0.0",
     "dotenv": "^14.0.0",
     "eslint": "^8.54.0",
@@ -57,6 +57,7 @@
     "mini-css-extract-plugin": "^0.12.0",
     "postcss-loader": "^3.0.0",
     "prettier": "^2.1.2",
+    "process": "^0.11.10",
     "rtlcss": "^2.6.0",
     "sass": "^1.69.5",
     "sass-loader": "^13.3.2",
@@ -68,9 +69,9 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
-    "@carbon/ibmdotcom-web-components": "next",
+    "@carbon/ibmdotcom-web-components": "^2.0.0",
     "@carbon/styles": "^1.36.0",
-    "@carbon/web-components": "^2.0.1"
+    "@carbon/web-components": "^2.1.1"
   },
   "commitlint": {
     "extends": [

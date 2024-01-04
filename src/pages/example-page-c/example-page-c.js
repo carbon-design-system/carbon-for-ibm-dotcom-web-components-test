@@ -20,7 +20,7 @@ import '@carbon/ibmdotcom-web-components/es/components/callout-with-media';
 import '@carbon/ibmdotcom-web-components/es/components/card-link';
 
 // Image
-import '@carbon/ibmdotcom-web-components/es/components/image-with-caption';
+import '@carbon/ibmdotcom-web-components/es/components/image';
 
 // Content Group and Horizontal
 import '@carbon/ibmdotcom-web-components/es/components/content-block-horizontal';

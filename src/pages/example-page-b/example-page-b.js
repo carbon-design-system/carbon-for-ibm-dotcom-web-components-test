@@ -26,7 +26,7 @@ import '@carbon/ibmdotcom-web-components/es/components/content-block-cards';
 import '@carbon/ibmdotcom-web-components/es/components/feature-card';
 
 // Image
-import '@carbon/ibmdotcom-web-components/es/components/image-with-caption';
+import '@carbon/ibmdotcom-web-components/es/components/image';
 
 // Logo Grid
 import '@carbon/ibmdotcom-web-components/es/components/logo-grid';

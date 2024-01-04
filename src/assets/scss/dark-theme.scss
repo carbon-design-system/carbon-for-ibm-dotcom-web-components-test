@@ -1,18 +1,19 @@
 @use '@carbon/styles/scss/theme' as *;
 @use '@carbon/styles/scss/themes' as *;
 @use './percy';
-@include type-reset();
+
+// @include type-reset();
 
 body,
-.g100-page dds-leadspace {
+.g100-page c4d-leadspace {
   @include theme($g100, true);
 }
 
-dds-table-of-contents {
+c4d-table-of-contents {
   display: block;
 }
 
-dds-card-link-cta {
+c4d-card-link-cta {
   display: flex;
 }
 

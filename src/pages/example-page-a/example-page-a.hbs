@@ -1,26 +1,36 @@
 {{#> base }}
 <div class="page-container">
   <c4d-leadspace type="centered" alt="Image text" default-src="../assets/images/leadspace/fpo--leadspace--1584x560--004.jpg">
-    <c4d-leadspace-heading>Lead space title</c4d-leadspace-heading>
+    <c4d-leadspace-heading>Heading can go to two lines max</c4d-leadspace-heading>
     Use this area for a short line of copy to support the title
     <c4d-button-group slot="action">
       <c4d-button-group-item href="https://example.com">
-        Button 1
+        Primary action
         <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" slot="icon">
           <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
         </svg>
       </c4d-button-group-item>
       <c4d-button-group-item href="https://example.com">
-        Button 2
+        Secondary action
         <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 20 20" slot="icon">
           <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
         </svg>
       </c4d-button-group-item>
     </c4d-button-group>
-    <c4d-leadspace-image slot="image" alt="Image text" default-src="../assets/images/leadspace/fpo--leadspace--1584x560--004.jpg">
-      <c4d-image-item media="(min-width: 672px)" srcset="../assets/images/leadspace/fpo--leadspace--1584x560--004.jpg"></c4d-image-item>
-      <c4d-image-item media="(min-width: 0)" srcset="../assets/images/leadspace/fpo--leadspace--1584x560--004.jpg"></c4d-image-item>
-    </c4d-leadspace-image>
+    <c4d-background-media
+      slot="image"
+      alt="Image text"
+      default-src="../assets/images/leadspace/fpo--leadspace--1584x560--004.jpg"
+      opacity="100">
+      <c4d-image-item media="(min-width: 1312px)" srcset="../assets/images/leadspace/fpo--leadspace--1584x560--004.jpg">
+      </c4d-image-item>
+      <c4d-image-item media="(min-width: 672px)" srcset="../assets/images/leadspace/fpo--leadspace--1584x560--004.jpg">
+      </c4d-image-item>
+      <c4d-image-item media="(min-width: 320px)" srcset="../assets/images/leadspace/fpo--leadspace--1584x560--004.jpg">
+      </c4d-image-item>
+      <c4d-image-item media="(min-width: 0px)" srcset="../assets/images/leadspace/fpo--leadspace--1584x560--004.jpg">
+      </c4d-image-item>
+    </c4d-background-media>
   </c4d-leadspace>
   <c4d-table-of-contents stickyOffset='48'>
     <a name="1" data-title="Content Block - Mixed Groups"></a>
@@ -35,35 +45,14 @@
         Phasellus at elit sollicitudin, sodales nulla quis, consequat libero.
       </c4d-content-block-copy>
       <c4d-content-block-complementary>
-        <c4d-link-list type="default">
+        <c4d-link-list>
           <c4d-link-list-heading>Tutorial</c4d-link-list-heading>
-          <c4d-link-list-item-card href="https://example.com" cta-type="local">
+          <c4d-link-list-item-cta href="https://example.com" cta-type="local" type="default">
             <p>Containerization A Complete Guide</p>
-            <c4d-card-cta-footer>
-              <svg
-                slot="icon"
-                focusable="false"
-                preserveAspectRatio="xMidYMid meet"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                aria-hidden="true"
-                width="20"
-                height="20"
-                viewBox="0 0 20 20"
-                >
-                <path d="M11.8 2.8L10.8 3.8 16.2 9.3 1 9.3 1 10.7 16.2 10.7 10.8 16.2 11.8 17.2 19 10z"></path>
-              </svg>
-            </c4d-card-cta-footer>
-          </c4d-link-list-item-card>
-          <c4d-link-list-item-card href="https://example.com" cta-type="external">
+          </c4d-link-list-item-cta>
+          <c4d-link-list-item-cta href="https://example.com" cta-type="external" type="default">
             <p>Why should you use microservices and containers</p>
-            <c4d-card-cta-footer>
-              <svg focusable="false" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" width="20" height="20" viewBox="0 0 32 32" class="cds--card__cta c4d-ce--cta__icon">
-                <path d="M26,28H6a2.0027,2.0027,0,0,1-2-2V6A2.0027,2.0027,0,0,1,6,4H16V6H6V26H26V16h2V26A2.0027,2.0027,0,0,1,26,28Z"></path>
-                <path d="M20 2L20 4 26.586 4 18 12.586 19.414 14 28 5.414 28 12 30 12 30 2 20 2z"></path>
-              </svg>
-            </c4d-card-cta-footer>
-          </c4d-link-list-item-card>
+          </c4d-link-list-item-cta>
         </c4d-link-list>
       </c4d-content-block-complementary>
       <c4d-content-group-cards>
@@ -263,15 +252,14 @@
     <a name="3" data-title="Content Block - Simple"></a>
     <c4d-hr></c4d-hr>
     <c4d-content-block-simple>
-      <c4d-content-block-heading>Content Block - Simple</c4d-content-block-heading>
+      <c4d-content-block-heading><h2>Content Block - Simple</h2></c4d-content-block-heading>
       <c4d-content-block-copy size='sm'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales nulla quis, consequat libero. Here are some common categories: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales nulla quis, consequat libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean et ultricies est. Mauris iaculis eget dolor nec hendrerit. Phasellus at elit sollicitudin, sodales nulla quis, consequat libero.</c4d-content-block-copy>
-      <c4d-card-cta slot="footer" cta-type="external" href="https://example.com">
-        Lorem ipsum dolor sit ametttt
+      <c4d-card-cta slot="footer" cta-type="local" href="https://example.com">
+        Lorem ipsum dolor
         <c4d-card-cta-footer></c4d-card-cta-footer>
       </c4d-card-cta>
     </c4d-content-block-simple>
     <a name="4" data-title="Content Block - With Media"></a>
-    <c4d-hr></c4d-hr>
     <c4d-content-block-media>
       <c4d-content-block-heading>Content Block - With Media</c4d-content-block-heading>
       <c4d-content-block-copy

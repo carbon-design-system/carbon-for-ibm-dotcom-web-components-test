@@ -3,6 +3,7 @@ import '../global';
 
 // Leadspace
 import '@carbon/ibmdotcom-web-components/es/components/leadspace';
+import '@carbon/ibmdotcom-web-components/es/components/background-media';
 
 // Table of Contents
 import '@carbon/ibmdotcom-web-components/es/components/table-of-contents';

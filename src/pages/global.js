@@ -18,14 +18,13 @@ import '@carbon/ibmdotcom-web-components/es/components/content-group-pictograms'
 
 // Content Item
 import '@carbon/ibmdotcom-web-components/es/components/content-item';
-import '@carbon/ibmdotcom-web-components/es/components/content-item-horizontal';
+import '@carbon/ibmdotcom-web-components/es/components/content-item-row';
 
 // CTA
 import '@carbon/ibmdotcom-web-components/es/components/cta';
 
 // Feature Card
 import '@carbon/ibmdotcom-web-components/es/components/feature-card';
-import '@carbon/ibmdotcom-web-components/es/components/feature-card-block-large';
 
 // Horizontal Rule
 import '@carbon/ibmdotcom-web-components/es/components/horizontal-rule';

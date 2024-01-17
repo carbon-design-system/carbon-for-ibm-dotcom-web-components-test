@@ -2433,36 +2433,36 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@carbon/ibmdotcom-services@npm:2.1.0-canary.7462874626.0+de38e68":
-  version: 2.1.0-canary.7462874626.0
-  resolution: "@carbon/ibmdotcom-services@npm:2.1.0-canary.7462874626.0"
+"@carbon/ibmdotcom-services@npm:2.1.0":
+  version: 2.1.0
+  resolution: "@carbon/ibmdotcom-services@npm:2.1.0"
   dependencies:
     "@babel/runtime": "npm:^7.16.3"
-    "@carbon/ibmdotcom-utilities": "npm:2.1.0-canary.7462874626.0+de38e68"
+    "@carbon/ibmdotcom-utilities": "npm:2.1.0"
     "@carbon/telemetry": "npm:0.1.0"
     axios: "npm:^1.6.0"
     marked: "npm:^4.0.10"
     window-or-global: "npm:^1.0.1"
-  checksum: 065fd951957939af1731f5957b359628550fb071c0963782a826c30f3a3449d4bc22288b8b76f7dcf1cdc5a515e634a4cc3c1566326a503351171d097313f3a7
+  checksum: c320746e9f7f88a1990750312a17766e30cdadd6d73bbd398599fab40d06526ec6aef60639fae8ab4cdd5ea0044c6ca552edb80be99a416953260b4ed52188d1
   languageName: node
   linkType: hard
 
-"@carbon/ibmdotcom-styles@npm:2.1.0-canary.7462874626.0+de38e68":
-  version: 2.1.0-canary.7462874626.0
-  resolution: "@carbon/ibmdotcom-styles@npm:2.1.0-canary.7462874626.0"
+"@carbon/ibmdotcom-styles@npm:2.1.0":
+  version: 2.1.0
+  resolution: "@carbon/ibmdotcom-styles@npm:2.1.0"
   dependencies:
     "@carbon/icons-react": "npm:11.33.0"
     "@carbon/layout": "npm:11.20.1"
     "@carbon/styles": "npm:1.47.0"
     "@carbon/telemetry": "npm:0.1.0"
     "@carbon/type": "npm:11.25.1"
-  checksum: cfa72e410ed133fb54775c27b9e619a71050c677058d2383a35618ed7ffa339f4ac3f24d2234a3dff947f179e37af165f7516c6a9c3c3444521bcaa7154dbfbe
+  checksum: c45158b53c9b2275fccb658fd61bbffa9b03e85a582635f3bc41414dfa4e52dce8486768c4f48ac50ae4863704b369961ea97e00cae15396c60bfd6df29b3e61
   languageName: node
   linkType: hard
 
-"@carbon/ibmdotcom-utilities@npm:2.1.0-canary.7462874626.0+de38e68":
-  version: 2.1.0-canary.7462874626.0
-  resolution: "@carbon/ibmdotcom-utilities@npm:2.1.0-canary.7462874626.0"
+"@carbon/ibmdotcom-utilities@npm:2.1.0":
+  version: 2.1.0
+  resolution: "@carbon/ibmdotcom-utilities@npm:2.1.0"
   dependencies:
     "@carbon/telemetry": "npm:0.1.0"
     axios: "npm:^1.6.0"
@@ -2471,17 +2471,17 @@ __metadata:
     marked: "npm:^4.0.10"
     striptags: "npm:^3.2.0"
     window-or-global: "npm:^1.0.1"
-  checksum: b5183206417dd55a616a6a4eaefcee1ab021028ceae5dbbc56401b51ff7fb1a3ae39727ec4cbf6ab695d4443037659fd41e2b4dce77ef0c63ccbf26a14ae74e9
+  checksum: 01e0511deafde974821c797021a1691ca371c898ddad9ea10ac63f1c5fa439f6b28570e82bdc1595206e9d6383f1a9155fc7b9110def91b966479a252f3abddc
   languageName: node
   linkType: hard
 
-"@carbon/ibmdotcom-web-components@npm:canary":
-  version: 2.1.0-canary.7462874626.0
-  resolution: "@carbon/ibmdotcom-web-components@npm:2.1.0-canary.7462874626.0"
+"@carbon/ibmdotcom-web-components@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@carbon/ibmdotcom-web-components@npm:2.1.0"
   dependencies:
-    "@carbon/ibmdotcom-services": "npm:2.1.0-canary.7462874626.0+de38e68"
-    "@carbon/ibmdotcom-styles": "npm:2.1.0-canary.7462874626.0+de38e68"
-    "@carbon/ibmdotcom-utilities": "npm:2.1.0-canary.7462874626.0+de38e68"
+    "@carbon/ibmdotcom-services": "npm:2.1.0"
+    "@carbon/ibmdotcom-styles": "npm:2.1.0"
+    "@carbon/ibmdotcom-utilities": "npm:2.1.0"
     "@carbon/icons-react": "npm:10.49.2"
     "@carbon/layout": "npm:11.20.1"
     "@carbon/motion": "npm:11.16.1"
@@ -2513,7 +2513,7 @@ __metadata:
       optional: true
     react-redux:
       optional: true
-  checksum: 87334a2c91e1987d163f8b51c60402695c642f43fca8034b5431f3f3542d0952e127c28eb2bc36bb765a37e6f05ac26fc83bbc98efbb306bf0f23bc8266dc304
+  checksum: 9182783bf56b426336f3c3a431b44f4f6a9f53586194a01b5c17453946c6bd577459d037b2d20bdf9c05fc3ac6a70c9bfe60011074721dda9b9018875415ed0a
   languageName: node
   linkType: hard
 
@@ -8667,7 +8667,7 @@ __metadata:
     "@actions/core": "npm:^1.6.0"
     "@babel/core": "npm:^7.16.0"
     "@babel/preset-env": "npm:^7.16.0"
-    "@carbon/ibmdotcom-web-components": "npm:canary"
+    "@carbon/ibmdotcom-web-components": "npm:^2.1.0"
     "@carbon/styles": "npm:^1.36.0"
     "@carbon/web-components": "npm:^2.1.1"
     "@commitlint/cli": "npm:^16.0.0"

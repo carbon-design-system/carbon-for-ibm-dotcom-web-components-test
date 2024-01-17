@@ -69,7 +69,7 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
-    "@carbon/ibmdotcom-web-components": "canary",
+    "@carbon/ibmdotcom-web-components": "^2.1.0",
     "@carbon/styles": "^1.36.0",
     "@carbon/web-components": "^2.1.1"
   },

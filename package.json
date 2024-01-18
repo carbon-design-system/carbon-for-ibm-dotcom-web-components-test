@@ -48,7 +48,7 @@
     "eslint-config-carbon": "^3.10.0",
     "fast-sass-loader": "^2.0.1",
     "file-loader": "^6.0.0",
-    "handlebars": "4.7.7",
+    "handlebars": "4.7.8",
     "handlebars-loader": "^1.7.0",
     "html-webpack-plugin": "^4.5.1",
     "http-server": "^14.0.0",

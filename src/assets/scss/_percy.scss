@@ -1,10 +1,10 @@
 // Styles that are included only in percy snapshots
 /* stylelint-disable declaration-no-important */
 @media only percy {
-  dds-video-player-container,
-  dds-video-cta-container,
-  dds-callout-with-media-video,
-  dds-link-list-item-cta[cta-type='video'] {
+  c4d-video-player-container,
+  c4d-video-cta-container,
+  c4d-callout-with-media-video,
+  c4d-link-list-item-cta[cta-type='video'] {
     display: none !important;
   }
 }

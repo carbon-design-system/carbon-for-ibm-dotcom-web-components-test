@@ -4190,13 +4190,13 @@ optgroup.cds--select-optgroup:disabled,
 }
 
 /**
- * Copyright IBM Corp. 2016, 2023
+ * Copyright IBM Corp. 2016, 2024
  *
  * This source code is licensed under the Apache-2.0 license found in the
  * LICENSE file in the root directory of this source tree.
  */
 /**
- * Copyright IBM Corp. 2016, 2023
+ * Copyright IBM Corp. 2016, 2024
  *
  * This source code is licensed under the Apache-2.0 license found in the
  * LICENSE file in the root directory of this source tree.
@@ -5622,7 +5622,7 @@ optgroup.cds--select-optgroup:disabled,
   align-items: flex-start;
 }
 
-.cds--modal-close-button {
+.cds--modal-close-button, :host(c4d-expressive-modal-close-button) {
   position: absolute;
   inset-block-start: 0;
   inset-inline-end: 0;
@@ -5687,8 +5687,9 @@ optgroup.cds--select-optgroup:disabled,
   inset-inline-end: 0;
 }
 
-.cds--modal-header > .cds--slug:has(+ .cds--modal-close-button),
+.cds--modal-header > .cds--slug:has(+ .cds--modal-close-button, + :host(c4d-expressive-modal-close-button)),
 .cds--modal-header > .cds--modal-close-button ~ .cds--slug,
+.cds--modal-header > :host(c4d-expressive-modal-close-button) ~ .cds--slug,
 .cds--modal--slug .cds--modal-container-body > .cds--slug {
   inset-inline-end: 3rem;
 }
@@ -5761,6 +5762,9 @@ optgroup.cds--select-optgroup:disabled,
 
 :host(c4d-expressive-modal-close-button) .cds--modal-close {
   position: fixed;
+  z-index: 2;
+  inset-block-start: 0;
+  inset-inline-end: 0;
 }
 
 :host(c4d-expressive-modal-heading),

@@ -70,8 +70,8 @@
   },
   "dependencies": {
     "@carbon/ibmdotcom-web-components": "^2.2.0",
-    "@carbon/styles": "^1.36.0",
-    "@carbon/web-components": "^2.1.1"
+    "@carbon/styles": "^1.48.1",
+    "@carbon/web-components": "^2.2.0"
   },
   "commitlint": {
     "extends": [

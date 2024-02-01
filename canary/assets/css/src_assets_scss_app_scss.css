@@ -24047,6 +24047,11 @@ button.cds--header__search--close.cds--header__action[part=close-button] svg {
   .cds--masthead__l1-cta:disabled {
     background-color: var(--cds-text-disabled, rgba(22, 22, 22, 0.25));
   }
+  .cds--masthead__l1-cta-inner {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
   .cds--masthead__l1-login {
     padding: 1rem;
     border: none;

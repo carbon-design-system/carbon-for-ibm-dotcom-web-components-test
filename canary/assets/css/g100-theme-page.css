@@ -10,6 +10,9 @@
 body,
 .g100-page c4d-leadspace {
   --cds-ai-aura-end: rgba(0, 0, 0, 0);
+  --cds-ai-aura-hover-background: #333333;
+  --cds-ai-aura-hover-end: rgba(0, 0, 0, 0);
+  --cds-ai-aura-hover-start: rgba(69, 137, 255, 0.4);
   --cds-ai-aura-start: rgba(69, 137, 255, 0.1);
   --cds-ai-border-end: rgba(166, 200, 255, 0.24);
   --cds-ai-border-start: #4589ff;
@@ -43,6 +46,15 @@ body,
   --cds-border-tile-01: #525252;
   --cds-border-tile-02: #6f6f6f;
   --cds-border-tile-03: #8d8d8d;
+  --cds-chat-avatar-agent: #f4f4f4;
+  --cds-chat-avatar-bot: #4589ff;
+  --cds-chat-avatar-user: #f4f4f4;
+  --cds-chat-bubble-agent: #262626;
+  --cds-chat-bubble-agent-border: #525252;
+  --cds-chat-bubble-user: #393939;
+  --cds-chat-prompt-background: #161616;
+  --cds-chat-prompt-border-end: rgba(38, 38, 38, 0);
+  --cds-chat-prompt-border-start: #262626;
   --cds-field-01: #262626;
   --cds-field-02: #393939;
   --cds-field-03: #525252;

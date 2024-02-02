@@ -8835,6 +8835,9 @@ optgroup.cds--select-optgroup:disabled,
 
 :host(c4d-locale-modal) {
   --cds-ai-aura-end: rgba(255, 255, 255, 0);
+  --cds-ai-aura-hover-background: #edf5ff;
+  --cds-ai-aura-hover-end: rgba(255, 255, 255, 0);
+  --cds-ai-aura-hover-start: rgba(69, 137, 255, 0.4);
   --cds-ai-aura-start: rgba(69, 137, 255, 0.1);
   --cds-ai-border-end: #d0e2ff;
   --cds-ai-border-start: #78a9ff;
@@ -8868,6 +8871,15 @@ optgroup.cds--select-optgroup:disabled,
   --cds-border-tile-01: #c6c6c6;
   --cds-border-tile-02: #a8a8a8;
   --cds-border-tile-03: #c6c6c6;
+  --cds-chat-avatar-agent: #161616;
+  --cds-chat-avatar-bot: #0f62fe;
+  --cds-chat-avatar-user: #161616;
+  --cds-chat-bubble-agent: #ffffff;
+  --cds-chat-bubble-agent-border: #e0e0e0;
+  --cds-chat-bubble-user: #e0e0e0;
+  --cds-chat-prompt-background: #ffffff;
+  --cds-chat-prompt-border-end: rgba(244, 244, 244, 0);
+  --cds-chat-prompt-border-start: #f4f4f4;
   --cds-field-01: #f4f4f4;
   --cds-field-02: #ffffff;
   --cds-field-03: #f4f4f4;
@@ -9690,6 +9702,9 @@ optgroup.cds--select-optgroup:disabled,
   -webkit-padding-before: 3rem;
           padding-block-start: 3rem;
   --cds-ai-aura-end: rgba(0, 0, 0, 0);
+  --cds-ai-aura-hover-background: #333333;
+  --cds-ai-aura-hover-end: rgba(0, 0, 0, 0);
+  --cds-ai-aura-hover-start: rgba(69, 137, 255, 0.4);
   --cds-ai-aura-start: rgba(69, 137, 255, 0.1);
   --cds-ai-border-end: rgba(166, 200, 255, 0.24);
   --cds-ai-border-start: #4589ff;
@@ -9723,6 +9738,15 @@ optgroup.cds--select-optgroup:disabled,
   --cds-border-tile-01: #525252;
   --cds-border-tile-02: #6f6f6f;
   --cds-border-tile-03: #8d8d8d;
+  --cds-chat-avatar-agent: #f4f4f4;
+  --cds-chat-avatar-bot: #4589ff;
+  --cds-chat-avatar-user: #f4f4f4;
+  --cds-chat-bubble-agent: #262626;
+  --cds-chat-bubble-agent-border: #525252;
+  --cds-chat-bubble-user: #393939;
+  --cds-chat-prompt-background: #161616;
+  --cds-chat-prompt-border-end: rgba(38, 38, 38, 0);
+  --cds-chat-prompt-border-start: #262626;
   --cds-field-01: #262626;
   --cds-field-02: #393939;
   --cds-field-03: #525252;
@@ -10209,6 +10233,9 @@ optgroup.cds--select-optgroup:disabled,
 :host(c4d-legal-nav-item),
 :host(c4d-legal-nav-cookie-preferences-placeholder) div {
   --cds-ai-aura-end: rgba(0, 0, 0, 0);
+  --cds-ai-aura-hover-background: #333333;
+  --cds-ai-aura-hover-end: rgba(0, 0, 0, 0);
+  --cds-ai-aura-hover-start: rgba(69, 137, 255, 0.4);
   --cds-ai-aura-start: rgba(69, 137, 255, 0.1);
   --cds-ai-border-end: rgba(166, 200, 255, 0.24);
   --cds-ai-border-start: #4589ff;
@@ -10242,6 +10269,15 @@ optgroup.cds--select-optgroup:disabled,
   --cds-border-tile-01: #525252;
   --cds-border-tile-02: #6f6f6f;
   --cds-border-tile-03: #8d8d8d;
+  --cds-chat-avatar-agent: #f4f4f4;
+  --cds-chat-avatar-bot: #4589ff;
+  --cds-chat-avatar-user: #f4f4f4;
+  --cds-chat-bubble-agent: #262626;
+  --cds-chat-bubble-agent-border: #525252;
+  --cds-chat-bubble-user: #393939;
+  --cds-chat-prompt-background: #161616;
+  --cds-chat-prompt-border-end: rgba(38, 38, 38, 0);
+  --cds-chat-prompt-border-start: #262626;
   --cds-field-01: #262626;
   --cds-field-02: #393939;
   --cds-field-03: #525252;
@@ -10696,6 +10732,9 @@ optgroup.cds--select-optgroup:disabled,
 
 :host(c4d-legal-nav) {
   --cds-ai-aura-end: rgba(0, 0, 0, 0);
+  --cds-ai-aura-hover-background: #333333;
+  --cds-ai-aura-hover-end: rgba(0, 0, 0, 0);
+  --cds-ai-aura-hover-start: rgba(69, 137, 255, 0.4);
   --cds-ai-aura-start: rgba(69, 137, 255, 0.1);
   --cds-ai-border-end: rgba(166, 200, 255, 0.24);
   --cds-ai-border-start: #4589ff;
@@ -10729,6 +10768,15 @@ optgroup.cds--select-optgroup:disabled,
   --cds-border-tile-01: #525252;
   --cds-border-tile-02: #6f6f6f;
   --cds-border-tile-03: #8d8d8d;
+  --cds-chat-avatar-agent: #f4f4f4;
+  --cds-chat-avatar-bot: #4589ff;
+  --cds-chat-avatar-user: #f4f4f4;
+  --cds-chat-bubble-agent: #262626;
+  --cds-chat-bubble-agent-border: #525252;
+  --cds-chat-bubble-user: #393939;
+  --cds-chat-prompt-background: #161616;
+  --cds-chat-prompt-border-end: rgba(38, 38, 38, 0);
+  --cds-chat-prompt-border-start: #262626;
   --cds-field-01: #262626;
   --cds-field-02: #393939;
   --cds-field-03: #525252;
@@ -11625,6 +11673,9 @@ optgroup.cds--select-optgroup:disabled,
 :host(c4d-footer-logo),
 .cds--footer-logo {
   --cds-ai-aura-end: rgba(0, 0, 0, 0);
+  --cds-ai-aura-hover-background: #333333;
+  --cds-ai-aura-hover-end: rgba(0, 0, 0, 0);
+  --cds-ai-aura-hover-start: rgba(69, 137, 255, 0.4);
   --cds-ai-aura-start: rgba(69, 137, 255, 0.1);
   --cds-ai-border-end: rgba(166, 200, 255, 0.24);
   --cds-ai-border-start: #4589ff;
@@ -11658,6 +11709,15 @@ optgroup.cds--select-optgroup:disabled,
   --cds-border-tile-01: #525252;
   --cds-border-tile-02: #6f6f6f;
   --cds-border-tile-03: #8d8d8d;
+  --cds-chat-avatar-agent: #f4f4f4;
+  --cds-chat-avatar-bot: #4589ff;
+  --cds-chat-avatar-user: #f4f4f4;
+  --cds-chat-bubble-agent: #262626;
+  --cds-chat-bubble-agent-border: #525252;
+  --cds-chat-bubble-user: #393939;
+  --cds-chat-prompt-background: #161616;
+  --cds-chat-prompt-border-end: rgba(38, 38, 38, 0);
+  --cds-chat-prompt-border-start: #262626;
   --cds-field-01: #262626;
   --cds-field-02: #393939;
   --cds-field-03: #525252;
@@ -12144,6 +12204,9 @@ optgroup.cds--select-optgroup:disabled,
 
 :host(c4d-footer-nav) {
   --cds-ai-aura-end: rgba(0, 0, 0, 0);
+  --cds-ai-aura-hover-background: #333333;
+  --cds-ai-aura-hover-end: rgba(0, 0, 0, 0);
+  --cds-ai-aura-hover-start: rgba(69, 137, 255, 0.4);
   --cds-ai-aura-start: rgba(69, 137, 255, 0.1);
   --cds-ai-border-end: rgba(166, 200, 255, 0.24);
   --cds-ai-border-start: #4589ff;
@@ -12177,6 +12240,15 @@ optgroup.cds--select-optgroup:disabled,
   --cds-border-tile-01: #525252;
   --cds-border-tile-02: #6f6f6f;
   --cds-border-tile-03: #8d8d8d;
+  --cds-chat-avatar-agent: #f4f4f4;
+  --cds-chat-avatar-bot: #4589ff;
+  --cds-chat-avatar-user: #f4f4f4;
+  --cds-chat-bubble-agent: #262626;
+  --cds-chat-bubble-agent-border: #525252;
+  --cds-chat-bubble-user: #393939;
+  --cds-chat-prompt-background: #161616;
+  --cds-chat-prompt-border-end: rgba(38, 38, 38, 0);
+  --cds-chat-prompt-border-start: #262626;
   --cds-field-01: #262626;
   --cds-field-02: #393939;
   --cds-field-03: #525252;
@@ -12910,6 +12982,9 @@ nav.cds--footer-nav__locale-button--disabled {
 .cds--footer-nav-group,
 .cds--footer-nav-group.cds--accordion__item {
   --cds-ai-aura-end: rgba(0, 0, 0, 0);
+  --cds-ai-aura-hover-background: #333333;
+  --cds-ai-aura-hover-end: rgba(0, 0, 0, 0);
+  --cds-ai-aura-hover-start: rgba(69, 137, 255, 0.4);
   --cds-ai-aura-start: rgba(69, 137, 255, 0.1);
   --cds-ai-border-end: rgba(166, 200, 255, 0.24);
   --cds-ai-border-start: #4589ff;
@@ -12943,6 +13018,15 @@ nav.cds--footer-nav__locale-button--disabled {
   --cds-border-tile-01: #525252;
   --cds-border-tile-02: #6f6f6f;
   --cds-border-tile-03: #8d8d8d;
+  --cds-chat-avatar-agent: #f4f4f4;
+  --cds-chat-avatar-bot: #4589ff;
+  --cds-chat-avatar-user: #f4f4f4;
+  --cds-chat-bubble-agent: #262626;
+  --cds-chat-bubble-agent-border: #525252;
+  --cds-chat-bubble-user: #393939;
+  --cds-chat-prompt-background: #161616;
+  --cds-chat-prompt-border-end: rgba(38, 38, 38, 0);
+  --cds-chat-prompt-border-start: #262626;
   --cds-field-01: #262626;
   --cds-field-02: #393939;
   --cds-field-03: #525252;
@@ -13512,6 +13596,9 @@ nav.cds--footer-nav__locale-button--disabled {
 }
 .cds--language-selector__container {
   --cds-ai-aura-end: rgba(0, 0, 0, 0);
+  --cds-ai-aura-hover-background: #333333;
+  --cds-ai-aura-hover-end: rgba(0, 0, 0, 0);
+  --cds-ai-aura-hover-start: rgba(69, 137, 255, 0.4);
   --cds-ai-aura-start: rgba(69, 137, 255, 0.1);
   --cds-ai-border-end: rgba(166, 200, 255, 0.24);
   --cds-ai-border-start: #4589ff;
@@ -13545,6 +13632,15 @@ nav.cds--footer-nav__locale-button--disabled {
   --cds-border-tile-01: #525252;
   --cds-border-tile-02: #6f6f6f;
   --cds-border-tile-03: #8d8d8d;
+  --cds-chat-avatar-agent: #f4f4f4;
+  --cds-chat-avatar-bot: #4589ff;
+  --cds-chat-avatar-user: #f4f4f4;
+  --cds-chat-bubble-agent: #262626;
+  --cds-chat-bubble-agent-border: #525252;
+  --cds-chat-bubble-user: #393939;
+  --cds-chat-prompt-background: #161616;
+  --cds-chat-prompt-border-end: rgba(38, 38, 38, 0);
+  --cds-chat-prompt-border-start: #262626;
   --cds-field-01: #262626;
   --cds-field-02: #393939;
   --cds-field-03: #525252;
@@ -15847,6 +15943,9 @@ nav.cds--footer-nav__locale-button--disabled {
 
 .c4d--legal-nav {
   --cds-ai-aura-end: rgba(0, 0, 0, 0);
+  --cds-ai-aura-hover-background: #333333;
+  --cds-ai-aura-hover-end: rgba(0, 0, 0, 0);
+  --cds-ai-aura-hover-start: rgba(69, 137, 255, 0.4);
   --cds-ai-aura-start: rgba(69, 137, 255, 0.1);
   --cds-ai-border-end: rgba(166, 200, 255, 0.24);
   --cds-ai-border-start: #4589ff;
@@ -15880,6 +15979,15 @@ nav.cds--footer-nav__locale-button--disabled {
   --cds-border-tile-01: #525252;
   --cds-border-tile-02: #6f6f6f;
   --cds-border-tile-03: #8d8d8d;
+  --cds-chat-avatar-agent: #f4f4f4;
+  --cds-chat-avatar-bot: #4589ff;
+  --cds-chat-avatar-user: #f4f4f4;
+  --cds-chat-bubble-agent: #262626;
+  --cds-chat-bubble-agent-border: #525252;
+  --cds-chat-bubble-user: #393939;
+  --cds-chat-prompt-background: #161616;
+  --cds-chat-prompt-border-end: rgba(38, 38, 38, 0);
+  --cds-chat-prompt-border-start: #262626;
   --cds-field-01: #262626;
   --cds-field-02: #393939;
   --cds-field-03: #525252;
@@ -16335,6 +16443,9 @@ nav.cds--footer-nav__locale-button--disabled {
 .c4d--adjunct-links__container.c4d--legal-nav__micro,
 .c4d--legal-nav__list.c4d--legal-nav__micro {
   --cds-ai-aura-end: rgba(0, 0, 0, 0);
+  --cds-ai-aura-hover-background: #333333;
+  --cds-ai-aura-hover-end: rgba(0, 0, 0, 0);
+  --cds-ai-aura-hover-start: rgba(69, 137, 255, 0.4);
   --cds-ai-aura-start: rgba(69, 137, 255, 0.1);
   --cds-ai-border-end: rgba(166, 200, 255, 0.24);
   --cds-ai-border-start: #4589ff;
@@ -16368,6 +16479,15 @@ nav.cds--footer-nav__locale-button--disabled {
   --cds-border-tile-01: #525252;
   --cds-border-tile-02: #6f6f6f;
   --cds-border-tile-03: #8d8d8d;
+  --cds-chat-avatar-agent: #f4f4f4;
+  --cds-chat-avatar-bot: #4589ff;
+  --cds-chat-avatar-user: #f4f4f4;
+  --cds-chat-bubble-agent: #262626;
+  --cds-chat-bubble-agent-border: #525252;
+  --cds-chat-bubble-user: #393939;
+  --cds-chat-prompt-background: #161616;
+  --cds-chat-prompt-border-end: rgba(38, 38, 38, 0);
+  --cds-chat-prompt-border-start: #262626;
   --cds-field-01: #262626;
   --cds-field-02: #393939;
   --cds-field-03: #525252;
@@ -17038,6 +17158,9 @@ nav.cds--footer-nav__locale-button--disabled {
 :host(c4d-locale-button),
 .cds--locale-btn__container {
   --cds-ai-aura-end: rgba(0, 0, 0, 0);
+  --cds-ai-aura-hover-background: #333333;
+  --cds-ai-aura-hover-end: rgba(0, 0, 0, 0);
+  --cds-ai-aura-hover-start: rgba(69, 137, 255, 0.4);
   --cds-ai-aura-start: rgba(69, 137, 255, 0.1);
   --cds-ai-border-end: rgba(166, 200, 255, 0.24);
   --cds-ai-border-start: #4589ff;
@@ -17071,6 +17194,15 @@ nav.cds--footer-nav__locale-button--disabled {
   --cds-border-tile-01: #525252;
   --cds-border-tile-02: #6f6f6f;
   --cds-border-tile-03: #8d8d8d;
+  --cds-chat-avatar-agent: #f4f4f4;
+  --cds-chat-avatar-bot: #4589ff;
+  --cds-chat-avatar-user: #f4f4f4;
+  --cds-chat-bubble-agent: #262626;
+  --cds-chat-bubble-agent-border: #525252;
+  --cds-chat-bubble-user: #393939;
+  --cds-chat-prompt-background: #161616;
+  --cds-chat-prompt-border-end: rgba(38, 38, 38, 0);
+  --cds-chat-prompt-border-start: #262626;
   --cds-field-01: #262626;
   --cds-field-02: #393939;
   --cds-field-03: #525252;
@@ -20673,6 +20805,9 @@ button.cds--header__search--close.cds--header__action[part=close-button] svg {
 .cds--masthead,
 :host(c4d-masthead) {
   --cds-ai-aura-end: rgba(255, 255, 255, 0);
+  --cds-ai-aura-hover-background: #edf5ff;
+  --cds-ai-aura-hover-end: rgba(255, 255, 255, 0);
+  --cds-ai-aura-hover-start: rgba(69, 137, 255, 0.4);
   --cds-ai-aura-start: rgba(69, 137, 255, 0.1);
   --cds-ai-border-end: #d0e2ff;
   --cds-ai-border-start: #78a9ff;
@@ -20706,6 +20841,15 @@ button.cds--header__search--close.cds--header__action[part=close-button] svg {
   --cds-border-tile-01: #c6c6c6;
   --cds-border-tile-02: #a8a8a8;
   --cds-border-tile-03: #c6c6c6;
+  --cds-chat-avatar-agent: #161616;
+  --cds-chat-avatar-bot: #0f62fe;
+  --cds-chat-avatar-user: #161616;
+  --cds-chat-bubble-agent: #ffffff;
+  --cds-chat-bubble-agent-border: #e0e0e0;
+  --cds-chat-bubble-user: #e0e0e0;
+  --cds-chat-prompt-background: #ffffff;
+  --cds-chat-prompt-border-end: rgba(244, 244, 244, 0);
+  --cds-chat-prompt-border-start: #f4f4f4;
   --cds-field-01: #f4f4f4;
   --cds-field-02: #ffffff;
   --cds-field-03: #f4f4f4;
@@ -21191,6 +21335,9 @@ button.cds--header__search--close.cds--header__action[part=close-button] svg {
 
 .cds--masthead__l0 {
   --cds-ai-aura-end: rgba(255, 255, 255, 0);
+  --cds-ai-aura-hover-background: #edf5ff;
+  --cds-ai-aura-hover-end: rgba(255, 255, 255, 0);
+  --cds-ai-aura-hover-start: rgba(69, 137, 255, 0.4);
   --cds-ai-aura-start: rgba(69, 137, 255, 0.1);
   --cds-ai-border-end: #d0e2ff;
   --cds-ai-border-start: #78a9ff;
@@ -21224,6 +21371,15 @@ button.cds--header__search--close.cds--header__action[part=close-button] svg {
   --cds-border-tile-01: #c6c6c6;
   --cds-border-tile-02: #a8a8a8;
   --cds-border-tile-03: #c6c6c6;
+  --cds-chat-avatar-agent: #161616;
+  --cds-chat-avatar-bot: #0f62fe;
+  --cds-chat-avatar-user: #161616;
+  --cds-chat-bubble-agent: #ffffff;
+  --cds-chat-bubble-agent-border: #e0e0e0;
+  --cds-chat-bubble-user: #e0e0e0;
+  --cds-chat-prompt-background: #ffffff;
+  --cds-chat-prompt-border-end: rgba(244, 244, 244, 0);
+  --cds-chat-prompt-border-start: #f4f4f4;
   --cds-field-01: #f4f4f4;
   --cds-field-02: #ffffff;
   --cds-field-03: #f4f4f4;
@@ -22285,6 +22441,9 @@ button.cds--header__search--close.cds--header__action[part=close-button] svg {
 
 .cds--overflow-menu-options {
   --cds-ai-aura-end: rgba(255, 255, 255, 0);
+  --cds-ai-aura-hover-background: #edf5ff;
+  --cds-ai-aura-hover-end: rgba(255, 255, 255, 0);
+  --cds-ai-aura-hover-start: rgba(69, 137, 255, 0.4);
   --cds-ai-aura-start: rgba(69, 137, 255, 0.1);
   --cds-ai-border-end: #d0e2ff;
   --cds-ai-border-start: #78a9ff;
@@ -22318,6 +22477,15 @@ button.cds--header__search--close.cds--header__action[part=close-button] svg {
   --cds-border-tile-01: #c6c6c6;
   --cds-border-tile-02: #a8a8a8;
   --cds-border-tile-03: #c6c6c6;
+  --cds-chat-avatar-agent: #161616;
+  --cds-chat-avatar-bot: #0f62fe;
+  --cds-chat-avatar-user: #161616;
+  --cds-chat-bubble-agent: #ffffff;
+  --cds-chat-bubble-agent-border: #e0e0e0;
+  --cds-chat-bubble-user: #e0e0e0;
+  --cds-chat-prompt-background: #ffffff;
+  --cds-chat-prompt-border-end: rgba(244, 244, 244, 0);
+  --cds-chat-prompt-border-start: #f4f4f4;
   --cds-field-01: #f4f4f4;
   --cds-field-02: #ffffff;
   --cds-field-03: #f4f4f4;
@@ -22796,6 +22964,9 @@ button.cds--header__search--close.cds--header__action[part=close-button] svg {
   --gutter-width: 1rem;
   --column-width: calc(var(--grid-width) / 4);
   --cds-ai-aura-end: rgba(255, 255, 255, 0);
+  --cds-ai-aura-hover-background: #edf5ff;
+  --cds-ai-aura-hover-end: rgba(255, 255, 255, 0);
+  --cds-ai-aura-hover-start: rgba(69, 137, 255, 0.4);
   --cds-ai-aura-start: rgba(69, 137, 255, 0.1);
   --cds-ai-border-end: #d0e2ff;
   --cds-ai-border-start: #78a9ff;
@@ -22829,6 +23000,15 @@ button.cds--header__search--close.cds--header__action[part=close-button] svg {
   --cds-border-tile-01: #c6c6c6;
   --cds-border-tile-02: #a8a8a8;
   --cds-border-tile-03: #c6c6c6;
+  --cds-chat-avatar-agent: #161616;
+  --cds-chat-avatar-bot: #0f62fe;
+  --cds-chat-avatar-user: #161616;
+  --cds-chat-bubble-agent: #ffffff;
+  --cds-chat-bubble-agent-border: #e0e0e0;
+  --cds-chat-bubble-user: #e0e0e0;
+  --cds-chat-prompt-background: #ffffff;
+  --cds-chat-prompt-border-end: rgba(244, 244, 244, 0);
+  --cds-chat-prompt-border-start: #f4f4f4;
   --cds-field-01: #f4f4f4;
   --cds-field-02: #ffffff;
   --cds-field-03: #f4f4f4;
@@ -24594,6 +24774,9 @@ button.cds--header__search--close.cds--header__action[part=close-button] svg {
 :host(c4d-left-nav-menu-section),
 .cds--side-nav__menu-section {
   --cds-ai-aura-end: rgba(255, 255, 255, 0);
+  --cds-ai-aura-hover-background: #edf5ff;
+  --cds-ai-aura-hover-end: rgba(255, 255, 255, 0);
+  --cds-ai-aura-hover-start: rgba(69, 137, 255, 0.4);
   --cds-ai-aura-start: rgba(69, 137, 255, 0.1);
   --cds-ai-border-end: #d0e2ff;
   --cds-ai-border-start: #78a9ff;
@@ -24627,6 +24810,15 @@ button.cds--header__search--close.cds--header__action[part=close-button] svg {
   --cds-border-tile-01: #c6c6c6;
   --cds-border-tile-02: #a8a8a8;
   --cds-border-tile-03: #c6c6c6;
+  --cds-chat-avatar-agent: #161616;
+  --cds-chat-avatar-bot: #0f62fe;
+  --cds-chat-avatar-user: #161616;
+  --cds-chat-bubble-agent: #ffffff;
+  --cds-chat-bubble-agent-border: #e0e0e0;
+  --cds-chat-bubble-user: #e0e0e0;
+  --cds-chat-prompt-background: #ffffff;
+  --cds-chat-prompt-border-end: rgba(244, 244, 244, 0);
+  --cds-chat-prompt-border-start: #f4f4f4;
   --cds-field-01: #f4f4f4;
   --cds-field-02: #ffffff;
   --cds-field-03: #f4f4f4;
@@ -25243,6 +25435,9 @@ button.cds--side-nav__link--current > .cds--side-nav__link-text {
 
 .cds--side-nav__submenu {
   --cds-ai-aura-end: rgba(255, 255, 255, 0);
+  --cds-ai-aura-hover-background: #edf5ff;
+  --cds-ai-aura-hover-end: rgba(255, 255, 255, 0);
+  --cds-ai-aura-hover-start: rgba(69, 137, 255, 0.4);
   --cds-ai-aura-start: rgba(69, 137, 255, 0.1);
   --cds-ai-border-end: #d0e2ff;
   --cds-ai-border-start: #78a9ff;
@@ -25276,6 +25471,15 @@ button.cds--side-nav__link--current > .cds--side-nav__link-text {
   --cds-border-tile-01: #c6c6c6;
   --cds-border-tile-02: #a8a8a8;
   --cds-border-tile-03: #c6c6c6;
+  --cds-chat-avatar-agent: #161616;
+  --cds-chat-avatar-bot: #0f62fe;
+  --cds-chat-avatar-user: #161616;
+  --cds-chat-bubble-agent: #ffffff;
+  --cds-chat-bubble-agent-border: #e0e0e0;
+  --cds-chat-bubble-user: #e0e0e0;
+  --cds-chat-prompt-background: #ffffff;
+  --cds-chat-prompt-border-end: rgba(244, 244, 244, 0);
+  --cds-chat-prompt-border-start: #f4f4f4;
   --cds-field-01: #f4f4f4;
   --cds-field-02: #ffffff;
   --cds-field-03: #f4f4f4;
@@ -26627,6 +26831,9 @@ c4d-content-group-cards-item:nth-of-type(2n + 2) {
 
 .cds--g10-container {
   --cds-ai-aura-end: rgba(255, 255, 255, 0);
+  --cds-ai-aura-hover-background: #edf5ff;
+  --cds-ai-aura-hover-end: rgba(255, 255, 255, 0);
+  --cds-ai-aura-hover-start: rgba(69, 137, 255, 0.4);
   --cds-ai-aura-start: rgba(69, 137, 255, 0.1);
   --cds-ai-border-end: #d0e2ff;
   --cds-ai-border-start: #78a9ff;
@@ -26660,6 +26867,15 @@ c4d-content-group-cards-item:nth-of-type(2n + 2) {
   --cds-border-tile-01: #a8a8a8;
   --cds-border-tile-02: #c6c6c6;
   --cds-border-tile-03: #a8a8a8;
+  --cds-chat-avatar-agent: #161616;
+  --cds-chat-avatar-bot: #0f62fe;
+  --cds-chat-avatar-user: #161616;
+  --cds-chat-bubble-agent: #ffffff;
+  --cds-chat-bubble-agent-border: #e0e0e0;
+  --cds-chat-bubble-user: #e0e0e0;
+  --cds-chat-prompt-background: #ffffff;
+  --cds-chat-prompt-border-end: rgba(244, 244, 244, 0);
+  --cds-chat-prompt-border-start: #f4f4f4;
   --cds-field-01: #ffffff;
   --cds-field-02: #f4f4f4;
   --cds-field-03: #ffffff;

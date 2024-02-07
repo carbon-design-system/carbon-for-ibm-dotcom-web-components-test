@@ -22904,9 +22904,6 @@ button.cds--header__search--close.cds--header__action[part=close-button] svg {
   position: fixed;
   z-index: 99999;
   background-color: var(--cds-background, #ffffff);
-  /* !rtl:raw:
-  left: 0 !important;
-  */
 }
 .cds--overflow-menu-options:focus {
   outline: none;
@@ -24372,10 +24369,6 @@ button.cds--header__search--close.cds--header__action[part=close-button] svg {
   position: absolute;
   inset-block-start: 0;
   inset-inline-end: 0;
-  /* stylelint-disable-next-line comment-whitespace-inside */
-  /* !rtl:raw:
-  left: 0;
-  */
 }
 .cds--header__search--actions .cds--header__search--search,
 .cds--header__search--actions .cds--header__search--close {

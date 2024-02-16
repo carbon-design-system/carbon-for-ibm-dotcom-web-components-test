@@ -23,6 +23,9 @@ body,
   --cds-ai-gradient-start-01: rgba(208, 226, 255, 0.2);
   --cds-ai-gradient-start-02: transparent;
   --cds-ai-inner-shadow: rgba(69, 137, 255, 0.2);
+  --cds-ai-overlay: rgba(0, 17, 65, 0.5);
+  --cds-ai-skeleton-background: #0053ff;
+  --cds-ai-skeleton-element-background: #001141;
   --cds-background: #161616;
   --cds-background-active: rgba(141, 141, 141, 0.4);
   --cds-background-brand: #0f62fe;

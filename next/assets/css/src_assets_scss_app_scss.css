@@ -8848,6 +8848,9 @@ optgroup.cds--select-optgroup:disabled,
   --cds-ai-gradient-start-01: rgba(242, 244, 248, 0.5);
   --cds-ai-gradient-start-02: rgba(237, 245, 255, 0.5);
   --cds-ai-inner-shadow: rgba(69, 137, 255, 0.2);
+  --cds-ai-overlay: rgba(0, 17, 65, 0.5);
+  --cds-ai-skeleton-background: #b8d3ff;
+  --cds-ai-skeleton-element-background: #001141;
   --cds-background: #ffffff;
   --cds-background-active: rgba(141, 141, 141, 0.5);
   --cds-background-brand: #0f62fe;
@@ -9716,6 +9719,9 @@ optgroup.cds--select-optgroup:disabled,
   --cds-ai-gradient-start-01: rgba(208, 226, 255, 0.2);
   --cds-ai-gradient-start-02: transparent;
   --cds-ai-inner-shadow: rgba(69, 137, 255, 0.2);
+  --cds-ai-overlay: rgba(0, 17, 65, 0.5);
+  --cds-ai-skeleton-background: #0053ff;
+  --cds-ai-skeleton-element-background: #001141;
   --cds-background: #161616;
   --cds-background-active: rgba(141, 141, 141, 0.4);
   --cds-background-brand: #0f62fe;
@@ -10248,6 +10254,9 @@ optgroup.cds--select-optgroup:disabled,
   --cds-ai-gradient-start-01: rgba(208, 226, 255, 0.2);
   --cds-ai-gradient-start-02: transparent;
   --cds-ai-inner-shadow: rgba(69, 137, 255, 0.2);
+  --cds-ai-overlay: rgba(0, 17, 65, 0.5);
+  --cds-ai-skeleton-background: #0053ff;
+  --cds-ai-skeleton-element-background: #001141;
   --cds-background: #161616;
   --cds-background-active: rgba(141, 141, 141, 0.4);
   --cds-background-brand: #0f62fe;
@@ -10748,6 +10757,9 @@ optgroup.cds--select-optgroup:disabled,
   --cds-ai-gradient-start-01: rgba(208, 226, 255, 0.2);
   --cds-ai-gradient-start-02: transparent;
   --cds-ai-inner-shadow: rgba(69, 137, 255, 0.2);
+  --cds-ai-overlay: rgba(0, 17, 65, 0.5);
+  --cds-ai-skeleton-background: #0053ff;
+  --cds-ai-skeleton-element-background: #001141;
   --cds-background: #161616;
   --cds-background-active: rgba(141, 141, 141, 0.4);
   --cds-background-brand: #0f62fe;
@@ -11690,6 +11702,9 @@ optgroup.cds--select-optgroup:disabled,
   --cds-ai-gradient-start-01: rgba(208, 226, 255, 0.2);
   --cds-ai-gradient-start-02: transparent;
   --cds-ai-inner-shadow: rgba(69, 137, 255, 0.2);
+  --cds-ai-overlay: rgba(0, 17, 65, 0.5);
+  --cds-ai-skeleton-background: #0053ff;
+  --cds-ai-skeleton-element-background: #001141;
   --cds-background: #161616;
   --cds-background-active: rgba(141, 141, 141, 0.4);
   --cds-background-brand: #0f62fe;
@@ -12222,6 +12237,9 @@ optgroup.cds--select-optgroup:disabled,
   --cds-ai-gradient-start-01: rgba(208, 226, 255, 0.2);
   --cds-ai-gradient-start-02: transparent;
   --cds-ai-inner-shadow: rgba(69, 137, 255, 0.2);
+  --cds-ai-overlay: rgba(0, 17, 65, 0.5);
+  --cds-ai-skeleton-background: #0053ff;
+  --cds-ai-skeleton-element-background: #001141;
   --cds-background: #161616;
   --cds-background-active: rgba(141, 141, 141, 0.4);
   --cds-background-brand: #0f62fe;
@@ -13001,6 +13019,9 @@ nav.cds--footer-nav__locale-button--disabled {
   --cds-ai-gradient-start-01: rgba(208, 226, 255, 0.2);
   --cds-ai-gradient-start-02: transparent;
   --cds-ai-inner-shadow: rgba(69, 137, 255, 0.2);
+  --cds-ai-overlay: rgba(0, 17, 65, 0.5);
+  --cds-ai-skeleton-background: #0053ff;
+  --cds-ai-skeleton-element-background: #001141;
   --cds-background: #161616;
   --cds-background-active: rgba(141, 141, 141, 0.4);
   --cds-background-brand: #0f62fe;
@@ -13616,6 +13637,9 @@ nav.cds--footer-nav__locale-button--disabled {
   --cds-ai-gradient-start-01: rgba(208, 226, 255, 0.2);
   --cds-ai-gradient-start-02: transparent;
   --cds-ai-inner-shadow: rgba(69, 137, 255, 0.2);
+  --cds-ai-overlay: rgba(0, 17, 65, 0.5);
+  --cds-ai-skeleton-background: #0053ff;
+  --cds-ai-skeleton-element-background: #001141;
   --cds-background: #161616;
   --cds-background-active: rgba(141, 141, 141, 0.4);
   --cds-background-brand: #0f62fe;
@@ -15964,6 +15988,9 @@ nav.cds--footer-nav__locale-button--disabled {
   --cds-ai-gradient-start-01: rgba(208, 226, 255, 0.2);
   --cds-ai-gradient-start-02: transparent;
   --cds-ai-inner-shadow: rgba(69, 137, 255, 0.2);
+  --cds-ai-overlay: rgba(0, 17, 65, 0.5);
+  --cds-ai-skeleton-background: #0053ff;
+  --cds-ai-skeleton-element-background: #001141;
   --cds-background: #161616;
   --cds-background-active: rgba(141, 141, 141, 0.4);
   --cds-background-brand: #0f62fe;
@@ -16465,6 +16492,9 @@ nav.cds--footer-nav__locale-button--disabled {
   --cds-ai-gradient-start-01: rgba(208, 226, 255, 0.2);
   --cds-ai-gradient-start-02: transparent;
   --cds-ai-inner-shadow: rgba(69, 137, 255, 0.2);
+  --cds-ai-overlay: rgba(0, 17, 65, 0.5);
+  --cds-ai-skeleton-background: #0053ff;
+  --cds-ai-skeleton-element-background: #001141;
   --cds-background: #161616;
   --cds-background-active: rgba(141, 141, 141, 0.4);
   --cds-background-brand: #0f62fe;
@@ -17181,6 +17211,9 @@ nav.cds--footer-nav__locale-button--disabled {
   --cds-ai-gradient-start-01: rgba(208, 226, 255, 0.2);
   --cds-ai-gradient-start-02: transparent;
   --cds-ai-inner-shadow: rgba(69, 137, 255, 0.2);
+  --cds-ai-overlay: rgba(0, 17, 65, 0.5);
+  --cds-ai-skeleton-background: #0053ff;
+  --cds-ai-skeleton-element-background: #001141;
   --cds-background: #161616;
   --cds-background-active: rgba(141, 141, 141, 0.4);
   --cds-background-brand: #0f62fe;
@@ -20829,6 +20862,9 @@ button.cds--header__search--close.cds--header__action[part=close-button] svg {
   --cds-ai-gradient-start-01: rgba(242, 244, 248, 0.5);
   --cds-ai-gradient-start-02: rgba(237, 245, 255, 0.5);
   --cds-ai-inner-shadow: rgba(69, 137, 255, 0.2);
+  --cds-ai-overlay: rgba(0, 17, 65, 0.5);
+  --cds-ai-skeleton-background: #b8d3ff;
+  --cds-ai-skeleton-element-background: #001141;
   --cds-background: #ffffff;
   --cds-background-active: rgba(141, 141, 141, 0.5);
   --cds-background-brand: #0f62fe;
@@ -21360,6 +21396,9 @@ button.cds--header__search--close.cds--header__action[part=close-button] svg {
   --cds-ai-gradient-start-01: rgba(242, 244, 248, 0.5);
   --cds-ai-gradient-start-02: rgba(237, 245, 255, 0.5);
   --cds-ai-inner-shadow: rgba(69, 137, 255, 0.2);
+  --cds-ai-overlay: rgba(0, 17, 65, 0.5);
+  --cds-ai-skeleton-background: #b8d3ff;
+  --cds-ai-skeleton-element-background: #001141;
   --cds-background: #ffffff;
   --cds-background-active: rgba(141, 141, 141, 0.5);
   --cds-background-brand: #0f62fe;
@@ -22467,6 +22506,9 @@ button.cds--header__search--close.cds--header__action[part=close-button] svg {
   --cds-ai-gradient-start-01: rgba(242, 244, 248, 0.5);
   --cds-ai-gradient-start-02: rgba(237, 245, 255, 0.5);
   --cds-ai-inner-shadow: rgba(69, 137, 255, 0.2);
+  --cds-ai-overlay: rgba(0, 17, 65, 0.5);
+  --cds-ai-skeleton-background: #b8d3ff;
+  --cds-ai-skeleton-element-background: #001141;
   --cds-background: #ffffff;
   --cds-background-active: rgba(141, 141, 141, 0.5);
   --cds-background-brand: #0f62fe;
@@ -22918,9 +22960,6 @@ button.cds--header__search--close.cds--header__action[part=close-button] svg {
   position: fixed;
   z-index: 99999;
   background-color: var(--cds-background, #ffffff);
-  /* !rtl:raw:
-  left: 0 !important;
-  */
 }
 .cds--overflow-menu-options:focus {
   outline: none;
@@ -22993,6 +23032,9 @@ button.cds--header__search--close.cds--header__action[part=close-button] svg {
   --cds-ai-gradient-start-01: rgba(242, 244, 248, 0.5);
   --cds-ai-gradient-start-02: rgba(237, 245, 255, 0.5);
   --cds-ai-inner-shadow: rgba(69, 137, 255, 0.2);
+  --cds-ai-overlay: rgba(0, 17, 65, 0.5);
+  --cds-ai-skeleton-background: #b8d3ff;
+  --cds-ai-skeleton-element-background: #001141;
   --cds-background: #ffffff;
   --cds-background-active: rgba(141, 141, 141, 0.5);
   --cds-background-brand: #0f62fe;
@@ -24387,10 +24429,6 @@ button.cds--header__search--close.cds--header__action[part=close-button] svg {
   position: absolute;
   inset-block-start: 0;
   inset-inline-end: 0;
-  /* stylelint-disable-next-line comment-whitespace-inside */
-  /* !rtl:raw:
-  left: 0;
-  */
 }
 .cds--header__search--actions .cds--header__search--search,
 .cds--header__search--actions .cds--header__search--close {
@@ -24806,6 +24844,9 @@ button.cds--header__search--close.cds--header__action[part=close-button] svg {
   --cds-ai-gradient-start-01: rgba(242, 244, 248, 0.5);
   --cds-ai-gradient-start-02: rgba(237, 245, 255, 0.5);
   --cds-ai-inner-shadow: rgba(69, 137, 255, 0.2);
+  --cds-ai-overlay: rgba(0, 17, 65, 0.5);
+  --cds-ai-skeleton-background: #b8d3ff;
+  --cds-ai-skeleton-element-background: #001141;
   --cds-background: #ffffff;
   --cds-background-active: rgba(141, 141, 141, 0.5);
   --cds-background-brand: #0f62fe;
@@ -25468,6 +25509,9 @@ button.cds--side-nav__link--current > .cds--side-nav__link-text {
   --cds-ai-gradient-start-01: rgba(242, 244, 248, 0.5);
   --cds-ai-gradient-start-02: rgba(237, 245, 255, 0.5);
   --cds-ai-inner-shadow: rgba(69, 137, 255, 0.2);
+  --cds-ai-overlay: rgba(0, 17, 65, 0.5);
+  --cds-ai-skeleton-background: #b8d3ff;
+  --cds-ai-skeleton-element-background: #001141;
   --cds-background: #ffffff;
   --cds-background-active: rgba(141, 141, 141, 0.5);
   --cds-background-brand: #0f62fe;
@@ -26869,6 +26913,9 @@ c4d-content-group-cards-item:nth-of-type(2n + 2) {
   --cds-ai-gradient-start-01: rgba(242, 244, 248, 0.5);
   --cds-ai-gradient-start-02: rgba(237, 245, 255, 0.5);
   --cds-ai-inner-shadow: rgba(69, 137, 255, 0.2);
+  --cds-ai-overlay: rgba(0, 17, 65, 0.5);
+  --cds-ai-skeleton-background: #b8d3ff;
+  --cds-ai-skeleton-element-background: #001141;
   --cds-background: #f4f4f4;
   --cds-background-active: rgba(141, 141, 141, 0.5);
   --cds-background-brand: #0f62fe;

@@ -9663,7 +9663,7 @@ optgroup.cds--select-optgroup:disabled,
 }
 
 /**
- * Copyright IBM Corp. 2016, 2023
+ * Copyright IBM Corp. 2016, 2024
  *
  * This source code is licensed under the Apache-2.0 license found in the
  * LICENSE file in the root directory of this source tree.
@@ -12213,7 +12213,7 @@ optgroup.cds--select-optgroup:disabled,
 }
 :host(c4d-footer-logo[size=micro]) .c4d--footer-logo__link {
   position: absolute;
-  inset-block-start: -37px;
+  inset-block-start: -2.21875rem;
 }
 @media (min-width: 66rem) {
   :host(c4d-footer-logo[size=micro]) .c4d--footer-logo__link {
@@ -12222,6 +12222,16 @@ optgroup.cds--select-optgroup:disabled,
   }
 }
 
+@media (min-width: 42rem) and (max-width: 66rem) {
+  :host(c4d-footer-logo[size=micro][disable-locale-button]) {
+    background-color: var(--cds-background, #ffffff);
+    block-size: 3rem;
+    inline-size: 100%;
+  }
+  :host(c4d-footer-logo[size=micro][disable-locale-button]) .c4d--footer-logo__link {
+    inset-block-start: 0.78125rem;
+  }
+}
 :host(c4d-footer-nav) {
   --cds-ai-aura-end: rgba(0, 0, 0, 0);
   --cds-ai-aura-hover-background: #333333;

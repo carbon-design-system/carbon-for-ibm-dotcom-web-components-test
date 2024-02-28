@@ -26287,9 +26287,9 @@ button.cds--side-nav__link > .cds--side-nav__link-text {
   --c4d-masthead-max-height: calc(
     100vh - var(--cds-spacing-09, 3rem) - var(--cds-layout-05, 4rem)
   );
-  --c4d-masthead-overflow: overlay;
+  --c4d-masthead-overflow: auto;
   display: block;
-  overflow: hidden overlay;
+  overflow: hidden auto;
   background-color: var(--cds-background, #ffffff);
 }
 :host(c4d-megamenu):focus,
@@ -26620,6 +26620,19 @@ button.cds--side-nav__link > .cds--side-nav__link-text {
 :host(c4d-megamenu-category-group),
 .cds--masthead__megamenu__category-group {
   display: block;
+}
+:host(c4d-megamenu-category-group).only-child,
+.cds--masthead__megamenu__category-group.only-child {
+  /**
+   * Necessary to accommodate Safari issue with columns.
+   *
+   * Container height is calculated before breaking into specified number
+   * of columns, which causes extra blank whitespace beneath column content.
+   */
+}
+:host(c4d-megamenu-category-group).only-child .cds--masthead__megamenu__category-group-content-wrapper,
+.cds--masthead__megamenu__category-group.only-child .cds--masthead__megamenu__category-group-content-wrapper {
+  display: inline;
 }
 :host(c4d-megamenu-category-group).only-child .cds--masthead__megamenu__category-group-heading,
 .cds--masthead__megamenu__category-group.only-child .cds--masthead__megamenu__category-group-heading {

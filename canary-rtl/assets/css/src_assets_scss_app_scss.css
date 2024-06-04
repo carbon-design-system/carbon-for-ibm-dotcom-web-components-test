@@ -21752,7 +21752,7 @@ button.cds--header__search--close.cds--header__action[part=close-button] svg {
   background-color: none;
   block-size: 100%;
   inline-size: 100%;
-  inset-block-start: 3rem;
+  inset-block-start: 0;
   inset-inline-start: 0;
   opacity: 0;
   transition: opacity 300ms cubic-bezier(0.5, 0, 0.1, 1), visibility 300ms cubic-bezier(0.5, 0, 0.1, 1), background-color 300ms cubic-bezier(0.5, 0, 0.1, 1);
@@ -26676,7 +26676,7 @@ button.cds--side-nav__link > .cds--side-nav__link-text {
 
 :host(c4d-megamenu-top-nav-menu) .cds--header__menu-title[aria-expanded=true] + .cds--header__menu,
 .cds--masthead__megamenu__l0-nav .cds--header__menu-title[aria-expanded=true] + .cds--header__menu {
-  inset-block-start: 3rem;
+  inset-block-start: var(--c4d-masthead-l0-bottom-edge, 3rem);
 }
 
 .cds--masthead__megamenu__l1-nav .cds--header__menu-title[aria-expanded=true] + .cds--header__menu {

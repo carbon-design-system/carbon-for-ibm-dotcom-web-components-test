@@ -16,7 +16,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_dotcom_shell_dotcom_shell_container_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/dotcom-shell/dotcom-shell-container.js */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/dotcom-shell/dotcom-shell-container.js\");\n/* harmony import */ var _assets_scss_app_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/scss/app.scss */ \"./src/assets/scss/app.scss\");\n/* harmony import */ var _assets_scss_app_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_scss_app_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_button_group__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/button-group */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/button-group/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_button_group__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_carbon_ibmdotcom_web_components_es_components_button_group__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_card__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/card */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/card/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_card__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_carbon_ibmdotcom_web_components_es_components_card__WEBPACK_IMPORTED_MODULE_3__);\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_card_section_simple__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/card-section-simple */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/card-section-simple/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_card_section_simple__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_carbon_ibmdotcom_web_components_es_components_card_section_simple__WEBPACK_IMPORTED_MODULE_4__);\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_card_group__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/card-group */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/card-group/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_card_group__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_carbon_ibmdotcom_web_components_es_components_card_group__WEBPACK_IMPORTED_MODULE_5__);\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_content_group__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/content-group */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/content-group/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_content_group__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_carbon_ibmdotcom_web_components_es_components_content_group__WEBPACK_IMPORTED_MODULE_6__);\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_content_group_cards__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/content-group-cards */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/content-group-cards/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_content_group_cards__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_carbon_ibmdotcom_web_components_es_components_content_group_cards__WEBPACK_IMPORTED_MODULE_7__);\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_content_group_pictograms__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/content-group-pictograms */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/content-group-pictograms/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_content_group_pictograms__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_carbon_ibmdotcom_web_components_es_components_content_group_pictograms__WEBPACK_IMPORTED_MODULE_8__);\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_content_item__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/content-item */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/content-item/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_content_item__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_carbon_ibmdotcom_web_components_es_components_content_item__WEBPACK_IMPORTED_MODULE_9__);\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_content_item_row__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/content-item-row */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/content-item-row/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_content_item_row__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_carbon_ibmdotcom_web_components_es_components_content_item_row__WEBPACK_IMPORTED_MODULE_10__);\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_cta__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/cta */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/cta/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_cta__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_carbon_ibmdotcom_web_components_es_components_cta__WEBPACK_IMPORTED_MODULE_11__);\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_feature_card__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/feature-card */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/feature-card/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_feature_card__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_carbon_ibmdotcom_web_components_es_components_feature_card__WEBPACK_IMPORTED_MODULE_12__);\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_horizontal_rule__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/horizontal-rule */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/horizontal-rule/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_horizontal_rule__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_carbon_ibmdotcom_web_components_es_components_horizontal_rule__WEBPACK_IMPORTED_MODULE_13__);\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_image__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/image */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/image/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_image__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_carbon_ibmdotcom_web_components_es_components_image__WEBPACK_IMPORTED_MODULE_14__);\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_link_list__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/link-list */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/link-list/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_link_list__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_carbon_ibmdotcom_web_components_es_components_link_list__WEBPACK_IMPORTED_MODULE_15__);\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_link_with_icon__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/link-with-icon */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/link-with-icon/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_link_with_icon__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_carbon_ibmdotcom_web_components_es_components_link_with_icon__WEBPACK_IMPORTED_MODULE_16__);\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_pictogram_item__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/pictogram-item */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/pictogram-item/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_pictogram_item__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_carbon_ibmdotcom_web_components_es_components_pictogram_item__WEBPACK_IMPORTED_MODULE_17__);\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_video_player__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/video-player */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/video-player/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_video_player__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_carbon_ibmdotcom_web_components_es_components_video_player__WEBPACK_IMPORTED_MODULE_18__);\n\n\n\n// Button Group\n\n\n// Card\n\n\n\n// Card Group\n\n\n// Content Group Cards\n\n\n\n\n// Content Item\n\n\n\n// CTA\n\n\n// Feature Card\n\n\n// Horizontal Rule\n\n\n// Image\n\n\n// Link List\n\n\n// Link with Icon\n\n\n// Pictogram Item\n\n\n// Vieo Player\n\n\n//# sourceURL=webpack://ibmdotcom-web-components-test/./src/pages/global.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_dotcom_shell_dotcom_shell_container_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/dotcom-shell/dotcom-shell-container.js */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/dotcom-shell/dotcom-shell-container.js\");\n/* harmony import */ var _assets_scss_app_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/scss/app.scss */ \"./src/assets/scss/app.scss\");\n/* harmony import */ var _assets_scss_app_scss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_assets_scss_app_scss__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_button_group__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/button-group */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/button-group/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_card__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/card */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/card/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_card_section_simple__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/card-section-simple */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/card-section-simple/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_card_group__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/card-group */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/card-group/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_content_group__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/content-group */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/content-group/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_content_group_cards__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/content-group-cards */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/content-group-cards/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_content_group_pictograms__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/content-group-pictograms */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/content-group-pictograms/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_content_item__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/content-item */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/content-item/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_content_item_row__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/content-item-row */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/content-item-row/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_cta__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/cta */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/cta/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_feature_card__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/feature-card */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/feature-card/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_horizontal_rule__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/horizontal-rule */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/horizontal-rule/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_image__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/image */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/image/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_link_list__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/link-list */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/link-list/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_link_with_icon__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/link-with-icon */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/link-with-icon/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_pictogram_item__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/pictogram-item */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/pictogram-item/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_video_player__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/video-player */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/video-player/index.js\");\n\n\n\n// Button Group\n\n\n// Card\n\n\n\n// Card Group\n\n\n// Content Group Cards\n\n\n\n\n// Content Item\n\n\n\n// CTA\n\n\n// Feature Card\n\n\n// Horizontal Rule\n\n\n// Image\n\n\n// Link List\n\n\n// Link with Icon\n\n\n// Pictogram Item\n\n\n// Vieo Player\n\n\n//# sourceURL=webpack://ibmdotcom-web-components-test/./src/pages/global.js?");
 
 /***/ }),
 
@@ -27,7 +27,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _car
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _global__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../global */ \"./src/pages/global.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_card_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/card-link */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/card-link/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_card_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_carbon_ibmdotcom_web_components_es_components_card_link__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_feature_card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/feature-card */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/feature-card/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_feature_card__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_carbon_ibmdotcom_web_components_es_components_feature_card__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_quote__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/quote */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/quote/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_quote__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_carbon_ibmdotcom_web_components_es_components_quote__WEBPACK_IMPORTED_MODULE_3__);\n\n\n\n\n\n//# sourceURL=webpack://ibmdotcom-web-components-test/./src/pages/ui-components/ui-components.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _global__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../global */ \"./src/pages/global.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_card_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/card-link */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/card-link/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_feature_card__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/feature-card */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/feature-card/index.js\");\n/* harmony import */ var _carbon_ibmdotcom_web_components_es_components_quote__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @carbon/ibmdotcom-web-components/es/components/quote */ \"./node_modules/@carbon/ibmdotcom-web-components/es/components/quote/index.js\");\n\n\n\n\n\n//# sourceURL=webpack://ibmdotcom-web-components-test/./src/pages/ui-components/ui-components.js?");
 
 /***/ }),
 
@@ -127,6 +127,39 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack://ibmdotc
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/ensure chunk */
+/******/ 	(() => {
+/******/ 		__webpack_require__.f = {};
+/******/ 		// This file contains only the entry chunk.
+/******/ 		// The chunk loading function for additional chunks
+/******/ 		__webpack_require__.e = (chunkId) => {
+/******/ 			return Promise.all(Object.keys(__webpack_require__.f).reduce((promises, key) => {
+/******/ 				__webpack_require__.f[key](chunkId, promises);
+/******/ 				return promises;
+/******/ 			}, []));
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/get javascript chunk filename */
+/******/ 	(() => {
+/******/ 		// This function allow to reference async chunks
+/******/ 		__webpack_require__.u = (chunkId) => {
+/******/ 			// return url for filenames based on template
+/******/ 			return "./assets/js/" + chunkId + ".js";
+/******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/get mini-css chunk filename */
+/******/ 	(() => {
+/******/ 		// This function allow to reference all chunks
+/******/ 		__webpack_require__.miniCssF = (chunkId) => {
+/******/ 			// return url for filenames not based on template
+/******/ 			if ({"vendors-node_modules_axios_lib_axios_js":1,"vendors-node_modules_babel_runtime_regenerator_index_js-node_modules_babel_runtime_helpers_es-edba87":1,"vendors-node_modules_carbon_ibmdotcom-services_es_services_KalturaPlayer_KalturaPlayer_js-nod-c8fb09":1,"vendors-node_modules_carbon_ibmdotcom-web-components_es_component-mixins_cta_cta-v1_js-node_m-ce6ad6":1,"vendors-node_modules_carbon_ibmdotcom-web-components_es_components_card-group_index_js-node_m-c28ad0":1,"vendors-node_modules_carbon_ibmdotcom-web-components_es_components_card_index_js":1,"vendors-node_modules_carbon_ibmdotcom-web-components_es_components_content-block_content-block_js":1,"vendors-node_modules_carbon_ibmdotcom-web-components_es_components_content-group-cards_index_-fe4c81":1,"vendors-node_modules_carbon_ibmdotcom-web-components_es_components_content-section_content-se-cafed6":1,"vendors-node_modules_carbon_ibmdotcom-web-components_es_components_cta_index_js":1,"vendors-node_modules_carbon_ibmdotcom-web-components_es_components_cta_text-cta_js-node_modul-20495f":1,"vendors-node_modules_carbon_ibmdotcom-web-components_es_components_expressive-modal_expressiv-d01c75":1,"vendors-node_modules_carbon_ibmdotcom-web-components_es_components_footer_footer-container_js-262df1":1,"vendors-node_modules_carbon_ibmdotcom-web-components_es_components_image_index_js":1,"vendors-node_modules_carbon_ibmdotcom-web-components_es_components_lightbox-media-viewer_ligh-e94709":1,"vendors-node_modules_carbon_ibmdotcom-web-components_es_components_link-list_index_js-node_mo-5842e0":1,"vendors-node_modules_carbon_ibmdotcom-web-components_es_components_locale-modal_locale-modal--a6a33c":1,"vendors-node_modules_carbon_ibmdotcom-web-components_es_components_markdown_markdown_js-node_-c67e73":1,"vendors-node_modules_carbon_ibmdotcom-web-components_es_components_masthead_megamenu-heading_-70cf3a":1,"vendors-node_modules_carbon_ibmdotcom-web-components_es_components_pictogram-item_index_js-no-927073":1,"vendors-node_modules_carbon_ibmdotcom-web-components_es_components_video-player_index_js":1,"vendors-node_modules_carbon_ibmdotcom-web-components_es_globals_defs_js-node_modules_carbon_i-7a80a3":1,"vendors-node_modules_carbon_ibmdotcom-web-components_es_internal_vendor_carbon_ibmdotcom-serv-de6849":1,"vendors-node_modules_carbon_ibmdotcom-web-components_es_internal_vendor_carbon_web-components-b7c0d7":1,"vendors-node_modules_carbon_ibmdotcom-web-components_es_internal_vendor_carbon_web-components-eeba8e":1,"vendors-node_modules_isomorphic-dompurify_browser_js-node_modules_js-cookie_src_js_cookie_js--4e59fa":1,"vendors-node_modules_process_browser_js-node_modules_lit_reactive-element_development_decorat-1b26fc":1,"vendors-node_modules_redux-logger_dist_redux-logger_js-node_modules_redux-thunk_es_index_js-n-32af70":1,"vendors-node_modules_carbon_ibmdotcom-web-components_es_components_card-link_index_js-node_mo-56add8":1,"src_assets_scss_app_scss":1,"ui-components":1}[chunkId]) return "./assets/css/" + chunkId + ".css";
+/******/ 			// return url for filenames based on template
+/******/ 			return "./assets/css/" + chunkId + ".css";
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/global */
 /******/ 	(() => {
 /******/ 		__webpack_require__.g = (function() {
@@ -144,6 +177,52 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack://ibmdotc
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/load script */
+/******/ 	(() => {
+/******/ 		var inProgress = {};
+/******/ 		var dataWebpackPrefix = "ibmdotcom-web-components-test:";
+/******/ 		// loadScript function to load a script via script tag
+/******/ 		__webpack_require__.l = (url, done, key, chunkId) => {
+/******/ 			if(inProgress[url]) { inProgress[url].push(done); return; }
+/******/ 			var script, needAttach;
+/******/ 			if(key !== undefined) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				for(var i = 0; i < scripts.length; i++) {
+/******/ 					var s = scripts[i];
+/******/ 					if(s.getAttribute("src") == url || s.getAttribute("data-webpack") == dataWebpackPrefix + key) { script = s; break; }
+/******/ 				}
+/******/ 			}
+/******/ 			if(!script) {
+/******/ 				needAttach = true;
+/******/ 				script = document.createElement('script');
+/******/ 		
+/******/ 				script.charset = 'utf-8';
+/******/ 				script.timeout = 120;
+/******/ 				if (__webpack_require__.nc) {
+/******/ 					script.setAttribute("nonce", __webpack_require__.nc);
+/******/ 				}
+/******/ 				script.setAttribute("data-webpack", dataWebpackPrefix + key);
+/******/ 		
+/******/ 				script.src = url;
+/******/ 			}
+/******/ 			inProgress[url] = [done];
+/******/ 			var onScriptComplete = (prev, event) => {
+/******/ 				// avoid mem leaks in IE.
+/******/ 				script.onerror = script.onload = null;
+/******/ 				clearTimeout(timeout);
+/******/ 				var doneFns = inProgress[url];
+/******/ 				delete inProgress[url];
+/******/ 				script.parentNode && script.parentNode.removeChild(script);
+/******/ 				doneFns && doneFns.forEach((fn) => (fn(event)));
+/******/ 				if(prev) return prev(event);
+/******/ 			}
+/******/ 			var timeout = setTimeout(onScriptComplete.bind(null, undefined, { type: 'timeout', target: script }), 120000);
+/******/ 			script.onerror = onScriptComplete.bind(null, script.onerror);
+/******/ 			script.onload = onScriptComplete.bind(null, script.onload);
+/******/ 			needAttach && document.head.appendChild(script);
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/make namespace object */
 /******/ 	(() => {
 /******/ 		// define __esModule on exports
@@ -153,6 +232,29 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack://ibmdotc
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src;
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) {
+/******/ 					var i = scripts.length - 1;
+/******/ 					while (i > -1 && !scriptUrl) scriptUrl = scripts[i--].src;
+/******/ 				}
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl + "../../";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
@@ -167,7 +269,44 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack://ibmdotc
 /******/ 			"src_assets_scss_app_scss": 0
 /******/ 		};
 /******/ 		
-/******/ 		// no chunk on demand loading
+/******/ 		__webpack_require__.f.j = (chunkId, promises) => {
+/******/ 				// JSONP chunk loading for javascript
+/******/ 				var installedChunkData = __webpack_require__.o(installedChunks, chunkId) ? installedChunks[chunkId] : undefined;
+/******/ 				if(installedChunkData !== 0) { // 0 means "already installed".
+/******/ 		
+/******/ 					// a Promise means "currently loading".
+/******/ 					if(installedChunkData) {
+/******/ 						promises.push(installedChunkData[2]);
+/******/ 					} else {
+/******/ 						if("src_assets_scss_app_scss" != chunkId) {
+/******/ 							// setup Promise in chunk cache
+/******/ 							var promise = new Promise((resolve, reject) => (installedChunkData = installedChunks[chunkId] = [resolve, reject]));
+/******/ 							promises.push(installedChunkData[2] = promise);
+/******/ 		
+/******/ 							// start chunk loading
+/******/ 							var url = __webpack_require__.p + __webpack_require__.u(chunkId);
+/******/ 							// create error before stack unwound to get useful stacktrace later
+/******/ 							var error = new Error();
+/******/ 							var loadingEnded = (event) => {
+/******/ 								if(__webpack_require__.o(installedChunks, chunkId)) {
+/******/ 									installedChunkData = installedChunks[chunkId];
+/******/ 									if(installedChunkData !== 0) installedChunks[chunkId] = undefined;
+/******/ 									if(installedChunkData) {
+/******/ 										var errorType = event && (event.type === 'load' ? 'missing' : event.type);
+/******/ 										var realSrc = event && event.target && event.target.src;
+/******/ 										error.message = 'Loading chunk ' + chunkId + ' failed.\n(' + errorType + ': ' + realSrc + ')';
+/******/ 										error.name = 'ChunkLoadError';
+/******/ 										error.type = errorType;
+/******/ 										error.request = realSrc;
+/******/ 										installedChunkData[1](error);
+/******/ 									}
+/******/ 								}
+/******/ 							};
+/******/ 							__webpack_require__.l(url, loadingEnded, "chunk-" + chunkId, chunkId);
+/******/ 						} else installedChunks[chunkId] = 0;
+/******/ 					}
+/******/ 				}
+/******/ 		};
 /******/ 		
 /******/ 		// no prefetching
 /******/ 		
@@ -214,7 +353,7 @@ eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack://ibmdotc
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_axios_lib_axios_js","vendors-node_modules_babel_runtime_helpers_interopRequireDefault_js-node_modules_babel_runtim-8e1ade","vendors-node_modules_carbon_ibmdotcom-services_es_services_KalturaPlayer_KalturaPlayer_js-nod-c8fb09","vendors-node_modules_carbon_ibmdotcom-web-components_es_component-mixins_cta_cta-v1_js-node_m-ce6ad6","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_card-group_index_js-node_m-c28ad0","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_card_index_js","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_content-block_content-block_js","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_content-group-cards_index_-afea61","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_content-item-row_index_js--0f31bb","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_content-section_content-se-cafed6","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_cta_index_js","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_cta_text-cta_js-node_modul-20495f","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_expressive-modal_expressiv-d01c75","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_footer_footer-container_js-262df1","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_image_index_js","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_lightbox-media-viewer_ligh-e94709","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_link-list_index_js-node_mo-5842e0","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_locale-modal_locale-modal--a6a33c","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_markdown_markdown_js-node_-89719f","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_masthead_masthead-container_js","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_masthead_megamenu-top-nav--565704","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_pictogram-item_index_js-no-927073","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_video-player_index_js","vendors-node_modules_carbon_ibmdotcom-web-components_es_globals_defs_js-node_modules_carbon_i-7a80a3","vendors-node_modules_carbon_ibmdotcom-web-components_es_internal_vendor_carbon_ibmdotcom-serv-de6849","vendors-node_modules_carbon_ibmdotcom-web-components_es_internal_vendor_carbon_web-components-905e5b","vendors-node_modules_carbon_ibmdotcom-web-components_es_internal_vendor_carbon_web-components-eab85e","vendors-node_modules_carbon_ibmdotcom-web-components_es_internal_vendor_carbon_web-components-5f493a","vendors-node_modules_isomorphic-dompurify_browser_js-node_modules_js-cookie_src_js_cookie_js--4e59fa","vendors-node_modules_process_browser_js-node_modules_lit_reactive-element_development_decorat-1b26fc","vendors-node_modules_redux-logger_dist_redux-logger_js-node_modules_redux-thunk_es_index_js-n-32af70","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_card-link_index_js-node_mo-56add8","src_assets_scss_app_scss"], () => (__webpack_require__("./src/pages/ui-components/ui-components.js")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["vendors-node_modules_axios_lib_axios_js","vendors-node_modules_babel_runtime_regenerator_index_js-node_modules_babel_runtime_helpers_es-edba87","vendors-node_modules_carbon_ibmdotcom-services_es_services_KalturaPlayer_KalturaPlayer_js-nod-c8fb09","vendors-node_modules_carbon_ibmdotcom-web-components_es_component-mixins_cta_cta-v1_js-node_m-ce6ad6","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_card-group_index_js-node_m-c28ad0","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_card_index_js","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_content-block_content-block_js","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_content-group-cards_index_-fe4c81","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_content-section_content-se-cafed6","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_cta_index_js","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_cta_text-cta_js-node_modul-20495f","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_expressive-modal_expressiv-d01c75","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_footer_footer-container_js-262df1","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_image_index_js","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_lightbox-media-viewer_ligh-e94709","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_link-list_index_js-node_mo-5842e0","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_locale-modal_locale-modal--a6a33c","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_markdown_markdown_js-node_-c67e73","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_masthead_megamenu-heading_-70cf3a","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_pictogram-item_index_js-no-927073","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_video-player_index_js","vendors-node_modules_carbon_ibmdotcom-web-components_es_globals_defs_js-node_modules_carbon_i-7a80a3","vendors-node_modules_carbon_ibmdotcom-web-components_es_internal_vendor_carbon_ibmdotcom-serv-de6849","vendors-node_modules_carbon_ibmdotcom-web-components_es_internal_vendor_carbon_web-components-b7c0d7","vendors-node_modules_carbon_ibmdotcom-web-components_es_internal_vendor_carbon_web-components-eeba8e","vendors-node_modules_isomorphic-dompurify_browser_js-node_modules_js-cookie_src_js_cookie_js--4e59fa","vendors-node_modules_process_browser_js-node_modules_lit_reactive-element_development_decorat-1b26fc","vendors-node_modules_redux-logger_dist_redux-logger_js-node_modules_redux-thunk_es_index_js-n-32af70","vendors-node_modules_carbon_ibmdotcom-web-components_es_components_card-link_index_js-node_mo-56add8","src_assets_scss_app_scss"], () => (__webpack_require__("./src/pages/ui-components/ui-components.js")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

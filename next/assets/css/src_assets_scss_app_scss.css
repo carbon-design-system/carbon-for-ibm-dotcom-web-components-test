@@ -7875,9 +7875,10 @@ optgroup.cds--select-optgroup:disabled,
 :host(c4d-content-group-cards-item) .cds--card__copy,
 :host(c4d-content-group-cards-item) .cds--card .cds--card__heading,
 :host(c4d-content-group-cards-item) .cds--card .cds--card__copy {
-  inline-size: 90%;
-  max-inline-size: to-rem(640px);
   color: var(--cds-text-primary, #161616);
+  max-inline-size: to-rem(640px);
+  -webkit-padding-end: 10%;
+          padding-inline-end: 10%;
 }
 @media (min-width: 42rem) {
   .cds--card .cds--card__heading,
@@ -7898,7 +7899,8 @@ optgroup.cds--select-optgroup:disabled,
   :host(c4d-content-group-cards-item) .cds--card__copy,
   :host(c4d-content-group-cards-item) .cds--card .cds--card__heading,
   :host(c4d-content-group-cards-item) .cds--card .cds--card__copy {
-    inline-size: calc(100% - 2rem);
+    -webkit-padding-end: 2rem;
+            padding-inline-end: 2rem;
   }
 }
 .cds--card .cds--card__copy:not([hidden]),
@@ -7973,6 +7975,12 @@ optgroup.cds--select-optgroup:disabled,
     -webkit-padding-start: 0;
             padding-inline-start: 0;
   }
+}
+:host(c4d-card-group-item) .cds--card__pictogram-wrapper,
+:host(c4d-card-in-card) .cds--card__pictogram-wrapper,
+:host(c4d-card-cta) .cds--card__pictogram-wrapper,
+:host(c4d-card) .cds--card__pictogram-wrapper {
+  display: flex;
 }
 :host(c4d-card-group-item)[pictogram] .cds--card ::slotted(c4d-card-heading),
 :host(c4d-card-in-card)[pictogram] .cds--card ::slotted(c4d-card-heading),
@@ -8304,6 +8312,7 @@ optgroup.cds--select-optgroup:disabled,
 
 :host(c4d-card-eyebrow),
 .cds--card__eyebrow {
+  display: block;
   inline-size: 90%;
   max-inline-size: to-rem(640px);
   font-size: var(--cds-label-02-font-size, 0.875rem);
@@ -8522,6 +8531,7 @@ optgroup.cds--select-optgroup:disabled,
 
 :host(c4d-card-heading),
 :host(c4d-card-link-heading) {
+  display: block;
   inline-size: 90%;
   max-inline-size: to-rem(640px);
   color: var(--cds-text-primary, #161616);

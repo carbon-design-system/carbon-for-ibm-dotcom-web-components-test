@@ -69,7 +69,7 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
-    "@carbon/ibmdotcom-web-components": "^2.13.1",
+    "@carbon/ibmdotcom-web-components": "^2.14.0",
     "@carbon/styles": "^1.55.0",
     "@carbon/web-components": "^2.8.0"
   },

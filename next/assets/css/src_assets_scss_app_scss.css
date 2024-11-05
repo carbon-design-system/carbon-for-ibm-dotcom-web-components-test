@@ -7876,7 +7876,7 @@ optgroup.cds--select-optgroup:disabled,
 :host(c4d-content-group-cards-item) .cds--card .cds--card__heading,
 :host(c4d-content-group-cards-item) .cds--card .cds--card__copy {
   color: var(--cds-text-primary, #161616);
-  max-inline-size: to-rem(640px);
+  max-inline-size: 40rem;
   -webkit-padding-end: 10%;
           padding-inline-end: 10%;
 }
@@ -7942,6 +7942,18 @@ optgroup.cds--select-optgroup:disabled,
   position: absolute;
   content: "";
   inset: 0;
+}
+.cds--card .cds--card__footer-wrapper,
+:host(c4d-card) .cds--card__footer-wrapper,
+:host(c4d-region-item) .cds--link .cds--card__footer-wrapper,
+:host(c4d-card-cta) .cds--card__footer-wrapper,
+:host(c4d-card-in-card) .cds--card__footer-wrapper,
+:host(c4d-card-group-item) .cds--card__footer-wrapper,
+:host(c4d-card-group-item) .cds--card .cds--card__footer-wrapper,
+:host(c4d-content-group-cards-item) .cds--card__footer-wrapper,
+:host(c4d-content-group-cards-item) .cds--card .cds--card__footer-wrapper {
+  -webkit-margin-before: auto;
+          margin-block-start: auto;
 }
 
 :host(c4d-card-group-item),
@@ -8362,9 +8374,6 @@ optgroup.cds--select-optgroup:disabled,
 :host(c4d-card-in-card-footer) a,
 :host(c4d-feature-card-footer) a,
 :host(c4d-feature-cta-footer) a {
-  /* Moves the footer down to the bottom in the card */
-  -webkit-margin-before: auto;
-          margin-block-start: auto;
   text-decoration: none;
 }
 .cds--card .cds--card__footer:focus,

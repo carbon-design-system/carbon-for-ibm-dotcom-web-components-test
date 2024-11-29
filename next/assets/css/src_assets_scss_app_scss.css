@@ -26,7 +26,7 @@
  * LICENSE file in the root directory of this source tree.
  */
 /**
- * Copyright IBM Corp. 2016, 2023
+ * Copyright IBM Corp. 2016, 2024
  *
  * This source code is licensed under the Apache-2.0 license found in the
  * LICENSE file in the root directory of this source tree.
@@ -257,7 +257,7 @@
 }
 
 /**
- * Copyright IBM Corp. 2016, 2023
+ * Copyright IBM Corp. 2016, 2024
  *
  * This source code is licensed under the Apache-2.0 license found in the
  * LICENSE file in the root directory of this source tree.
@@ -10041,7 +10041,7 @@ optgroup.cds--select-optgroup:disabled,
  * LICENSE file in the root directory of this source tree.
  */
 /**
- * Copyright IBM Corp. 2016, 2023
+ * Copyright IBM Corp. 2016, 2024
  *
  * This source code is licensed under the Apache-2.0 license found in the
  * LICENSE file in the root directory of this source tree.
@@ -10590,7 +10590,7 @@ optgroup.cds--select-optgroup:disabled,
 
 :host(c4d-footer-nav-item),
 :host(c4d-legal-nav-item),
-:host(c4d-legal-nav-cookie-preferences-placeholder) div {
+:host(c4d-legal-nav-cookie-preferences-placeholder) {
   --cds-ai-aura-end: rgba(0, 0, 0, 0);
   --cds-ai-aura-hover-background: #333333;
   --cds-ai-aura-hover-end: rgba(0, 0, 0, 0);
@@ -11058,7 +11058,7 @@ optgroup.cds--select-optgroup:disabled,
 }
 :host(c4d-footer-nav-item) .cds--footer__link.cds--link,
 :host(c4d-legal-nav-item) .cds--footer__link.cds--link,
-:host(c4d-legal-nav-cookie-preferences-placeholder) div .cds--footer__link.cds--link {
+:host(c4d-legal-nav-cookie-preferences-placeholder) .cds--footer__link.cds--link {
   font-size: var(--cds-body-01-font-size, 0.875rem);
   font-weight: var(--cds-body-01-font-weight, 400);
   line-height: var(--cds-body-01-line-height, 1.42857);
@@ -11067,27 +11067,31 @@ optgroup.cds--select-optgroup:disabled,
 :host(c4d-footer-nav-item) .cds--footer__link.cds--link, :host(c4d-footer-nav-item) .cds--footer__link.cds--link:visited,
 :host(c4d-legal-nav-item) .cds--footer__link.cds--link,
 :host(c4d-legal-nav-item) .cds--footer__link.cds--link:visited,
-:host(c4d-legal-nav-cookie-preferences-placeholder) div .cds--footer__link.cds--link,
-:host(c4d-legal-nav-cookie-preferences-placeholder) div .cds--footer__link.cds--link:visited {
+:host(c4d-legal-nav-cookie-preferences-placeholder) .cds--footer__link.cds--link,
+:host(c4d-legal-nav-cookie-preferences-placeholder) .cds--footer__link.cds--link:visited {
   color: var(--cds-text-secondary, #525252);
 }
 :host(c4d-footer-nav-item) .cds--footer__link.cds--link:focus,
 :host(c4d-legal-nav-item) .cds--footer__link.cds--link:focus,
-:host(c4d-legal-nav-cookie-preferences-placeholder) div .cds--footer__link.cds--link:focus {
+:host(c4d-legal-nav-cookie-preferences-placeholder) .cds--footer__link.cds--link:focus {
   outline-color: var(--cds-focus, #0f62fe);
   outline-offset: -1px;
 }
 :host(c4d-footer-nav-item) .cds--footer__link.cds--link:active,
 :host(c4d-legal-nav-item) .cds--footer__link.cds--link:active,
-:host(c4d-legal-nav-cookie-preferences-placeholder) div .cds--footer__link.cds--link:active {
+:host(c4d-legal-nav-cookie-preferences-placeholder) .cds--footer__link.cds--link:active {
   color: var(--cds-text-on-color, #ffffff);
 }
 :host(c4d-footer-nav-item) .cds--footer__link.cds--link:hover, :host(c4d-footer-nav-item) .cds--footer__link.cds--link:visited:hover,
 :host(c4d-legal-nav-item) .cds--footer__link.cds--link:hover,
 :host(c4d-legal-nav-item) .cds--footer__link.cds--link:visited:hover,
-:host(c4d-legal-nav-cookie-preferences-placeholder) div .cds--footer__link.cds--link:hover,
-:host(c4d-legal-nav-cookie-preferences-placeholder) div .cds--footer__link.cds--link:visited:hover {
+:host(c4d-legal-nav-cookie-preferences-placeholder) .cds--footer__link.cds--link:hover,
+:host(c4d-legal-nav-cookie-preferences-placeholder) .cds--footer__link.cds--link:visited:hover {
   color: var(--cds-text-primary, #161616);
+}
+
+:host(c4d-legal-nav-cookie-preferences-placeholder) .cds--footer__link.cds--link {
+  cursor: pointer;
 }
 
 :host(c4d-legal-nav) {
@@ -11667,8 +11671,8 @@ optgroup.cds--select-optgroup:disabled,
     padding-inline: 2.5rem;
   }
 }
-:host(c4d-footer) .cds--adjunct-links__container--hidden,
-:host(c4d-legal-nav) .cds--adjunct-links__container--hidden {
+:host(c4d-footer) .c4d--adjunct-links__container--hidden,
+:host(c4d-legal-nav) .c4d--adjunct-links__container--hidden {
   display: none;
 }
 
@@ -17585,7 +17589,7 @@ nav.cds--footer-nav__locale-button--disabled {
 }
 
 :host(c4d-legal-nav-item),
-:host(c4d-legal-nav-cookie-preferences-placeholder) div,
+:host(c4d-legal-nav-cookie-preferences-placeholder),
 .cds--legal-nav__list-item {
   padding: 0.5rem 0 0 0;
   -webkit-margin-end: 2rem;
@@ -17597,14 +17601,14 @@ nav.cds--footer-nav__locale-button--disabled {
 }
 @media (max-width: 41.98rem) {
   :host(c4d-legal-nav-item):first-child,
-  :host(c4d-legal-nav-cookie-preferences-placeholder) div:first-child,
+  :host(c4d-legal-nav-cookie-preferences-placeholder):first-child,
   .cds--legal-nav__list-item:first-child {
     -webkit-padding-before: 0;
             padding-block-start: 0;
   }
 }
 :host(c4d-legal-nav-item):last-child,
-:host(c4d-legal-nav-cookie-preferences-placeholder) div:last-child,
+:host(c4d-legal-nav-cookie-preferences-placeholder):last-child,
 .cds--legal-nav__list-item:last-child {
   -webkit-margin-end: 0;
           margin-inline-end: 0;

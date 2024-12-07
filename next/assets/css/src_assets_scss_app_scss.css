@@ -4261,8 +4261,8 @@ optgroup.cds--select-optgroup:disabled,
           padding-block-start: 0;
 }
 
-:host(c4d-video-player[background-mode=true]),
-.c4d--video-player[background-mode=true] {
+:host(c4d-video-player[background-mode]),
+.c4d--video-player[background-mode] {
   /**
    * These styles mock `object-fit: cover;` and `object-position: center`.
    *   - Aspect ratio forces the shape of the element.
@@ -4270,15 +4270,15 @@ optgroup.cds--select-optgroup:disabled,
    *   - inset/translate combine to ensure the element is centered over the parent footprint.
    */
 }
-:host(c4d-video-player[background-mode=true]) .c4d--video-player__video-container,
-.c4d--video-player[background-mode=true] .c4d--video-player__video-container {
+:host(c4d-video-player[background-mode]) .c4d--video-player__video-container,
+.c4d--video-player[background-mode] .c4d--video-player__video-container {
   padding: 0;
   block-size: 100%;
 }
-:host(c4d-video-player[background-mode=true]) ::slotted(.c4d--video-player__video),
-:host(c4d-video-player[background-mode=true]) .c4d--video-player__video,
-.c4d--video-player[background-mode=true] ::slotted(.c4d--video-player__video),
-.c4d--video-player[background-mode=true] .c4d--video-player__video {
+:host(c4d-video-player[background-mode]) ::slotted(.c4d--video-player__video),
+:host(c4d-video-player[background-mode]) .c4d--video-player__video,
+.c4d--video-player[background-mode] ::slotted(.c4d--video-player__video),
+.c4d--video-player[background-mode] .c4d--video-player__video {
   aspect-ratio: var(--native-file-aspect-ratio, 16/9);
   inset: 50% 0 0 50%;
   min-block-size: 100%;
@@ -7749,6 +7749,19 @@ optgroup.cds--select-optgroup:disabled,
   inset-block-start: 0;
   opacity: 16%;
 }
+.cds--card .cds--card,
+:host(c4d-card) .cds--card,
+:host(c4d-region-item) .cds--link .cds--card,
+:host(c4d-card-cta) .cds--card,
+:host(c4d-card-in-card) .cds--card,
+:host(c4d-card-group-item) .cds--card,
+:host(c4d-card-group-item) .cds--card .cds--card,
+:host(c4d-content-group-cards-item) .cds--card,
+:host(c4d-content-group-cards-item) .cds--card .cds--card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .cds--card .cds--card__wrapper,
 :host(c4d-card) .cds--card__wrapper,
 :host(c4d-region-item) .cds--link .cds--card__wrapper,
@@ -8483,43 +8496,43 @@ optgroup.cds--select-optgroup:disabled,
 }
 
 :host(c4d-card)[color-scheme=inverse]:not([disabled]) .cds--tile,
-:host(c4d-card-group-item)[color-scheme=inverse]:not([disabled]) .cds--card .cds--tile {
+:host(c4d-card-group-item)[color-scheme=inverse]:not([disabled]) .cds--tile {
   border-color: var(--cds-background-inverse, #393939);
   background-color: var(--cds-background-inverse, #393939);
 }
-:host(c4d-card)[color-scheme=inverse]:not([disabled]) .cds--tile:hover c4d-image,
+:host(c4d-card)[color-scheme=inverse]:not([disabled]) .cds--tile:hover .c4d-image,
 :host(c4d-card)[color-scheme=inverse]:not([disabled]) .cds--tile:hover ::slotted(c4d-image),
 :host(c4d-card)[color-scheme=inverse]:not([disabled]) .cds--tile:hover ::slotted(c4d-card-cta-image),
-:host(c4d-card-group-item)[color-scheme=inverse]:not([disabled]) .cds--card .cds--tile:hover c4d-image,
-:host(c4d-card-group-item)[color-scheme=inverse]:not([disabled]) .cds--card .cds--tile:hover ::slotted(c4d-image),
-:host(c4d-card-group-item)[color-scheme=inverse]:not([disabled]) .cds--card .cds--tile:hover ::slotted(c4d-card-cta-image) {
+:host(c4d-card-group-item)[color-scheme=inverse]:not([disabled]) .cds--tile:hover .c4d-image,
+:host(c4d-card-group-item)[color-scheme=inverse]:not([disabled]) .cds--tile:hover ::slotted(c4d-image),
+:host(c4d-card-group-item)[color-scheme=inverse]:not([disabled]) .cds--tile:hover ::slotted(c4d-card-cta-image) {
   -webkit-filter: brightness(108%);
           filter: brightness(108%);
 }
-:host(c4d-card)[color-scheme=inverse]:not([disabled]) .cds--tile:hover c4d-image::after,
+:host(c4d-card)[color-scheme=inverse]:not([disabled]) .cds--tile:hover .c4d-image::after,
 :host(c4d-card)[color-scheme=inverse]:not([disabled]) .cds--tile:hover ::slotted(c4d-image)::after,
 :host(c4d-card)[color-scheme=inverse]:not([disabled]) .cds--tile:hover ::slotted(c4d-card-cta-image)::after,
-:host(c4d-card-group-item)[color-scheme=inverse]:not([disabled]) .cds--card .cds--tile:hover c4d-image::after,
-:host(c4d-card-group-item)[color-scheme=inverse]:not([disabled]) .cds--card .cds--tile:hover ::slotted(c4d-image)::after,
-:host(c4d-card-group-item)[color-scheme=inverse]:not([disabled]) .cds--card .cds--tile:hover ::slotted(c4d-card-cta-image)::after {
+:host(c4d-card-group-item)[color-scheme=inverse]:not([disabled]) .cds--tile:hover .c4d-image::after,
+:host(c4d-card-group-item)[color-scheme=inverse]:not([disabled]) .cds--tile:hover ::slotted(c4d-image)::after,
+:host(c4d-card-group-item)[color-scheme=inverse]:not([disabled]) .cds--tile:hover ::slotted(c4d-card-cta-image)::after {
   display: none;
 }
 :host(c4d-card)[color-scheme=inverse]:not([disabled]) .cds--card__wrapper:hover,
-:host(c4d-card-group-item)[color-scheme=inverse]:not([disabled]) .cds--card .cds--card__wrapper:hover {
+:host(c4d-card-group-item)[color-scheme=inverse]:not([disabled]) .cds--card__wrapper:hover {
   background-color: var(--cds-background-inverse-hover, #474747);
 }
 :host(c4d-card)[color-scheme=inverse]:not([disabled]) .cds--card__heading,
 :host(c4d-card)[color-scheme=inverse]:not([disabled]) .cds--card__copy,
-:host(c4d-card-group-item)[color-scheme=inverse]:not([disabled]) .cds--card .cds--card__heading,
-:host(c4d-card-group-item)[color-scheme=inverse]:not([disabled]) .cds--card .cds--card__copy {
+:host(c4d-card-group-item)[color-scheme=inverse]:not([disabled]) .cds--card__heading,
+:host(c4d-card-group-item)[color-scheme=inverse]:not([disabled]) .cds--card__copy {
   color: var(--cds-icon-inverse, #ffffff);
 }
 :host(c4d-card)[color-scheme=inverse]:not([disabled]) .cds--card__eyebrow,
-:host(c4d-card-group-item)[color-scheme=inverse]:not([disabled]) .cds--card .cds--card__eyebrow {
+:host(c4d-card-group-item)[color-scheme=inverse]:not([disabled]) .cds--card__eyebrow {
   color: var(--cds-text-placeholder, rgba(22, 22, 22, 0.4));
 }
 :host(c4d-card)[color-scheme=inverse]:not([disabled]):focus-within::after,
-:host(c4d-card-group-item)[color-scheme=inverse]:not([disabled]) .cds--card:focus-within::after {
+:host(c4d-card-group-item)[color-scheme=inverse]:not([disabled]):focus-within::after {
   position: absolute;
   z-index: 2;
   border: 0.125rem solid var(--cds-focus, #0f62fe);
